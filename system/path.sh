@@ -18,6 +18,8 @@ path /usr/local/sbin
 path /bin
 path /usr/bin
 path /usr/local/bin
+path /opt/sbin
+path /opt/bin
 
 # Composer binaries
 path $HOME/.composer/vendor/bin 

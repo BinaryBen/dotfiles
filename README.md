@@ -1,15 +1,23 @@
 # dotfiles
 The essence of me, naturally!
-
 ## Todo
 
-### Languages
+### Languages / Frameworks / Platforms
 
 - [ ] Python 3
 - [ ] Node (via NVM)
+  - [ ] React
+  - [ ] Vue
+  - [ ] Directus
+  - [ ] Vite
 - [ ] Go
 - [ ] Rust
 - [ ] C/C++
+  - [ ] Arduino
+- [ ] C#
+- [ ] Deno
+- [ ] PHP / Composer
+  - [ ] Laravel / Artisan
 
 ### CLI Software
 

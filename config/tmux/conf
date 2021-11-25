@@ -1,0 +1,77 @@
+
+###########################
+# Global Settings
+###########################
+
+set -g mouse on					# Enable mouse support (ick!)
+set -g status-position top		# Move status bar to the top
+# set -g default-shell ${SHELL}	# Use the default shell
+set -g base-index 1				# 1 is closer than 0
+setw -g pane-base-index 1
+
+# @todo: trying to fix Shift+arrows in micro
+set -g default-terminal "xterm-256color"
+# set -g xterm-keys on
+
+###########################
+# Status bar
+###########################
+
+set -g status-interval 1 		# Redraw the status bar every second
+
+set -g pane-border-status top
+set -g pane-border-format '─'
+
+MUSIC="#(zscroll -d 1 -p '    ' -l 18 'Blurryface by Twenty One Pilots')"
+
+set -g status-left '   #S '
+set -g status-right '#[fg=white]爵#[fg=color240] 192.168.123.55  #[fg=white]祥 #[fg=color240]up 2yrs 8mth  #[fg=white] #[fg=color240] 2.5GB 45%  #[fg=white] #[fg=color240] #[$MUSIC]  #[fg=white]盛#[fg=color240] 28°C  #[fg=white] #[fg=color240] %eth %b   #[fg=white] #[fg=color240]%l:%M %p  #[fg=white]⏻ #[fg=color240]ON  #[fg=white] #[fg=color240]SSH  #[fg=white]說 '
+# set -g status-right '#(~/Development/projects/dotfiles/tmux/beeline.sh)'
+set -g status-right-length 250
+set -g window-status-format '#[bg=black,fg=color240]  #{window_index}: #{window_name} #[fg=white]'
+
+# set -g status 3
+
+# set -g status-format[0] '#[align=left]Top left'
+# set -ag status-format[0] '#[align=centre]Top center'
+# set -ag status-format[0] '#[align=right]Top right'
+# set -g status-format[1] ''
+# set -g status-format[2] '#[align=left]#(~/Development/binaryben/dotfiles/beeline/beelines.sh #{client_width} #{pane_current_path})'
+# set -ag status-format[1] '#[align=centre]Bottom center'
+# set -ag status-format[1] '#[align=right]Bottom right'
+
+###########################
+# Colors
+###########################
+
+# color status bar
+set -g status-style fg=white,bg=black
+# color of message bar
+set -g message-style fg=white,bold,bg=green
+
+# highlight current window
+setw -g window-status-style fg=cyan,bg=colour235
+setw -g window-status-current-style fg=white,bold,bg=red
+
+# set color of active pane
+set -g pane-border-style fg=colour240,bg=black
+set -g pane-active-border-style fg=green,bg=black
+
+###########################
+# Key Bindings
+###########################
+
+# Change leader to 'C-space'
+unbind C-b
+set -g prefix C-Space
+bind Space send-prefix
+
+# Reload tmux config file changes
+bind r source-file ~/.config/tmux/tmux.conf \; display-message " Config reloaded from dotfiles. "
+
+# Quicker change to next window
+bind C-Space next-window
+
+# Better mnemonics
+bind | split-window -h
+bind _ split-window

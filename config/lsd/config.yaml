@@ -1,0 +1,8 @@
+blocks:
+  - name
+  - size
+  - date
+date: relative
+sorting:
+  dir-grouping: first
+total-size: true

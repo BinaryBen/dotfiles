@@ -1,0 +1,93 @@
+#!/usr/bin/env bash
+
+dock() {
+  echo -e "\033[24;0H"
+  sleep $1
+}
+
+BLACK="\033[38;5;235m"
+WHITE="\033[38;5;254m"
+RED="\033[0;31m"
+BLUE="\033[0;34m"
+CYAN="\033[38;5;33m"
+GREY="\033[38;5;242m"
+SILVER="\033[38;5;250m"
+NO_COLOR="\033[0m"
+
+clear
+
+# Play first sound
+afplay $XDG_DOTFILES/static/artoo.mp3 & disown
+
+echo ""
+echo -e "                ${BLACK}████████${NO_COLOR}"
+echo -e "            ${BLACK}████${WHITE}██${BLUE}██${SILVER}██${CYAN}██${BLACK}████${NO_COLOR}"
+echo -e "          ${BLACK}██${WHITE}██${SILVER}████████████${GREY}██${BLACK}██${NO_COLOR}"
+echo -e "          ${BLACK}██${WHITE}██${BLUE}██████${SILVER}██████${GREY}██${BLACK}██${NO_COLOR}"
+echo -e "        ${BLACK}██${WHITE}██${SILVER}██${BLUE}██${BLACK}██${BLUE}██${SILVER}██${BLUE}██${SILVER}██${BLUE}██${GREY}██${BLACK}██${NO_COLOR}"
+echo -e "        ${BLACK}██${SILVER}████${RED}██${GREY}██${SILVER}██${GREY}██${BLUE}██${SILVER}██${BLUE}██${GREY}██${BLACK}██${NO_COLOR}"
+echo -e "      ${BLACK}████${CYAN}██${BLUE}██████████${CYAN}██${BLUE}██${CYAN}██${BLACK}████████${NO_COLOR}"
+echo -e "    ${BLACK}██${WHITE}██${BLACK}██${WHITE}██████████${SILVER}██${WHITE}██${SILVER}██${BLACK}██${GREY}██${SILVER}██████${BLACK}██${NO_COLOR}"
+echo -e "    ${BLACK}██${WHITE}██${BLACK}██${WHITE}██████████${SILVER}██${WHITE}██${SILVER}██${BLACK}██${WHITE}██${SILVER}██${BLACK}██${SILVER}██${BLACK}██${NO_COLOR}"
+echo -e "    ${BLACK}██${WHITE}██${BLACK}██${CYAN}██${SILVER}██${BLUE}████${SILVER}██${BLUE}██${WHITE}██${SILVER}██${BLACK}██${WHITE}██${SILVER}██████${BLACK}██${NO_COLOR}"
+echo -e "    ${BLACK}██${SILVER}██${BLACK}██${WHITE}██████████${SILVER}██${WHITE}██${SILVER}██${BLACK}██${WHITE}██${SILVER}██${BLUE}██${SILVER}██${BLACK}██${NO_COLOR}"
+echo -e "      ${BLACK}████${BLUE}████${SILVER}██${CYAN}██${SILVER}██${BLUE}██${WHITE}██${SILVER}████${BLACK}██${SILVER}██${BLUE}██${BLACK}██${NO_COLOR}"
+echo -e "      ${BLACK}████${WHITE}██████████${SILVER}██${WHITE}██${SILVER}████${BLACK}██${WHITE}██${CYAN}██${BLACK}██${NO_COLOR}"
+echo -e "      ${BLACK}████${WHITE}████${BLUE}████${WHITE}██${SILVER}██${WHITE}██${SILVER}████${BLACK}██${WHITE}██${CYAN}██${BLACK}██${NO_COLOR}"
+echo -e "      ${BLACK}████${SILVER}██${WHITE}██${GREY}████${WHITE}██${GREY}██${WHITE}██${SILVER}████${BLACK}██${WHITE}██${CYAN}██${BLACK}██${NO_COLOR}"
+echo -e "      ${BLACK}████${SILVER}██${WHITE}██${BLUE}████${WHITE}██${SILVER}██${WHITE}██${SILVER}████${BLACK}██${WHITE}██${CYAN}██${BLACK}██${NO_COLOR}"
+echo -e "      ${BLACK}████${WHITE}██████████${SILVER}██${BLUE}██${GREY}██${SILVER}██${BLACK}██${WHITE}██${CYAN}██${BLACK}██${NO_COLOR}"
+echo -e "    ${BLACK}██${WHITE}██${BLACK}██${WHITE}████${BLUE}████${WHITE}████${GREY}████${BLACK}██${WHITE}██${SILVER}██████${BLACK}██${NO_COLOR}"
+echo -e "    ${BLACK}██${WHITE}██${BLACK}██${SILVER}████████████████${BLACK}██${WHITE}██${SILVER}██${GREY}██${SILVER}██${BLACK}██${NO_COLOR}"
+echo -e "  ${BLACK}██${WHITE}██${GREY}████${BLACK}████████████████${WHITE}██${SILVER}██${GREY}██████${SILVER}██${BLACK}██${NO_COLOR}"
+echo -e "  ${BLACK}██${WHITE}██${GREY}██${SILVER}██████${BLACK}██        ██${WHITE}██${SILVER}██${GREY}██${SILVER}██${GREY}██${SILVER}██${BLACK}██${NO_COLOR}"
+echo -e "    ${BLACK}██████████            ${BLACK}████████████${NO_COLOR}      "
+echo ""
+
+# Turn head
+
+dock 0.1
+printf "\033[0;0H"
+echo ""
+echo -e "                ${BLACK}████████${NO_COLOR}"
+echo -e "            ${BLACK}████${WHITE}██${SILVER}██${BLUE}██${SILVER}██${BLACK}████${NO_COLOR}"
+echo -e "          ${BLACK}██${WHITE}██${SILVER}████████████${GREY}██${BLACK}██${NO_COLOR}"
+echo -e "          ${BLACK}██${WHITE}██${SILVER}██${BLUE}██████${SILVER}████${GREY}██${BLACK}██${NO_COLOR}"
+echo -e "        ${BLACK}██${WHITE}██${SILVER}████${BLUE}██${BLACK}██${BLUE}██${SILVER}██${BLUE}██${SILVER}██${GREY}██${BLACK}██${NO_COLOR}"
+echo -e "        ${BLACK}██${SILVER}██████${RED}██${GREY}██${SILVER}██${GREY}██${BLUE}██${SILVER}██${GREY}██${BLACK}██${NO_COLOR}"
+
+dock 0.1
+printf "\033[0;0H"
+echo ""
+echo -e "                ${BLACK}████████${NO_COLOR}"
+echo -e "            ${BLACK}████${BLUE}██${SILVER}████${BLUE}██${BLACK}████${NO_COLOR}"
+echo -e "          ${BLACK}██${WHITE}██${SILVER}████████████${GREY}██${BLACK}██${NO_COLOR}"
+echo -e "          ${BLACK}██${WHITE}██${SILVER}████${BLUE}██████${SILVER}██${GREY}██${BLACK}██${NO_COLOR}"
+echo -e "        ${BLACK}██${WHITE}██${SILVER}██████${BLUE}██${BLACK}██${BLUE}██${SILVER}██${BLUE}██${GREY}██${BLACK}██${NO_COLOR}"
+echo -e "        ${BLACK}██${SILVER}████████${CYAN}██${GREY}██${SILVER}████${BLUE}██${GREY}██${BLACK}██${NO_COLOR}"
+
+dock 0.1
+printf "\033[0;0H"
+echo ""
+echo -e "                ${BLACK}████████${NO_COLOR}"
+echo -e "            ${BLACK}████${WHITE}██${BLUE}██${SILVER}████${BLACK}████${NO_COLOR}"
+echo -e "          ${BLACK}██${WHITE}██${SILVER}████████████${GREY}██${BLACK}██${NO_COLOR}"
+echo -e "          ${BLACK}██${WHITE}██${SILVER}██████${BLUE}██████${GREY}██${BLACK}██${NO_COLOR}"
+echo -e "        ${BLACK}██${WHITE}██${SILVER}████████${BLUE}██${BLACK}██${BLUE}██${SILVER}██${GREY}██${BLACK}██${NO_COLOR}"
+echo -e "        ${BLACK}██${SILVER}██████████${CYAN}██${GREY}██${SILVER}████${GREY}██${BLACK}██${NO_COLOR}"
+
+# Keep blinking PSI
+
+dock 0.3
+printf "\033[7;0H"
+echo -e "        ${BLACK}██${SILVER}██████████${RED}██${GREY}██${SILVER}████${GREY}██${BLACK}██${NO_COLOR}"
+
+dock 0.5
+printf "\033[7;0H"
+echo -e "        ${BLACK}██${SILVER}██████████${CYAN}██${GREY}██${SILVER}████${GREY}██${BLACK}██${NO_COLOR}"
+
+dock 0.5
+printf "\033[7;0H"
+echo -e "        ${BLACK}██${SILVER}██████████${RED}██${GREY}██${SILVER}████${GREY}██${BLACK}██${NO_COLOR}"
+
+dock 0.5

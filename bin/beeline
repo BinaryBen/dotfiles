@@ -1,0 +1,104 @@
+#!/usr/bin/env bash
+# A custom powerline like prompt generator
+
+
+__intelli_host() {
+  # If local access, only show icon
+  if [[ "${SSH_CLIENT}" == "" ]]; then
+    echo -n "🌐"
+  else
+    echo -n "🌐"
+  fi
+  if [[ "$OSTYPE" == "linux-gnu" ]]; then
+      echo ""
+  elif [[ "$OSTYPE" == "darwin"* ]]; then
+      echo ""
+  elif [[ "$OSTYPE" == "cygwin" ]]; then
+      echo ""
+  elif [[ "$OSTYPE" == "msys" ]]; then
+      echo ""
+  elif [[ "$OSTYPE" == "win32" ]]; then
+      echo ""
+  elif [[ "$OSTYPE" == "freebsd"* ]]; then
+      echo ""
+  else
+      echo ""
+  fi
+}
+
+__get_pretty_pwd() {
+
+  # Make relavtive to home
+  # Make relative to git root
+  # Make short
+
+  # Get the current directory
+  local pwd=$(pwd)
+
+  # Remove the home directory
+  pwd=${pwd#$HOME}
+
+  # Remove the leading /
+  pwd=${pwd#/}
+
+  # Remove the trailing /
+  pwd=${pwd%/}
+
+  # If the directory is empty, use the home directory
+  if [[ "$pwd" == "" ]]; then
+      pwd="~"
+  fi
+
+  # If the directory is the home directory, use ~
+  if [[ "$pwd" == "~" ]]; then
+      pwd="~"
+  fi
+
+  # Print the directory
+  echo "$pwd"
+}
+
+__get_user() {
+  # Get the current user
+  local user=$(whoami)
+
+  # Print the user
+  echo "$user"
+}
+
+__get_git_branch() {
+  # Get the current git branch
+  local branch=$(git rev-parse --abbrev-ref HEAD 2> /dev/null)
+
+  # If the git branch is not empty
+  if [[ "$branch" != "" ]]; then
+      # Print the git branch
+      echo "$branch"
+  fi
+}
+
+__get_git_env() {
+  # Get the git status
+  local status=$(git status 2> /dev/null)
+
+  # If the git status is not empty
+  if [[ "$status" != "" ]]; then
+      # Get the git status
+      local status=$(git status 2> /dev/null)
+  fi
+}
+
+case $1 in
+'user')
+  __get_user
+  ;;
+'host')
+  __intelli_host
+  ;;
+'pwd')
+  __get_pretty_pwd
+  ;;
+'git')
+  __get_git_branch
+  ;;
+esac

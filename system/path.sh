@@ -33,6 +33,13 @@ if [ -d $HOME/.nvm ]; then
   [ -s "$NVM_DIR/bash_completion" ] && source "$NVM_DIR/bash_completion"
 fi
 
+# As above, but if installed via Homebrew
+if [ -d /opt/homebrew/opt/nvm ]; then
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
+fi
+
 # Homebrew
 path /opt/homebrew/sbin
 path /opt/homebrew/bin

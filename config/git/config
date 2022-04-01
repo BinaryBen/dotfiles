@@ -1,0 +1,4 @@
+[alias]
+	last = log -1 HEAD --stat
+  draft = !git-create-draft-pr
+  new = !git-push-new-branch

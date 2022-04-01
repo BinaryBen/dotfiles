@@ -13,8 +13,6 @@ alias 3="cd -3"
 alias 4="cd -4"
 alias 5="cd -5"
 
-# TODO: Make work with lsd with ls as backup
-
 if command -v lsd &> /dev/null
 then
   alias ls='lsd --classic'
@@ -34,10 +32,14 @@ else
   alias lt='du -sh * | sort -h' # Sort by size (macOS)
 fi
 
-alias rm="rm -iv" # TODO: Write function to default to yes on ENTER
-alias rmf="rm -fv"
-# alias trash="mv --force -t ~/.local/share/Trash " # Instead of rm? Move to Trash/Recycle Bin?
-# ALTERNATIVE: https://gitlab.com/trashy/trashy
+if command -v trash &> /dev/null
+then
+  alias rm="trash"
+else
+  alias rm="rm -iv" # TODO: Write function to default to yes on ENTER
+  alias rmf="rm -fv"
+fi
+
 # TODO: would be nice if `fuck` restored a accidentally trashed thing?
 alias mv="mv -iv" # TODO: See above
 alias mvf="mv -fv"

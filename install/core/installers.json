@@ -1,0 +1,25 @@
+{
+  "apps": [
+    {
+      "name": "Homebrew"
+    },
+    {
+      "name": "Mac App Store (CLI)"
+    },
+    {
+      "name": "Chocolatey"
+    },
+    {
+      "name": "Node Version Manager",
+      "install": {
+        "brew": "nvm"
+      },
+      "postinstall": {
+        "nix": "mkdir ~/.nvm"
+      }
+    },
+    {
+      "name": "Flatpak"
+    }
+  ]
+}

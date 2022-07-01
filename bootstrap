@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
-# This is specifically in root in case I get access to Github Codespace
+# This is located in root for use in Github Codespace
 # https://docs.github.com/en/codespaces/customizing-your-codespace/personalizing-codespaces-for-your-account#dotfiles
 
+echo "This does nothing at the moment. Sad face."

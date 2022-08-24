@@ -1,2 +1,1 @@
 amphetamine
-Bitwarden

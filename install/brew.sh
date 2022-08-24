@@ -18,12 +18,12 @@ brew install --cask tor-browser
 
 brew install --cask ha-menu
 brew install --cask hammerspoon
-brew install --cask google-assistant
 
 # Utilities
 
 brew install --cask barrier
 brew install --cask rectangle
+brew install --cask betterdisplay
 brew install --cask insomnia
 brew install lsd
 brew install thefuck
@@ -32,6 +32,7 @@ brew install jq
 brew install trash
 brew install --cask fig
 brew install mas
+brew install qrcp
 # Epoccam?
 brew install --cask duet
 brew install --cask imageoptim
@@ -42,7 +43,6 @@ brew install --cask browserosaurus
 # Find large files / duplicates / empty directories?
 # Geektool
 brew install --cask geekbench
-# Free Download Manager?
 brew install --cask nomachine
 # Mount NTFS drives
 brew install --cask onyx
@@ -76,8 +76,8 @@ brew install --cask autodesk-fusion360
 # 3D printing software
 brew install --cask teensy
 brew install --cask raspberry-pi-imager
-# Etcher
-# Arduino?
+brew install --cask balenaetcher
+brew install arduino-cli
 
 # Design
 
@@ -96,21 +96,21 @@ git lfs install
 # Some kind of git profile management
 brew install direnv
 brew install --cask docker
-brew install docker-compose
 brew install --cask visual-studio-code
+brew install --cask vscodium
 brew install --cask open-in-code
 brew install --cask iterm2
 brew install --cask dotnet
 brew install --cask devtoys
+brew install --cask multipass
 #ASCIinema
-brew install --cask beekeeper-studio # TODO: Review
+brew install --cask beekeeper-studio
 # Docs viewer (like Dash)
 # API browser
 # Electron?
 # Browser automation
 brew install --cask firebase-admin
 # Git GUI
-# Github Desktop?
 # Fuse https://fuseopen.com
 brew install --cask koa11y
 # Opera, Firefox?
@@ -120,10 +120,12 @@ brew install --cask microsoft-edge
 # Localhost SSH keys
 brew install --cask publii
 brew install --cask pulse
-# Language playgrounds? Codepen desktop concept?
-brew install --cask touch-bar-simulator
+# brew install --cask touch-bar-simulator
+brew install nim
+brew install sass/sass/sass
+brew install flyctl
 
-# Media production
+Media production
 
 brew install --cask ableton-live-standard
 # Tracktion Waveform
@@ -135,20 +137,24 @@ brew install --cask blender
 brew install --cask obs
 # Ebook creator
 
+# VST Plugin Portals
+brew install --cask spitfire-audio
+
 # Office / productivity
 
 brew install --cask resilio-sync
 brew install --cask adobe-acrobat-reader
 brew install --cask google-drive
 brew install --cask microsoft-office
-brew install --cask mailspring
-# GPG Email? Canary? Proton?
+brew install --cask mailspring # Seems to be this or Thunderbird
+# Which supports PEP? GPG? What about Canary and Proton?
+# Mailspring is apparently going more open
 brew install --cask drawio
-# NV alternative? Endnote alternative? Memo? https://usememo.com
+brew install --cask standard-notes
 # Calendar? Fantastical?
 # Project Management
 # Grammarly
-brew install --cask google-chrome
+brew install --cask eloston-chromium
 
 # Academic
 
@@ -163,10 +169,10 @@ brew install --cask google-chrome
 brew install --cask vlc
 brew install --cask optimus-player
 # Music player
-# Spotify? Lofi? SpotSpot?
+brew install --cask psst
 brew tap popcorn-official/popcorn-desktop https://github.com/popcorn-official/popcorn-desktop.git
 brew install --cask popcorn-time
-# Torrent Client? Remote torrent client? Electorrent?
+brew install --cask motrix
 # SteamLink
 brew install --cask steam
 # Epic Games
@@ -179,6 +185,7 @@ brew install --cask runescape
 # Communication
 
 brew install --cask ferdium
+brew install caprine
 brew install --cask around
 # Element?
 

@@ -16,14 +16,15 @@ alias 5="cd -5"
 if command -v lsd &> /dev/null
 then
   alias ls='lsd --classic'
-  alias l='lsd'
-  alias ll='lsd -l'
-  alias l.='lsd -a'
-  alias lla='lsd -la'
+  alias l='lsd --config-file ~/.files/config/lsd/config.yaml'
+  alias ll='lsd -l --config-file ~/.files/config/lsd/config.yaml'
+  alias l.='lsd -a --config-file ~/.files/config/lsd/config.yaml'
+  alias lla='lsd -la --config-file ~/.files/config/lsd/config.yaml'
   # TODO: Make this ignore .git, vendor, node_modules, etc.
-  alias tree='lsd --tree --depth 2'
+  alias tree='lsd --tree --depth 2 --config-file ~/.files/config/lsd/config.yaml'
 else
   alias ls="ls -G"
+  alias l="echo 'LSD is not installed. You should install it.'"
   alias ll="ls -lahG"	# TODO: See above
   alias l.="" # ls all instead of almost all
   alias ld="" # list directories only

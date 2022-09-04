@@ -1,10 +1,9 @@
-# Fig pre block. Keep at the top of this file.
-export PATH="${PATH}:${HOME}/.local/bin"
-eval "$(fig init zsh pre)"
-
 # This file should be symlinked to ~/.zshrc
 
-# Bash specific config
+# Fig pre block. Keep at the top of this file.
+[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && source "$HOME/.fig/shell/zshrc.pre.zsh"
+
+# Zsh specific config
 
 export SHELL_TYPE='zsh'
 
@@ -13,10 +12,7 @@ export SHELL_TYPE='zsh'
 export XDG_DOTFILES="$HOME/.files"
 source $XDG_DOTFILES/runcom/shared.sh
 
-
-
 eval "$(direnv hook zsh)"
 
 # Fig post block. Keep at the bottom of this file.
-eval "$(fig init zsh post)"
-
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && source "$HOME/.fig/shell/zshrc.post.zsh"

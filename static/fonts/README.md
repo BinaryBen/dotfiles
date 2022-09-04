@@ -1,7 +1,11 @@
 
 Note: This repo should only contain the fonts needed for terminals and code editors. Everything else will live elsewhere.
 
-The patched directory contains the Input font configured with my preferred characters, weights and whitespacing options. It has also been patched with Nerd Font icons:
+The patched directory contains the Input font configured with my preferred characters, weights and whitespacing options. See image for config options:
+
+<img alt="Input config options" src="./settings.png" height="500"/>
+
+It has also been patched with Nerd Font icons:
 
 ```
 # From $REPO/static/fonts

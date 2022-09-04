@@ -1,11 +1,9 @@
 setopt PROMPT_SUBST
 
-export PS0="$ "       # Super minimalist prompt
+
 export PS9="${PS1}"   # Save the default prompt
 
-export ICON_APPLE=""
-export ICON_USER=""
-export ICON_FOLDER=""
+export ICON_NPM=""
 
 # Semi-circles
 export L_PAD=""
@@ -23,16 +21,7 @@ export NEL=$'\n'
 # export LS_CYAN="\e[0;36m"
 # export LS_WHITE="\e[0;37m"
 
-export LS_BLACK="%F{black}"
-export LS_RED="%F{red}"
-export LS_GREEN="%F{green}"
-export LS_YELLOW="%F{yellow}"
-export LS_BLUE="%F{blue}"
-export LS_PURPLE="%F{magenta}"
-export LS_CYAN="%F{cyan}"
-export LS_WHITE="%F{white}"
 
-export LS_RESET=$'\e[m'
 
 function t() {
   x=0
@@ -49,17 +38,17 @@ function t() {
 PROMPT='$(tput dim)$(t)${NEL}${NEL} ╭──'
 
 # Host information
-PROMPT+='${L_PAD}${ICON_APPLE}  %m ${R_PAD}'
+PROMPT+='${L_PAD}${D6S_ICON_OS_APPLE}  %m ${R_PAD}'
 
 # Username
-PROMPT+='──${L_PAD}${ICON_USER}  %n ${R_PAD}'
+PROMPT+='──${L_PAD}${D6S_ICON_GENERIC_USER}  %n ${R_PAD}'
 
 # Present Working Directory
-PROMPT+='──${L_PAD}${ICON_FOLDER}  ${PWD} ${R_PAD}'
+PROMPT+='──${L_PAD}${D6S_ICON_DIR_GENERIC}  ${PWD} ${R_PAD}'
 
 # LGBT Pride!
-LGBT_PROMPT="${LS_RED}❯${LS_YELLOW}❯${LS_GREEN}❯${LS_CYAN}❯${LS_PURPLE}❯ ${LS_RESET}"
-DEMI_PROMPT=" 🏳️‍🌈  \e[38;5;236m\❯\e[38;5;248m\❯\e[38;5;8m\❯\e[38;5;5m\❯${LS_RESET}"
+LGBT_PROMPT="${LS_RED}${LS_YELLOW}${LS_GREEN}${LS_CYAN}${LS_PURPLE} ${LS_RESET}"
+DEMI_PROMPT=" 🏳️‍🌈  \e[38;5;236m\\e[38;5;248m\\e[38;5;8m\\e[38;5;5m\${LS_RESET}"
 
 PROMPT+='${NEL} │ ${NEL} ╰─ ${LGBT_PROMPT}'
 
@@ -69,3 +58,4 @@ preexec () {
   tput el1; tput cuu1; tput el; tput cuu1; tput el; tput cuu1; tput el; tput cuu1; tput el;
   print "${NEL} ${DEMI_PROMPT} $1${NEL}"
 }
+

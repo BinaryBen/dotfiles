@@ -30,7 +30,7 @@ function _getWeatherIcon () {
 }
 
 function _getSimpleWeather () {
-  _updateWeatherData &
   echo $(_getWeatherIcon)" "$(_getWeatherTemperature)
+  _updateWeatherData &
 }
 

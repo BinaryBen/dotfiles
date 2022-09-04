@@ -49,11 +49,11 @@ echo -e "\033[1;90mAdding apps to the dock...\033[1;0m"
 # Remove all default icons from dock first
 defaults write com.apple.dock persistent-apps -array
 
-for app in "Applications/Google Chrome" \
-  "System/Applications/Messages" \
-  "System/Applications/Music" \
-	"Applications/Visual Studio Code" \
-  "Applications/iTerm"; do
+for app in "Applications/Chromium" \
+  "System/Applications/Standard Notes" \
+	"Applications/VSCodium" \
+	"Applications/iTerm" \
+  "Applications/Cider"; do
   defaults write com.apple.dock persistent-apps -array-add "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/${app}.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>"
 done
 

@@ -1,0 +1,30 @@
+# Color options can be found here for reference:
+# https://upload.wikimedia.org/wikipedia/commons/1/15/Xterm_256color_chart.svg
+
+user: 201
+group: 201
+permission:
+  read: 201
+  write: 201
+  exec: 201
+  exec-sticky: 201
+  no-access: 201
+  octal: 201
+  acl: 201
+  context: 201
+date:
+  hour-old: 201
+  day-old: 201
+  older: 201
+size:
+  none: 201
+  small: 201
+  medium: 201
+  large: 201
+inode:
+  valid: 201
+  invalid: 201
+links:
+  valid: 201
+  invalid: 201
+tree-edge: 201

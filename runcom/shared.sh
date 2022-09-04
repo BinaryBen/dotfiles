@@ -17,6 +17,7 @@ reload() { # Helper to (re)load source files
     reload path
     reload functions  # Simple fn that don't need their own script
     reload aliases
+    reload beeline    # Powerline inspired prompt segments
     reload prompt
   
   else # Load scope from ...

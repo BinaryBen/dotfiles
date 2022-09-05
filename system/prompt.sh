@@ -38,13 +38,13 @@ function t() {
 PROMPT='$(tput dim)$(t)${NEL}${NEL} ╭──'
 
 # Host information
-PROMPT+='${L_PAD}${D6S_ICON_OS_APPLE}  %m ${R_PAD}'
+PROMPT+='${L_PAD}${BEELINE_ICON_OS_APPLE}  %m ${R_PAD}'
 
 # Username
-PROMPT+='──${L_PAD}${D6S_ICON_GENERIC_USER}  %n ${R_PAD}'
+PROMPT+='──${L_PAD}${BEELINE_ICON_GENERIC_USER}  %n ${R_PAD}'
 
 # Present Working Directory
-PROMPT+='──${L_PAD}${D6S_ICON_DIR_GENERIC}  ${PWD} ${R_PAD}'
+PROMPT+='──${L_PAD}${BEELINE_ICON_DIR_GENERIC}  ${PWD} ${R_PAD}'
 
 # LGBT Pride!
 LGBT_PROMPT="${LS_RED}${LS_YELLOW}${LS_GREEN}${LS_CYAN}${LS_PURPLE} ${LS_RESET}"

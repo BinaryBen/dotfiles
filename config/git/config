@@ -1,4 +1,24 @@
 [alias]
 	last = log -1 HEAD --stat
+  co = checkout
   draft = !git-create-draft-pr
   new = !git-push-new-branch
+
+  # Would be ideal to allow expanding:
+  # echo "@binaryben/dotfiles" | sed -e "s/@/https://github.com//g"
+
+  # ghq aliases
+  ; git clone over SSH (-p) or update local repo if it exists (-u). Run in parallel (-P) if multiple repos specified
+  get = !ghq get -u -p -P
+  ; as above, but 'carbon copy' only (i.e. '--depth 1', no submodules, cannot push to remote)
+  cc = !ghq get -u -p --no-recursive --shallow --bare
+  ls = !ghq list
+  ll = !ghq list -p
+  root = !ghq root
+  create = !ghq create
+
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f

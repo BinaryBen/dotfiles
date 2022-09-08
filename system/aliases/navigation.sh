@@ -2,7 +2,8 @@
 alias ~="cd $HOME"
 alias cg='cd `git rev-parse --show-toplevel`' # Like cd but to git root
 # Function `cl` which cd to directory and lists content
-alias .="code ." # TODO: Check code command exists, else default to a file explorer
+# I like . opening code. So many files use . as source though. Other options?
+# alias .="code ." # TODO: Check code command exists, else default to a file explorer
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
@@ -12,6 +13,10 @@ alias 2="cd -2"
 alias 3="cd -3"
 alias 4="cd -4"
 alias 5="cd -5"
+
+function cdl () {
+  cd "$1" && l;
+}
 
 if command -v lsd &> /dev/null
 then
@@ -33,6 +38,7 @@ else
   alias lt='du -sh * | sort -h' # Sort by size (macOS)
 fi
 
+# Inspiration: https://github.com/MikeDacre/careful_rm
 if command -v trash &> /dev/null
 then
   alias rm="trash"

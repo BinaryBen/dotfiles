@@ -1,13 +1,8 @@
 setopt PROMPT_SUBST
 
-
 export PS9="${PS1}"   # Save the default prompt
 
-export ICON_NPM=""
-
 # Semi-circles
-export L_PAD=""
-export R_PAD=""
 export LEFT_SOFT=""
 
 export NEL=$'\n'
@@ -17,45 +12,47 @@ export NEL=$'\n'
 # export LS_GREEN="\e[0;32m"
 # export LS_YELLOW="\e[0;33m"
 # export LS_BLUE="\e[0;34m"
-# export LS_PURPLE="\e[0;35m"
+# export LS_PURPLE="\e[0;35m"ƒ
 # export LS_CYAN="\e[0;36m"
 # export LS_WHITE="\e[0;37m"
 
 
 
 function t() {
-  x=0
-  c=$(($COLUMNS-21))
-  LINE='\e[38;5;236m'
-  while [ $x -lt $c ]
-  do
-    LINE="${LINE}•"
-    x=$(( $x + 1 ))
-  done
-  echo "${NEL}••   $LINE${LS_RESET}   18:23:03 ••${NEL}"
+  echo "${NEL}$(__printTerminalDivider 2) $(__getStatusOutput) $(__printTerminalDivider $(($COLUMNS-23)))  ${LS_DIM}${BEELINE_ICON_GENERIC_STOPWATCH}236 ms $(__printTerminalDivider 2)${NEL}"
 }
 
 PROMPT='$(tput dim)$(t)${NEL}${NEL} ╭──'
 
 # Host information
-PROMPT+='${L_PAD}${BEELINE_ICON_OS_APPLE}  %m ${R_PAD}'
+PROMPT+='${${BEELINE_ICON_POWERLINE_R_LEADER}}${BEELINE_ICON_OS_APPLE}  %m ${${BEELINE_ICON_POWERLINE_L_LEADER}}'
 
 # Username
-PROMPT+='──${L_PAD}${BEELINE_ICON_GENERIC_USER}  %n ${R_PAD}'
+PROMPT+='──${${BEELINE_ICON_POWERLINE_R_LEADER}}${BEELINE_ICON_GENERIC_USER}  %n ${${BEELINE_ICON_POWERLINE_L_LEADER}}'
 
 # Present Working Directory
-PROMPT+='──${L_PAD}${BEELINE_ICON_DIR_GENERIC}  ${PWD} ${R_PAD}'
+PROMPT+='──${${BEELINE_ICON_POWERLINE_R_LEADER}}${BEELINE_ICON_DIR_GENERIC}  ${PWD} ${${BEELINE_ICON_POWERLINE_L_LEADER}}'
 
 # LGBT Pride!
 LGBT_PROMPT="${LS_RED}${LS_YELLOW}${LS_GREEN}${LS_CYAN}${LS_PURPLE} ${LS_RESET}"
-DEMI_PROMPT=" 🏳️‍🌈  \e[38;5;236m\\e[38;5;248m\\e[38;5;8m\\e[38;5;5m\${LS_RESET}"
+DEMI_PROMPT=" \e[38;5;236m\\e[38;5;248m\\e[38;5;8m\\e[38;5;5m\${LS_RESET}"
 
 PROMPT+='${NEL} │ ${NEL} ╰─ ${LGBT_PROMPT}'
 
 export PS2="        ❯ "
 
 preexec () {
+  if [[ "${1}" == *"shellfirm pre-command"* ]]; then
+      return
+  fi
+  shellfirm pre-command --command "${1}"
   tput el1; tput cuu1; tput el; tput cuu1; tput el; tput cuu1; tput el; tput cuu1; tput el;
-  print "${NEL} ${DEMI_PROMPT} $1${NEL}"
+  print "${NEL} $(__printCurrentCommandMeta)"
+  print "${DEMI_PROMPT} $1${NEL}"
 }
 
+precmd() {
+  export LAST_CMD_EXIT_CODE=$?
+}
+
+# RPROMPT='$(__printSimpleWeather)'

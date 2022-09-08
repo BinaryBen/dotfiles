@@ -1,4 +1,7 @@
 
+# Allow copying of commands from websites with a leading $
+alias \$=''
+
 # Upper case runs the most common action
 
 # alias A="" # Alias

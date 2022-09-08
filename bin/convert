@@ -1,3 +1,4 @@
 # Humanise input from various types.
 
 # * time - https://github.com/sindresorhus/pretty-time-zsh/blob/main/pretty-time.zsh
+# * string2web - https://github.com/lashoun/slugify

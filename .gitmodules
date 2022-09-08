@@ -1,0 +1,12 @@
+[submodule "modules/sysadmin-util"]
+	path = modules/sysadmin-util
+	url = https://github.com/skx/sysadmin-util
+[submodule "modules/gud"]
+	path = modules/gud
+	url = https://github.com/binaryben/gud
+[submodule "modules/tux"]
+	path = modules/tux
+	url = https://github.com/binaryben/tux
+[submodule "modules/beeline"]
+	path = modules/beeline
+	url = https://github.com/binaryben/beeline

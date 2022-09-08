@@ -7,3 +7,14 @@ export LS_PURPLE="%F{magenta}"
 export LS_CYAN="%F{cyan}"
 export LS_WHITE="%F{white}"
 export LS_RESET=$'\e[m'
+export LS_DARK=$'\e[38;5;236m'
+export LS_DIM=$'\e[38;5;244m'
+
+# export LS_BLACK="\e[0;30m"
+# export LS_RED="\e[0;31m"
+# export LS_GREEN="\e[0;32m"
+# export LS_YELLOW="\e[0;33m"
+# export LS_BLUE="\e[0;34m"
+# export LS_PURPLE="\e[0;35m"ƒ
+# export LS_CYAN="\e[0;36m"
+# export LS_WHITE="\e[0;37m"

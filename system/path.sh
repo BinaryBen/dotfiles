@@ -1,5 +1,5 @@
 # Construct the $PATH explicitly
-# Tip: Comment out things you never use to speed up load time
+# Tip: Comment out things you never use
 
 export PATH=
 
@@ -20,6 +20,12 @@ path /usr/bin
 path /usr/local/bin
 path /opt/sbin
 path /opt/bin
+
+# Submodules from dotfiles
+path ${XDG_DOTFILES}/modules/beeline/bin
+path ${XDG_DOTFILES}/modules/gud/bin
+path ${XDG_DOTFILES}/modules/tux/bin
+path ${XDG_DOTFILES}/modules/sysadmin-util
 
 # Composer binaries
 path $HOME/.composer/vendor/bin 

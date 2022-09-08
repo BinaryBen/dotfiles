@@ -12,11 +12,11 @@
 # alias h=""
 # alias i=""
 # alias j=""
-# alias k=""
+# alias k="" # k8s / k3s
 # alias l=""
 # alias m=""
 # alias n="" # NPM / Node / yarn
-# alias o=""
+# alias o="" # Open
 # alias p=""
 # alias q=""
 # alias r="" 

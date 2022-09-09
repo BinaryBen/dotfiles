@@ -15,10 +15,13 @@
 
 </div>
 
+## Core features
+
 * 🦸‍♂️ &nbsp; **Superpowered DX** - bespoke git ( [gud](//github.com/binaryben/gud) ) and tmux ( [tux](//github.com/binaryben/tux) ) modules supercharge the development experience
 * 🐝 &nbsp; **Lightweight Prompt** - powerline inspired segments (beeline; currently written in Bash, may move to Nim)
 * ☁ &nbsp; **Distributed files** - Support for Resilio synced drive
 * ⚙️ &nbsp; **Synced preferences** - Makes the dock and menu bar hide on every macOS computer with ease
+* 🪪 &nbsp; **Multiple Identities** - Seperate who you are at home from your work life
 * 🔀 &nbsp; **Cross platform** - Software is installed via Dropbear, a meta-package manager
 * 🧑‍💻 &nbsp; **Modern tools** - Contemporary (faster, prettier, more intuitive) alternatives used in interactive shells
 * ⏪ &nbsp; **Graceful fallbacks** - Zsh, Nerd Fonts or other modern tooling unavailable? No problem!
@@ -30,8 +33,16 @@ Once a machine has it's OS installed and your user configured, run the command b
 > ⚠️ This is not ready and does not work. DO NOT try to run this.
 
 ```
-$ curl https://dotfiles.bnry.be/bootstrap | sh
+$ curl https://dotfiles.bnry.be/bootstrap | sh && drop in
 ```
+
+You are encouraged to review the docs and code thoughrouly, but in short, it will:
+
+1. Install the core dependencies (currently Git, NVM/Node v16 and Dropbear)
+2. Download this dottfiles repo to `~/.files`
+3. Symlink `~/.files/runcom/{bash|zsh}.sh` to `~/.{bash|zsh}rc`
+4. ???
+5. Profit
 
 <details>
 <summary>📖 Table of contents</summary>
@@ -59,13 +70,8 @@ $ curl https://dotfiles.bnry.be/bootstrap | sh
 
 - [ ] Drivers
 - [ ] Desktop Backgrounds
-- [ ] Fonts
-  - [ ] Nerdfonts
-  - [ ] Brands
-  - [ ] Libre
-  - [ ] Personal
-  - [ ] Commercial
-- [ ] Logos
+- Fonts are saved in my Omnidrive and managed via FontBase
+- Brand assets are saved in Omnidrive and git repos
 
 [List of CLI apps to trawl through in bed or whenever](https://github.com/toolleeo/cli-apps)
 
@@ -98,7 +104,7 @@ Most of these are installed via my Dropbear "droppings", however many are config
 
 ![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/solar.png)
 
-## ✨ Make the Terminal Convenient
+## 💪 Make the Terminal Convenient
 
 * Auto environment variables
 * Auto python environments
@@ -125,5 +131,8 @@ Most of these are installed via my Dropbear "droppings", however many are config
 
 * https://github.com/ChrisPenner/session-sauce
 
+![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/solar.png)
+
+## 🙏 Thanks!
 
 Original dotfiles [logo](https://github.com/jglovier/dotfiles-logo) by [Joel Glovier](https://github.com/jglovier). Remixed with gratitude under the [MIT Licence](https://github.com/jglovier/dotfiles-logo/blob/main/LICENSE).

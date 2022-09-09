@@ -1,5 +1,11 @@
-# dotfiles
+<div align="center">
+
+<img alt="binaryben's dotfiles" src="./static/logo.png" height="100" />
+
 The essence of me, naturally!
+
+</div>
+
 ## Todo
 
 ### CLI Software

@@ -2,7 +2,7 @@
 
 <img alt="binaryben's dotfiles" src="./static/logo.png" height="100" />
 
-<br /><hr />
+<h1>&nbsp;</h1>
 
 ![ISC License](https://img.shields.io/badge/license-ISC-green?style=for-the-badge) &nbsp; ![Project Status](https://img.shields.io/badge/status-🚧%20WIP-yellow?style=for-the-badge)
 

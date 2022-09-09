@@ -30,7 +30,7 @@ Software is installed via the Dropbear package. My options are stored in that re
 
 [List of CLI apps to trawl through in bed or whenever](https://github.com/toolleeo/cli-apps)
 
-![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/solar.png)
 
 ## 🛟 Supported Systems
 
@@ -40,7 +40,7 @@ Windows (mainly via RDI) - gaming mainly, some creative software is Windows only
 macOS - default OS for professional work
 
 
-![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/solar.png)
 
 ## ✨ Modernise the Terminal
 
@@ -57,7 +57,7 @@ Most of these are installed via my Dropbear "droppings", however many are config
 * fd
 * ripgrep
 
-![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/solar.png)
 
 ## ✨ Make the Terminal Convenient
 
@@ -70,7 +70,7 @@ Most of these are installed via my Dropbear "droppings", however many are config
   * [howdoi](https://github.com/gleitz/howdoi)
   * tldr++
 
-![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/solar.png)
 
 ## 🦸‍♂️ Install Superpowers!
 

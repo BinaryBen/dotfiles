@@ -1,8 +1,8 @@
-<br /><br /><div align="center">
+<br /><br /><br /><div align="center">
 
 <img alt="binaryben's dotfiles" src="./static/logo.png" height="100" />
 
-<h1>&nbsp;</h1>
+<h1>&nbsp;</h1><br />
 
 ![ISC License](https://img.shields.io/badge/license-ISC-green?style=for-the-badge) &nbsp; ![Project Status](https://img.shields.io/badge/status-🚧%20WIP-yellow?style=for-the-badge)
 

@@ -1,10 +1,16 @@
-<div align="center">
+<br /><br /><div align="center">
 
 <img alt="binaryben's dotfiles" src="./static/logo.png" height="100" />
 
-The essence of me, naturally!
+<br />
+
+**It is said that you are your dotfiles. Ergo, this is me. Welcome, make yourself at ::1.**
+
+<sub>A very opinionated and modern take on `~/.files`. Aimed at creating a personalised standard experience across various systems, including desktops and servers (for container-based and remote development workflows mainly).</sub>
 
 </div>
+
+<br /><br />
 
 ## Todo
 
@@ -86,3 +92,5 @@ Most of these are installed via my Dropbear "droppings", however many are config
 
 * https://github.com/ChrisPenner/session-sauce
 
+
+Original dotfiles [logo](https://github.com/jglovier/dotfiles-logo) by [Joel Glovier](https://github.com/jglovier). Remixed with gratitude under the [MIT Licence](https://github.com/jglovier/dotfiles-logo/blob/main/LICENSE).

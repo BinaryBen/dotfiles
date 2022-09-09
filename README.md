@@ -2,15 +2,36 @@
 
 <img alt="binaryben's dotfiles" src="./static/logo.png" height="100" />
 
+<br /><hr /><br />
+
+![ISC License](https://img.shields.io/badge/license-ISC-green?style=for-the-badge) &nbsp; ![Project Status](https://img.shields.io/badge/status-🚧%20WIP-yellow?style=for-the-badge)
+
 <br />
 
-**It is said that you are your dotfiles. Ergo, this is me. Welcome, make yourself at ::1.**
-
-<sub>A very opinionated and modern take on `~/.files`. Aimed at creating a personalised standard experience across various systems, including desktops and servers (for container-based and remote development workflows mainly).</sub>
+<strong>It is said that you are your dotfiles. Ergo, this is me. Welcome, make yourself at ::1.</strong><br />
+<sub>A very opinionated and modern take on `~/.files`. Aimed at creating a personalised standard experience across various systems. Drop into a similar experience across desktops and servers (for container-based and remote development workflows mainly). Built using custom coded modules. Build your own dotfiles using all of them, or take only what you need.</sub>
 
 </div>
 
 <br /><br />
+
+![Demo placeholder](https://raw.githubusercontent.com/andreasbm/readme/master/assets/demo.gif)
+
+<details>
+<summary>📖 Table of contents</summary>
+
+<br />
+
+![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/solar.png)
+
+## Table of Contents
+
+* ➤ [**Quick start**](#)
+* ➤ [**Philosophy**](#)
+
+</details>
+
+![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/solar.png)
 
 ## Todo
 

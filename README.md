@@ -1,6 +1,6 @@
 <br /><br /><br /><div align="center">
 
-<img alt="binaryben's dotfiles" src="./static/logo.png" height="100" />
+<img alt="binaryben's dotfiles" src="https://raw.githubusercontent.com/binaryben/dotfiles/docs/public/logo.png?token=GHSAT0AAAAAABYJ747ATDL7625C3H6OBUA4YY3AVLA" height="100" />
 
 <h1>&nbsp;</h1><br />
 

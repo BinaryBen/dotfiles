@@ -6,14 +6,32 @@
 
 ![ISC License](https://img.shields.io/badge/license-ISC-green?style=for-the-badge) &nbsp; ![Project Status](https://img.shields.io/badge/status-🚧%20WIP-yellow?style=for-the-badge)
 
-<strong>It is said that you are your dotfiles. Ergo, this is me. Welcome, make yourself at ::1.</strong><br />
-<sub>A very opinionated and modern take on `~/.files`. Aimed at creating a personalised standard experience across various systems. Drop into a similar experience across desktops and servers (for container-based and remote development workflows mainly). Built using custom coded modules. Build your own dotfiles using all of them, or take only what you need.</sub>
-
-</div>
+<strong>It is said that you are your dotfiles. Ergo, this is me. Welcome, make yourself at <code>::1</code>.</strong><br />
+<sub>A very opinionated and modern take on `~/.files`. Aimed at creating a personalised standard experience across supported systems. Drop into a similar experience across desktops and servers (for container-based and remote development workflows mainly). Build your own dotfiles using all of the custom coded modules, or take only what you need.</sub>
 
 <br />
 
 ![Demo placeholder](https://raw.githubusercontent.com/andreasbm/readme/master/assets/demo.gif)
+
+</div>
+
+* 🦸‍♂️ &nbsp; **Superpowered DX** - bespoke git ( [gud](//github.com/binaryben/gud) ) and tmux ( [tux](//github.com/binaryben/tux) ) modules supercharge the development experience
+* 🐝 &nbsp; **Lightweight Prompt** - powerline inspired segments (beeline; currently written in Bash, may move to Nim)
+* ☁ &nbsp; **Distributed files** - Support for Resilio synced drive
+* ⚙️ &nbsp; **Synced preferences** - Makes the dock and menu bar hide on every macOS computer with ease
+* 🔀 &nbsp; **Cross platform** - Software is installed via Dropbear, a meta-package manager
+* 🧑‍💻 &nbsp; **Modern tools** - Contemporary (faster, prettier, more intuitive) alternatives used in interactive shells
+* ⏪ &nbsp; **Graceful fallbacks** - Zsh, Nerd Fonts or other modern tooling unavailable? No problem!
+
+## Quick start
+
+Once a machine has it's OS installed and your user configured, run the command below to get up and running as fast as possible.
+
+> ⚠️ This is not ready and does not work. DO NOT try to run this.
+
+```
+$ curl https://dotfiles.bnry.be/bootstrap | sh
+```
 
 <details>
 <summary>📖 Table of contents</summary>
@@ -36,10 +54,6 @@
 ### CLI Software
 - [ ] ssh
 - [ ] ssl? hostnames?
-
-### GUI Software
-
-Software is installed via the Dropbear package. My options are stored in that repo.
 
 ### Install Libraries
 

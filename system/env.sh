@@ -79,4 +79,5 @@ then
   export EDITOR='vi'
 fi
 
-
+# Load beeline icons
+source $XDG_DOTFILES/modules/beeline/bin/beeline-icons

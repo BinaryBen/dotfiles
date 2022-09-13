@@ -14,8 +14,7 @@ export XDG_RUNTIME_DIR=${XDG_RUNTIME_DIR:-$HOME/.xdg}
 # Non-standard additions:
 
 export XDG_DOTFILES=${XDG_DOTFILES:-$HOME/.files}
-export XDG_GIT_ROOT=${XDG_GIT_ROOT:-$HOME/repos}
-export XDG_SYNC_ROOT=${XDG_SYNC_ROOT:-$HOME/.files}
+export XDG_SYNC_HOME=${XDG_SYNC_ROOT:-$HOME/.files}
 export XDG_SYNC_TMP=${XDG_SYNC_TMP}/Inbox
 
 DEV_ROOT=$HOME/development
@@ -60,8 +59,9 @@ export _Z_DATA="${_Z_DATA:-$XDG_DATA_HOME/z/data}"
 
 # Git config
 
+export GITPATH=${GITPATH:-$XDG_DATA_HOME/git}
 export GIT_CONFIG_GLOBAL="$HOME/.files/config/git/config"
-export GHQ_ROOT="$" # Where to store git repos using ghq
+export GHQ_ROOT="$GITPATH" # Where to store git repos using ghq
 
 # Change default $EDITOR based on personal preference and available options
 

@@ -8,7 +8,7 @@
 # alias d="" # Docker / Docker Compose
 # alias e=""
 # alias f=""
-# alias g="" # Git
+source $XDG_DOTFILES/config/git/git.aliases.sh # G is for Git!
 # alias h=""
 # alias i=""
 # alias j=""

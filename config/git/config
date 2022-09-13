@@ -1,8 +1,5 @@
 [alias]
 	last = log -1 HEAD --stat
-  co = checkout
-  draft = !git-create-draft-pr
-  new = !git-push-new-branch
 
   # Would be ideal to allow expanding:
   # echo "@binaryben/dotfiles" | sed -e "s/@/https://github.com//g"

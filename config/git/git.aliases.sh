@@ -1,12 +1,14 @@
-[alias]
-  g = git
-  gco = git co
-  gtf = git summary
+# Note: most of these are not standard git commands
+# Please check out https://getgitgud.dev/ for more information
+
+alias g="git"
+alias gco="git co"
+alias gtf="git summary"
 
 # Repo navigation
 
-  gg = git gg # Clone and cd, or cd
-  gmv =
-  grm =
-  gcp =
-  gz =
+alias gg="gud-gg" # Clone and cd, or cd
+alias gmv="git mv"
+alias grm="git rm"
+alias gcp="git cp"
+alias gz="git go"

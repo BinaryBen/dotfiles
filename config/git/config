@@ -19,3 +19,6 @@
 	process = git-lfs filter-process
 	required = true
 	clean = git-lfs clean -- %f
+
+[include]
+	path = $XDG_DOTFILES/modules/gud/aliases

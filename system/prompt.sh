@@ -19,7 +19,7 @@ export NEL=$'\n'
 
 
 function t() {
-  echo "${NEL}$(__printTerminalDivider 2) $(__getStatusOutput) $(__printTerminalDivider $(($COLUMNS-23)))  ${LS_DIM}${BEELINE_ICON_GENERIC_STOPWATCH}236 ms $(__printTerminalDivider 2)${NEL}"
+  echo "${NEL}$(beeline-history divider 2) $(beeline-history status) $(beeline-history divider $(($COLUMNS-23)))  ${LS_DIM}${BEELINE_ICON_GENERIC_STOPWATCH}236 ms $(beeline-history divider 2)${NEL}"
 }
 
 PROMPT='$(tput dim)$(t)${NEL}${NEL} ╭──'
@@ -47,7 +47,7 @@ preexec () {
   fi
   shellfirm pre-command --command "${1}"
   tput el1; tput cuu1; tput el; tput cuu1; tput el; tput cuu1; tput el; tput cuu1; tput el;
-  print "${NEL} $(__printCurrentCommandMeta)"
+  print "${NEL} $(beeline-history meta)"
   print "${DEMI_PROMPT} $1${NEL}"
 }
 

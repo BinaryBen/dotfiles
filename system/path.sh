@@ -1,3 +1,5 @@
+# shellcheck shell=sh
+
 # Construct the $PATH explicitly
 # Tip: Comment out things you never use
 
@@ -49,6 +51,9 @@ fi
 # Homebrew
 path /opt/homebrew/sbin
 path /opt/homebrew/bin
+
+# GNU coreutils for macOS without g prefix
+path "$(brew --prefix)/opt/coreutils/libexec/gnubin"
 
 # Deno binaries
 path $HOME/.deno/bin

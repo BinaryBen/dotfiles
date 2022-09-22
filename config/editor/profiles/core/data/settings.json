@@ -2,16 +2,34 @@
   "codeswing.layout": "splitLeft",
   "cSpell.language": "en-GB",
   "editor.accessibilitySupport": "off",
-  "editor.bracketPairColorization.enabled": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontFamily": "Input NF, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 13,
   "editor.formatOnSave": true,
   "editor.guides.bracketPairs": "active",
   "editor.inlineSuggest.enabled": true,
+  "editor.minimap.showSlider": "always",
   "editor.tabSize": 2,
+  "editor.unicodeHighlight.allowedCharacters": {
+    "️": true
+  },
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
+  "extensions.closeExtensionDetailsOnViewChange": true,
+  "extensions.autoUpdate": "onlyEnabledExtensions",
   "git.autofetch": true,
   "git.confirmSync": false,
+  // #if(editor="visual studio code")
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "markdown": false
+  },
+  // #endif
+  "gitlens.currentLine.format": "${author, }${agoOrDate}",
+  "gitlens.plusFeatures.enabled": false,
+  "gitlens.showWelcomeOnInstall": false,
+  "keyboard.touchbar.enabled": false,
   "peacock.affectStatusBar": false,
   "peacock.affectTitleBar": false,
   "peacock.favoriteColors": [
@@ -54,8 +72,14 @@
   ],
   "prettier.requireConfig": true,
   "redhat.telemetry.enabled": false,
+  "telemetry.telemetryLevel": "off",
+  "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.fontFamily": "Input NF",
+  "terminal.integrated.fontSize": 13,
+  "vscode-edge-devtools.mirrorEdits": true,
   "window.commandCenter": true,
+  "window.restoreWindows": "none",
   "workbench.iconTheme": "vscode-great-icons",
-  "workbench.startupEditor": "none"
+  "workbench.startupEditor": "none",
+  "zenMode.fullScreen": false
 }

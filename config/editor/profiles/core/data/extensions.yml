@@ -20,6 +20,8 @@ enabled:
     uuid: d3836729-9cc1-42c1-b2af-d50071f57d29
   - id: formulahendry.auto-rename-tag
     uuid: 6e440e71-8ed9-4f25-bb78-4b13096b8a03
+  - id: genuitecllc.codetogether
+    uuid: 406af941-64c7-49b5-8091-d579dc77a913
   - id: GrapeCity.gc-excelviewer
     uuid: 8bb12ae3-73f8-40cf-86b7-4bd5729c6238
   - id: Gruntfuggly.todo-tree

@@ -21,9 +21,3 @@ enabled:
     uuid: f0c5397b-d357-4197-99f0-cb4202f22818
   - id: ms-vscode-remote.vscode-remote-extensionpack
     uuid: 23d72dfc-8dd1-4e30-926e-8783b4378f13
-  - id: ms-vsliveshare.vsliveshare
-    uuid: 5a6dc0d5-dc02-4121-8e24-cad33a2ff0af
-  - id: ms-vsliveshare.vsliveshare-audio
-    uuid: f38fdd1c-7ee2-47b1-90b9-77ecc90d4bff
-  - id: ms-vsliveshare.vsliveshare-pack
-    uuid: 87caf16b-d487-45c0-877d-573fe319b015

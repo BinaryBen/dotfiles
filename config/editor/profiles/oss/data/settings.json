@@ -1,0 +1,18 @@
+{
+  "redhat.telemetry.enabled" : false,
+  "git.autofetch" : true,
+  "editor.accessibilitySupport": "off",
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "git.confirmSync": false,
+  "explorer.confirmDragAndDrop": false,
+  "terminal.integrated.fontFamily": "Input NF",
+  "editor.fontFamily": "Input NF, Menlo, Monaco, 'Courier New', monospace",
+  "codeswing.layout": "splitLeft",
+  "sync.gist": "20fecde420238f78007995852cffefdf",
+  "sync.autoDownload": true,
+  "sync.autoUpload": true,
+  "workbench.iconTheme": "vscode-great-icons",
+  "cSpell.language": "en-GB"
+}

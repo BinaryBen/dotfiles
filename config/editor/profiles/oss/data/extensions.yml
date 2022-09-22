@@ -1,0 +1,14 @@
+disabled: []
+enabled:
+  - id: hbenl.test-adapter-converter
+    uuid: fcc7f3d5-c349-4329-85ab-4760fc641520
+  - id: hbenl.vscode-mocha-test-adapter
+    uuid: 16c44458-f8a5-434f-9d65-b658dea51b0f
+  - id: mjmlio.vscode-mjml
+    uuid: ce7683f9-a9fd-4fd5-8524-eb2c362b84a7
+  - id: lukashass.volar
+    uuid: 4c506791-bb66-4c22-9232-ee700ac08aab
+  - id: johnsoncodehk.volar
+    uuid: a5223b43-8621-4351-a14e-3d560f85f277
+  - id: kavod-io.vscode-jest-test-adapter
+    uuid: 64dae992-51a7-47e2-a399-4c57c3cebae9

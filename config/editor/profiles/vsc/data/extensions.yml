@@ -1,0 +1,69 @@
+builtin:
+  disabled:
+    - vscode.php-language-features
+disabled:
+  - id: lintangwisesa.arduino
+    uuid: 5d1f0d95-7843-4cbe-b5fc-6a24f82044f4
+enabled:
+  - id: eamodio.toggle-excluded-files
+    uuid: 7a21e2ae-a6dd-4666-b31d-871b4862f214
+  - id: attilabuti.vscode-mjml
+    uuid: efc33846-2498-43d7-9699-47d0a7741345
+  - id: bmewburn.vscode-intelephense-client
+    uuid: ffda6552-0ad5-431b-a4fa-0905a7e4f3f0
+  - id: dawhite.mustache
+    uuid: a831e395-d150-46aa-8644-3027af1c5b36
+  - id: GitHub.codespaces
+    uuid: 4023d3e5-c840-4cdd-8b54-51c77548aa3f
+  - id: GitHub.copilot
+    uuid: 23c4aeee-f844-43cd-b53e-1113e483f1a6
+  - id: GraphQL.vscode-graphql
+    uuid: 55ef6448-487b-49a0-a66e-4d2d9bb82229
+  - id: GraphQL.vscode-graphql-syntax
+    uuid: e1ab76b1-9acd-4ffa-baf7-1d9eaf7cf3d2
+  - id: kosz78.nim
+    uuid: 1f3d8d31-8ff8-4429-8565-7313f9c67971
+  - id: matt-meyers.vscode-dbml
+    uuid: 4cea5698-223c-41b3-809b-a904d516f061
+  - id: mikestead.dotenv
+    uuid: 532533c9-a894-4a58-9eee-bbfbe7c06f71
+  - id: ms-dotnettools.csharp
+    uuid: d0bfc4ab-1d3a-4487-8782-7cf6027b4fff
+  - id: ms-python.python
+    uuid: f1f59ae4-9318-4f3c-a9b5-81b2eaa5f8a5
+  - id: ms-python.vscode-pylance
+    uuid: 364d2426-116a-433a-a5d8-a5098dc3afbd
+  - id: ms-vscode-remote.remote-containers
+    uuid: 93ce222b-5f6f-49b7-9ab1-a0463c6238df
+  - id: ms-vscode-remote.remote-ssh
+    uuid: 607fd052-be03-4363-b657-2bd62b83d28a
+  - id: ms-vscode-remote.remote-ssh-edit
+    uuid: bfeaf631-bcff-4908-93ed-fda4ef9a0c5c
+  - id: ms-vscode-remote.remote-wsl
+    uuid: f0c5397b-d357-4197-99f0-cb4202f22818
+  - id: ms-vscode-remote.vscode-remote-extensionpack
+    uuid: 23d72dfc-8dd1-4e30-926e-8783b4378f13
+  - id: ms-vscode.cpptools
+    uuid: 690b692e-e8a9-493f-b802-8089d50ac1b2
+  - id: ms-vscode.test-adapter-converter
+    uuid: 47210ec2-0324-4cbb-9523-9dff02a5f9ec
+  - id: ms-vsliveshare.vsliveshare
+    uuid: 5a6dc0d5-dc02-4121-8e24-cad33a2ff0af
+  - id: ms-vsliveshare.vsliveshare-audio
+    uuid: f38fdd1c-7ee2-47b1-90b9-77ecc90d4bff
+  - id: ms-vsliveshare.vsliveshare-pack
+    uuid: 87caf16b-d487-45c0-877d-573fe319b015
+  - id: natqe.reload
+    uuid: b9484b93-0531-4fd3-b3dd-9ff58dcfe678
+  - id: ryanluker.vscode-coverage-gutters
+    uuid: 188277b8-e4bc-4c10-92fa-d6959b4243ea
+  - id: tal7aouy.theme
+    uuid: 1d57ed17-b4be-4755-9a69-073a6e6065bc
+  - id: Tyriar.luna-paint
+    uuid: 4358224d-f1ef-4635-a14b-a2f784a06e3d
+  - id: vsciot-vscode.vscode-arduino
+    uuid: cf5a111e-3bd1-4e32-9526-20ec73780741
+  - id: xdebug.php-debug
+    uuid: 044b4b31-2969-4af3-895d-855433b8b46d
+  - id: Vue.volar
+    uuid: a5223b43-8621-4351-a14e-3d560f85f277

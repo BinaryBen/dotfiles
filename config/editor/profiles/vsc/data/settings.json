@@ -1,0 +1,43 @@
+{
+  "remote.SSH.remotePlatform": {
+    "domo.lan": "linux"
+  },
+  "omnisharp.enableImportCompletion": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "vscode-edge-devtools.mirrorEdits": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "omnisharp.enableRoslynAnalyzers": true,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": true,
+    "markdown": false
+  },
+  "editor.unicodeHighlight.allowedCharacters": {
+    "️": true
+  },
+  "gitlens.advanced.messages": {
+    "suppressGitMissingWarning": true
+  },
+  "files.associations": {
+    "*.module": "php"
+  },
+  "files.exclude": {
+    "**/.hg": false,
+    "**/CVS": false,
+    "**/.DS_Store": false,
+    "**/.git": false,
+    "**/.svn": false,
+    "**/Thumbs.db": false,
+    "node_modules": false,
+    "**/.*": false
+  },
+  "workbench.colorTheme": "Theme (Italic)",
+}

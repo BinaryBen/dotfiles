@@ -1,0 +1,18 @@
+{
+  "linkProtectionTrustedDomains": [
+    "https://open-vsx.org",
+    "https://*.bnry.be",
+    "https://*.bennymichaels.com",
+    "https://*.visualstudio.com",
+    "https://*.microsoft.com",
+    "https://aka.ms",
+    "https://*.gallerycdn.vsassets.io",
+    "https://github.com",
+    "https://*.github.com",
+    "https://vscode.dev/+ms-vscode.remote-server/*"
+  ],
+  "extensionAllowedProposedApi": [
+    "ms-vscode-remote.vscode-remote-extensionpack",
+    "ms-vscode-remote.remote-wsl"
+  ]
+}

@@ -1,8 +1,0 @@
-{
-  "omnisharp.enableImportCompletion": true,
-  "omnisharp.enableRoslynAnalyzers": true,
-  "files.associations": {
-    "*.module": "php"
-  },
-  "workbench.colorTheme": "Theme (Italic)",
-}

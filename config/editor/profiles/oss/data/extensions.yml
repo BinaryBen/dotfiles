@@ -1,7 +1,10 @@
 disabled: []
 enabled:
-  # Mismatched UU/IDs (official marketplace ≈ community marketplace)
   - id: hbenl.test-adapter-converter
     uuid: fcc7f3d5-c349-4329-85ab-4760fc641520
   - id: mjmlio.vscode-mjml
     uuid: ce7683f9-a9fd-4fd5-8524-eb2c362b84a7
+
+  # Remote SSH alternative
+  - id: jeanp413.open-remote-ssh
+    uuid: 9fc16cea-08e2-4ae5-bf75-224004d722ff

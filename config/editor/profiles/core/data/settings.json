@@ -13,6 +13,8 @@
   "editor.unicodeHighlight.allowedCharacters": {
     "️": true
   },
+  "editor.wordWrap": "bounded",
+  "editor.wordWrapColumn": 120,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "extensions.closeExtensionDetailsOnViewChange": true,
@@ -76,6 +78,10 @@
   "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.fontFamily": "Input NF",
   "terminal.integrated.fontSize": 13,
+  // Prefer to only know about new features when they are also available in Codium
+  // #if(editor="visual studio code")
+  "update.showReleaseNotes": false,
+  // #endif
   "vscode-edge-devtools.mirrorEdits": true,
   "window.commandCenter": true,
   "window.restoreWindows": "none",

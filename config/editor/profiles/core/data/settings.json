@@ -82,8 +82,8 @@
     "*": "Default Dark+",
     "csv": "Office Theme (Excel)"
   },
-  // Prefer to only know about new features when they are also available in Codium
-  // #if(editor="visual studio code")
+  // * Prefer to only know about new features when they are also available in Codium
+  // #if(editor="vscodium")
   "update.showReleaseNotes": false,
   // #endif
   "vscode-edge-devtools.mirrorEdits": true,

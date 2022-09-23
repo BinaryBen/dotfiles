@@ -55,12 +55,10 @@ plugins=(
 
 plugin-load $plugins
 
-# Remap ⌥j to ⌃j for loading interactive JQ builder
-bindkey `^j` jq-complete
-
 # What to run when told not to run a thing
 function magic-enter-cmd {
-  echo "clear && l"
+  preamble="👋 Hello $(whoami)!\n📂 $PWD\n"
+  echo "clear && echo \"$preamble\" | lolcat && l"
 }
 
 # Fig post block. Keep at the bottom of this file.

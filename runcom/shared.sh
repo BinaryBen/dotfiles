@@ -19,7 +19,12 @@ reload() { # Helper to (re)load source files
     reload path
     reload functions  # Simple fn that don't need their own script
     reload aliases
+    
+    # Load beeline (TODO: Find a better way)
+    . b6 init # Here so prompt can access the set env
+    
     reload prompt
+
   
   else # Load scope from ...
 
@@ -37,7 +42,7 @@ reload() { # Helper to (re)load source files
     # ... and then $XDG_DOTFILES
 
     if [ -d $XDG_DOTFILES/system/$1 ]; then
-      for FILE in `find $XDG_DOTFILES/system/$1`
+      for FILE in $(find $XDG_DOTFILES/system/$1)
       do
         [ -f $FILE ] && source $FILE
       done

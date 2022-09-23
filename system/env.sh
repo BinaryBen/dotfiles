@@ -1,3 +1,4 @@
+#! /usr/bin/env sh
 
 # Conform to XDG Base Directory:
 # https://standards.freedesktop.org/basedir-spec/basedir-spec-latest.html
@@ -78,6 +79,3 @@ elif command -v vi &> /dev/null
 then
   export EDITOR='vi'
 fi
-
-# Load beeline icons
-source $XDG_DOTFILES/modules/beeline/bin/beeline-icons

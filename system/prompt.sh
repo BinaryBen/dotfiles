@@ -16,29 +16,27 @@ export NEL=$'\n'
 # export LS_CYAN="\e[0;36m"
 # export LS_WHITE="\e[0;37m"
 
-
-
 function t() {
-  echo "${NEL}$(beeline-history divider 2) $(beeline-history status) $(beeline-history divider $(($COLUMNS-23)))  ${LS_DIM}${BEELINE_ICON_GENERIC_STOPWATCH}236 ms $(beeline-history divider 2)${NEL}"
+  echo "${NEL}$(beeline-history divider 2) $(beeline-history status) $(beeline-history divider $(($COLUMNS-23)))  ${LS_DIM}${B6_ICON_GENERIC_STOPWATCH}236 ms $(beeline-history divider 2)${NEL}"
 }
 
 PROMPT='$(tput dim)$(t)${NEL}${NEL} ╭──'
 
 # Host information
-PROMPT+='${${BEELINE_ICON_POWERLINE_R_LEADER}}$(beeline-system host) ${BEELINE_ICON_POWERLINE_R_SOFT_SEP}'
+PROMPT+='${${B6_ICON_POWERLINE_R_LEADER}}$(beeline-system host) ${B6_ICON_POWERLINE_R_SOFT_SEP}'
 
 # Username
-PROMPT+=' ${BEELINE_ICON_GENERIC_USER}  %n ${BEELINE_ICON_POWERLINE_R_HARD_SEP}${BEELINE_ICON_POWERLINE_R_HARD_SEP}'
+PROMPT+=' ${B6_ICON_GENERIC_USER}  %n ${B6_ICON_POWERLINE_R_HARD_SEP}${B6_ICON_POWERLINE_R_HARD_SEP}'
 
 # Present Working Directory
-PROMPT+=' $(beeline-pwd) ${BEELINE_ICON_POWERLINE_R_CAP}'
+PROMPT+=' $(beeline-pwd print) ${B6_ICON_POWERLINE_R_CAP}'
 
 # LGBT Pride!
-LGBT_PROMPT="${LS_RED}${LS_YELLOW}${LS_GREEN}${LS_CYAN}${LS_PURPLE} ${LS_RESET}"
+# LGBT_PROMPT="${LS_RED}${LS_YELLOW}${LS_GREEN}${LS_CYAN}${LS_PURPLE} ${LS_RESET}"
 DEMI_PROMPT=" \e[38;5;236m\\e[38;5;248m\\e[38;5;8m\\e[38;5;5m\${LS_RESET}"
 
-PS0_PROMPT="${LS_YELLOW}${BEELINE_ICON_POWERLINE_R_LEADER} ${BEELINE_ICON_GENERIC_PROMPT} ${BEELINE_ICON_POWERLINE_R_CAP}  ${LS_RESET}"
-PROMPT+='${NEL} │ ${NEL} ╰─ ${PS0_PROMPT}'
+PS0_PROMPT="${LS_YELLOW}${B6_ICON_POWERLINE_R_LEADER} $(beeline-prompt icon) ${B6_ICON_POWERLINE_R_CAP}  ${LS_RESET}"
+PROMPT+="${NEL} │ ${NEL} ╰─ ${PS0_PROMPT}"
 
 export PS2="        ❯ "
 
@@ -53,7 +51,7 @@ preexec () {
 }
 
 precmd() {
-  export LAST_CMD_EXIT_CODE=$?
+  . beeline-hooks precmd --source
 }
 
 # RPROMPT='$(__printSimpleWeather)'

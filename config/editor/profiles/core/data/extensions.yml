@@ -30,6 +30,8 @@ enabled:
     uuid: ff96f1b4-a4b8-45ef-8ecf-c232c0cb75c8
   - id: hediet.vscode-drawio
     uuid: ea6a6046-2132-421f-a984-664909fcf0b8
+  - id: huacat.office-theme
+    uuid: 93be3aa5-b260-4caf-ab9d-8cebc9c463fd
   - id: johnpapa.vscode-peacock
     uuid: 5a7017bf-c571-4d77-b902-6e56b16f539a
   - id: keesschollaart.vscode-home-assistant

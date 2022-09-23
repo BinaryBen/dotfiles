@@ -78,6 +78,10 @@
   "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.fontFamily": "Input NF",
   "terminal.integrated.fontSize": 13,
+  "theme-by-language.themes": {
+    "*": "Default Dark+",
+    "csv": "Office Theme (Excel)"
+  },
   // Prefer to only know about new features when they are also available in Codium
   // #if(editor="visual studio code")
   "update.showReleaseNotes": false,
@@ -85,6 +89,10 @@
   "vscode-edge-devtools.mirrorEdits": true,
   "window.commandCenter": true,
   "window.restoreWindows": "none",
+  "workbench.editorAssociations": {
+    "*.csv": "gc-excelviewer-csv-editor",
+    "*.xlsx": "gc-excelviewer-csv-editor"
+  },
   "workbench.iconTheme": "vscode-great-icons",
   "workbench.startupEditor": "none",
   "zenMode.fullScreen": false

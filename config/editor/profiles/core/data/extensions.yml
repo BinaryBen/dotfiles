@@ -66,6 +66,8 @@ enabled:
     uuid: 466468c3-1861-4ad1-bf3e-f9ad46545ebb
   - id: wayou.vscode-todo-highlight
     uuid: 97a08c5f-6667-4242-a5c5-045dfb6bd4b9
+  - id: yzhang.markdown-all-in-one
+    uuid: 98790d67-10fa-497c-9113-f6c7489207b2
 builtin:
   disabled:
     - vscode.php-language-features

@@ -68,6 +68,8 @@ enabled:
     uuid: 70378119-1d85-4935-9733-0298c7a369a2
   - id: streetsidesoftware.code-spell-checker
     uuid: f6dbd813-b0a0-42c1-90ea-10dde9d925a7
+  - id: stylelint.vscode-stylelint
+    uuid: ec35b5a3-9802-4c68-b5ff-e85f19ec0977
   - id: syler.sass-indented
     uuid: 466468c3-1861-4ad1-bf3e-f9ad46545ebb
   - id: wayou.vscode-todo-highlight

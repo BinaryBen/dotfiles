@@ -8,6 +8,10 @@ enabled:
     uuid: 1b747f06-3789-4ebd-ac99-f1fe430c3347
   - id: alexcvzz.vscode-sqlite
     uuid: eaee103c-e866-4b73-87f8-3749cab64da2
+  - id: bierner.markdown-mermaid
+    uuid: f8d0ffc4-66bb-4a9c-8149-ef8f043691a1
+  - id: bierner.markdown-preview-github-styles
+    uuid: 5cbdf58a-694a-4aba-af08-61d00842eb03
   - id: codespaces-contrib.codeswing
     uuid: a6c97efe-981d-4eee-a0bd-5ffd1dc807f1
   - id: dbaeumer.vscode-eslint
@@ -30,6 +34,8 @@ enabled:
     uuid: 8bb12ae3-73f8-40cf-86b7-4bd5729c6238
   - id: Gruntfuggly.todo-tree
     uuid: 261cac81-cd7b-4555-bb41-0c2d2bcd3e70
+  - id: houkanshan.vscode-markdown-footnote
+    uuid: 67d20411-9a51-4004-8982-1f777b4560fd
   - id: hbenl.vscode-test-explorer
     uuid: ff96f1b4-a4b8-45ef-8ecf-c232c0cb75c8
   - id: hediet.vscode-drawio

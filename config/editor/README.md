@@ -24,11 +24,18 @@ I tend to install both VSCode and Codium now. This is because if there is ever a
 
 The primary difference between profiles is the plugins that are available. 
 
-```
-             →  Arduino
-        OSS  →  PHP
-Core →       →  C#/.NET
-        VCS  →  Python
+```mermaid
+graph TD
+  Core-->OSS
+  Core-->VCS
+  OSS-->Arduino
+  OSS-->PHP
+  OSS-->C#/.NET
+  OSS-->Python
+  VCS-->Arduino
+  VCS-->PHP
+  VCS-->C#/.NET
+  VCS-->Python
 ```
 
 Symlink the `./profiles/oss/product.json` file to:
@@ -36,6 +43,16 @@ Symlink the `./profiles/oss/product.json` file to:
 * **Windows:** `%APPDATA%\VSCodium\product.json` or `%USERPROFILE%\AppData\Roaming\VSCodium\product.json`
 * **macOS:** `~/Library/Application Support/VSCodium/product.json`
 * **Linux:** `$XDG_CONFIG_HOME/VSCodium/product.json` or `~/.config/VSCodium/product.json`
+
+### Todo
+
+- [ ] Configure "Markdown Preview Github Styling" to use dark mode
+
+**Find extensions for:**
+
+- [ ] Emoji in Markdown (or use espanso emoji?)
+- [ ] Better manage YAML preamble in Markdown
+- [ ] Find a better Markdown word counter (needs to ignore markup)
 
 ## Micro
 

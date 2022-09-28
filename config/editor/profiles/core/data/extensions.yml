@@ -12,6 +12,10 @@ enabled:
     uuid: 1b747f06-3789-4ebd-ac99-f1fe430c3347
   - id: alexcvzz.vscode-sqlite
     uuid: eaee103c-e866-4b73-87f8-3749cab64da2
+  - id: antfu.browse-lite
+    uuid: 61ce9ab3-f230-47ea-8cdc-2b5eb25f3ae2
+  - id: antfu.vite
+    uuid: b22eea9f-5a30-43a2-8a59-3d3707869cf8
   - id: bierner.markdown-mermaid
     uuid: f8d0ffc4-66bb-4a9c-8149-ef8f043691a1
   - id: bierner.markdown-preview-github-styles

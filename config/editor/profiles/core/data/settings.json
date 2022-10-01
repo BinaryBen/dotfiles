@@ -109,6 +109,7 @@
   ],
   "prettier.requireConfig": true,
   "redhat.telemetry.enabled": false,
+  "syncSettings.resources": ["extensions", "keybindings", "settings"],
   "telemetry.telemetryLevel": "off",
   "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.fontFamily": "Input NF",

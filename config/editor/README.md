@@ -53,6 +53,43 @@ Symlink the `./profiles/oss/product.json` file to:
 - [ ] Emoji in Markdown (or use espanso emoji?)
 - [ ] Better manage YAML preamble in Markdown
 - [ ] Find a better Markdown word counter (needs to ignore markup)
+- [ ] Utilities / Dev toolbox
+  - [ ] Regex editor/validator
+  - [ ] Time conversion
+- [ ] [C/C++](https://viatsko.github.io/awesome-vscode/#c)
+- [ ] [C#/.NET](https://viatsko.github.io/awesome-vscode/#c-asp-net-and-net-core)
+- [ ] Better copy/paste (maybe integrate into OS instead?)
+- [ ] Volar
+- [ ] Todo list
+- [ ] Markdown notes in Action bar
+- [ ] Dash docs integration
+
+### Language support
+
+- [ ] HTML
+- [ ] CSS3 / Sass
+- [ ] Markup Languages
+  - [ ] Markdown
+    - [ ] Mermaid
+  - [ ] MJML
+- [ ] Node / Typescript
+  - [ ] React
+  - [ ] Vue
+  - [ ] JSON / YAML
+- [ ] Mobile
+  - [ ] React Native
+  - [ ] Flutter
+  - [ ] Swift
+  - [ ] NativeScript Vue
+- [ ] PHP
+  - [ ] Laravel
+- [ ] Go
+- [ ] C/C++
+  - [ ] Arduino
+- [ ] C#/.NET
+- [ ] Other / experimental
+  - [ ] Deno
+  - [ ] Nim
 
 ## Micro
 

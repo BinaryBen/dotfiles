@@ -52,6 +52,10 @@ enabled:
     uuid: ea6a6046-2132-421f-a984-664909fcf0b8
   - id: huacat.office-theme
     uuid: 93be3aa5-b260-4caf-ab9d-8cebc9c463fd
+  - id: iocave.customize-ui
+    uuid: ac44dd75-bdb7-433b-9d86-23f9f070c07a
+  - id: iocave.monkey-patch
+    uuid: 736c2316-7f4f-4b6a-8e5c-70527d82cf51
   - id: johnpapa.vscode-peacock
     uuid: 5a7017bf-c571-4d77-b902-6e56b16f539a
   - id: keesschollaart.vscode-home-assistant

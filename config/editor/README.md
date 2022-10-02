@@ -26,16 +26,29 @@ The primary difference between profiles is the plugins that are available.
 
 ```mermaid
 graph TD
-  Core-->OSS
-  Core-->VCS
-  OSS-->Arduino
+  Core-->Full
+  Full-->OSS
+  Full-->VCS
+  OSS-->Embedded
+  OSS--->Mobile
   OSS-->PHP
   OSS-->C#/.NET
   OSS-->Python
-  VCS-->Arduino
+  OSS---->Node/Web
+  VCS-->Embedded
+  VCS--->Mobile
   VCS-->PHP
   VCS-->C#/.NET
   VCS-->Python
+  VCS--->Node/Web
+  Node/Web-->React
+  Node/Web-->Svelte
+  Node/Web-->Vue
+  Node/Web-->Electron
+  Node/Web-->Neutrino
+  Mobile-->React_Native
+  Mobile-->NativeScript-Vue
+  Mobile-->Flutter/Dart
 ```
 
 Symlink the `./profiles/oss/product.json` file to:

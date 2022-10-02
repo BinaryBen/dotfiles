@@ -6,6 +6,13 @@ enabled:
   - id: ms-vscode.test-adapter-converter
     uuid: 47210ec2-0324-4cbb-9523-9dff02a5f9ec
 
+  # Unavailable on Open VSX Registry
+  # ! Only add plugins that are coming to Open VSX Registry
+
+  # Print: https://github.com/PDConSec/vsc-print/issues/120
+  - id: pdconsec.vscode-print
+    uuid: 05046d70-8146-42f5-ac9e-b97b37c8c0ef
+
   # Proprietary extensions (Microsoft tools)
   - id: GitHub.codespaces
     uuid: 4023d3e5-c840-4cdd-8b54-51c77548aa3f

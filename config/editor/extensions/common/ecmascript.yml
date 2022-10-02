@@ -1,6 +1,0 @@
-disabled: []
-enabled:
-  - id: christian-kohler.path-intellisense
-    uuid: a41c1549-4053-44d4-bf30-60fc809b4a86
-  - id: Orta.vscode-jest
-    uuid: 7997a8ae-1fae-4022-b834-12f6318aeffd

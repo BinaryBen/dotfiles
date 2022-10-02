@@ -67,7 +67,8 @@
   "gitlens.plusFeatures.enabled": false,
   "gitlens.showWelcomeOnInstall": false,
   "keyboard.touchbar.enabled": false,
-  "peacock.affectStatusBar": false,
+  "peacock.affectActivityBar": false,
+  "peacock.affectStatusBar": true,
   "peacock.affectTitleBar": false,
   "peacock.favoriteColors": [
     {
@@ -107,6 +108,8 @@
       "value": "#42b883"
     }
   ],
+  "peacock.showColorInStatusBar": false,
+  "peacock.surpriseMeOnStartup": true,
   "prettier.requireConfig": true,
   "redhat.telemetry.enabled": false,
   "syncSettings.keybindingsPerPlatform": false,
@@ -131,6 +134,7 @@
   "workbench.editor.showTabs": false,
   "workbench.editorAssociations": {
     "*.csv": "gc-excelviewer-csv-editor",
+    "*.md": "vscode.markdown.preview.editor",
     "*.xlsx": "gc-excelviewer-csv-editor"
   },
   "workbench.iconTheme": "vscode-great-icons",

@@ -1,0 +1,6 @@
+disabled: []
+enabled:
+  - id: lintangwisesa.arduino
+    uuid: 5d1f0d95-7843-4cbe-b5fc-6a24f82044f4
+  - id: vsciot-vscode.vscode-arduino
+    uuid: cf5a111e-3bd1-4e32-9526-20ec73780741

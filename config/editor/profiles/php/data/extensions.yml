@@ -10,6 +10,8 @@ enabled:
     uuid: d1d38669-b95b-4592-be08-47526ef8b730
   - id: kokororin.vscode-phpfmt
     uuid: 8130e01f-ac60-4803-ab86-f05469dd7b4d
+  - id: liamhammett.inline-parameters
+    uuid: ff698641-127d-4b67-a8c2-b59179576b9d
   - id: ms-vscode.test-adapter-converter
     uuid: 47210ec2-0324-4cbb-9523-9dff02a5f9ec
   - id: onecentlin.laravel-blade

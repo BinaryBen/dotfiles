@@ -1,4 +1,9 @@
-disabled: []
+disabled:
+  # C#
+  - id: jsw.csharpextensions
+    uuid: c24bbd37-32cd-47dc-ae5f-cadd1106cdd1
+  - id: muhammad-sammy.csharp
+    uuid: 57b4ceec-c35a-4a96-ab38-23c6338df406
 enabled:
   - id: hbenl.test-adapter-converter
     uuid: fcc7f3d5-c349-4329-85ab-4760fc641520

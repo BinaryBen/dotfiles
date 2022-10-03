@@ -1,0 +1,6 @@
+disabled: []
+enabled:
+  - id: kreativ-software.csharpextensions
+    uuid: 80c8f9ff-3535-4b4a-b3db-e88f5752bb18
+  - id: ms-dotnettools.csharp
+    uuid: d0bfc4ab-1d3a-4487-8782-7cf6027b4fff

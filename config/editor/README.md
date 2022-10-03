@@ -80,17 +80,12 @@ Symlink the `./profiles/oss/product.json` file to:
 **Find extensions for:**
 
 - [ ] Emoji in Markdown (or use espanso emoji?)
-- [ ] Better manage YAML preamble in Markdown
-- [ ] Find a better Markdown word counter (needs to ignore markup)
 - [ ] Utilities / Dev toolbox
   - [ ] Regex editor/validator
   - [ ] Time conversion
-- [ ] [C/C++](https://viatsko.github.io/awesome-vscode/#c)
-- [ ] [C#/.NET](https://viatsko.github.io/awesome-vscode/#c-asp-net-and-net-core)
 - [ ] Better copy/paste (maybe integrate into OS instead?)
-- [ ] Volar
-- [ ] Todo list
-- [ ] Markdown notes in Action bar
+- [x] Todo lists
+- [x] Markdown notes in Action bar
 - [ ] Dash docs integration
 
 ### Language support
@@ -98,12 +93,18 @@ Symlink the `./profiles/oss/product.json` file to:
 - [ ] HTML
 - [ ] CSS3 / Sass
 - [ ] Markup Languages
-  - [ ] Markdown
-    - [ ] Mermaid
-  - [ ] MJML
+  - [x] Markdown
+    - [x] Mermaid
+    - [x] Footnotes
+    - [ ] Github theme
+    - [ ] Stats <!-- Find a better word counter that ignores markup -->
+    - [ ] YAML Frontmatter
+    - [x] Maths
+  - [x] MJML
 - [ ] Node / Typescript
   - [ ] React
   - [ ] Vue
+    - [ ] Volar
   - [ ] JSON / YAML
 - [ ] Mobile
   - [ ] React Native
@@ -112,13 +113,14 @@ Symlink the `./profiles/oss/product.json` file to:
   - [ ] NativeScript Vue
 - [ ] PHP
   - [ ] Laravel
-- [ ] Go
-- [ ] C/C++
+- [ ] [C/C++](https://viatsko.github.io/awesome-vscode/#c)
   - [ ] Arduino
-- [ ] C#/.NET
-- [ ] Other / experimental
-  - [ ] Deno
-  - [ ] Nim
+- [ ] [C#/.NET](https://viatsko.github.io/awesome-vscode/#c-asp-net-and-net-core)
+- [x] Other / emerging
+  - [x] Deno
+  - [x] Nim
+  - [x] Go
+  - [x] Rust
 
 ## Micro
 

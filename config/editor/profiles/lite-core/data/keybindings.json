@@ -40,5 +40,9 @@
   {
     "key": "shift+cmd+p",
     "command": "-workbench.action.showCommands"
+  },
+  {
+    "key": "ctrl+space n",
+    "command": "extension.advancedNewFile"
   }
 ]

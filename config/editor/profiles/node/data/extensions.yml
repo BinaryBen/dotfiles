@@ -6,6 +6,8 @@ enabled:
     uuid: 40d13ed9-34ed-423f-acc1-95d0fe3aa2fa
   - id: christian-kohler.npm-intellisense
     uuid: dff6b801-247e-40e9-82e8-8c9b1d19d1b8
+  - id: christian-kohler.path-intellisense
+    uuid: a41c1549-4053-44d4-bf30-60fc809b4a86
   - id: dsznajder.es7-react-js-snippets
     uuid: 19804510-b475-4dae-b0f7-6ca08fd1af0c
   - id: hollowtree.vue-snippets

@@ -115,6 +115,7 @@
   "peacock.surpriseMeOnStartup": true,
   "prettier.requireConfig": true,
   "redhat.telemetry.enabled": false,
+  "sidebar-markdown-notes.leftMargin": true,
   "syncSettings.keybindingsPerPlatform": false,
   "syncSettings.resources": ["extensions", "keybindings", "settings"],
   "telemetry.telemetryLevel": "off",

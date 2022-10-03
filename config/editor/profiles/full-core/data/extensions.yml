@@ -48,6 +48,8 @@ enabled:
     uuid: 61ce9ab3-f230-47ea-8cdc-2b5eb25f3ae2
   - id: antfu.vite
     uuid: b22eea9f-5a30-43a2-8a59-3d3707869cf8
+  - id: assisrMatheus.sidebar-markdown-notes
+    uuid: f37ebf56-464c-4ee5-aeb5-168b1cc40008
   - id: codespaces-contrib.codeswing
     uuid: a6c97efe-981d-4eee-a0bd-5ffd1dc807f1
   - id: eamodio.gitlens

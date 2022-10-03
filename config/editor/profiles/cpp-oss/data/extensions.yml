@@ -1,0 +1,4 @@
+disabled: []
+enabled:
+  - id: llvm-vs-code-extensions.vscode-clangd
+    uuid: 103154cb-b81d-4e1b-8281-c5f4fa563d37

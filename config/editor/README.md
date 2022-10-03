@@ -37,9 +37,11 @@ graph TD
   OSS-->PHP
   OSS-->C#/.NET
   OSS-->C++
+  OSS-->Emerging
   OSS-->Python/R
   OSS---->Node/Web
   VCS--->Mobile
+  VCS----->Emerging
   VCS-->PHP
   VCS-->C#/.NET
   VCS-->C++
@@ -47,6 +49,10 @@ graph TD
   VCS--->Node/Web
   C++-->Embedded
   C#/.NET-->Unity
+  Emerging-->Go
+  Emerging-->Rust
+  Emerging-->Deno
+  Emerging-->Nim
   Node/Web-->React
   Node/Web-->Svelte
   Node/Web-->Vue

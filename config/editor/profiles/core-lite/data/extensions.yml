@@ -43,6 +43,8 @@ enabled:
     uuid: 5a7017bf-c571-4d77-b902-6e56b16f539a
   - id: lokalise.i18n-ally
     uuid: 8ab81d13-c812-4a2f-8f19-c32e3655e53c
+  - id: mikestead.dotenv
+    uuid: 532533c9-a894-4a58-9eee-bbfbe7c06f71
   - id: patbenatar.advanced-new-file
     uuid: 2cbad5ee-b4ab-4de8-a1c7-77fede846155
   - id: pranaygp.vscode-css-peek

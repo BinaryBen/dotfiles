@@ -1,4 +1,13 @@
 {
+  "advancedNewFile.exclude": {
+    "node_modules": true,
+    "node_modules_electron": true,
+    "dist": true,
+    "out": true,
+    "build": true
+  },
+  "advancedNewFile.showInformationMessages": true,
+  "advancedNewFile.convenienceOptions": ["last", "current", "root"],
   "codeswing.layout": "splitLeft",
   "cSpell.language": "en-GB","customizeUI.activityBar": "bottom",
   "customizeUI.activityBarHideSettings": true,
@@ -39,7 +48,7 @@
     {
       "column": 120,
       "color": "#3f0101"
-    },
+    }
   ],
   "editor.scrollbar.vertical": "hidden",
   "editor.scrollbar.verticalScrollbarSize": 0,
@@ -143,5 +152,20 @@
   },
   "workbench.iconTheme": "vscode-great-icons",
   "workbench.startupEditor": "none",
-  "zenMode.fullScreen": false
+  "zenMode.fullScreen": false,
+  "[dotenv]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[ignore]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[hosts]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  }
 }

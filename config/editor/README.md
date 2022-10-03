@@ -33,21 +33,22 @@ graph TD
   Lite-->Full
   Full-->OSS
   Full-->VCS
-  OSS--->Mobile
+  OSS-->Emerging
+  OSS-->Mobile
   OSS-->PHP
   OSS-->C#/.NET
   OSS-->C++
-  OSS-->Emerging
   OSS-->Python/R
-  OSS---->Node/Web
-  VCS--->Mobile
+  OSS-->Node/Web
   VCS----->Emerging
+  VCS-->Mobile
   VCS-->PHP
   VCS-->C#/.NET
   VCS-->C++
   VCS-->Python/R
   VCS--->Node/Web
   C++-->Embedded
+  Python/R-->Embedded
   C#/.NET-->Unity
   Emerging-->Go
   Emerging-->Rust
@@ -62,6 +63,8 @@ graph TD
   Mobile-->NativeScript-Vue
   Mobile-->Flutter/Dart
   Mobile-->Swift
+  React-->React_Native
+  Vue-->NativeScript-Vue
 ```
 
 Symlink the `./profiles/oss/product.json` file to:

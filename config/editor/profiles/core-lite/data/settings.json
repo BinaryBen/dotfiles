@@ -78,6 +78,7 @@
   "gitlens.currentLine.format": "${author, }${agoOrDate}",
   "gitlens.plusFeatures.enabled": false,
   "gitlens.showWelcomeOnInstall": false,
+  "javascript.suggest.paths": false,
   "keyboard.touchbar.enabled": false,
   "peacock.affectActivityBar": false,
   "peacock.affectStatusBar": true,
@@ -135,6 +136,7 @@
     "*": "Default Dark+",
     "csv": "Office Theme (Excel)"
   },
+  "typescript.suggest.paths": false,
   // * Prefer to only know about new features when they are also available in Codium
   // #if(editor="vscodium")
   "update.showReleaseNotes": false,

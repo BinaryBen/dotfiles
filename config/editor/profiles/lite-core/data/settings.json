@@ -53,6 +53,9 @@
   "explorer.confirmDragAndDrop": false,
   "extensions.closeExtensionDetailsOnViewChange": true,
   "extensions.autoUpdate": "onlyEnabledExtensions",
+  "files.associations": {
+    "*.module": "php"
+  },
   "files.autoSave": "onFocusChange",
   "git.autofetch": true,
   "git.confirmSync": false,

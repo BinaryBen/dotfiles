@@ -7,6 +7,8 @@ enabled:
     uuid: f8d0ffc4-66bb-4a9c-8149-ef8f043691a1
   - id: bierner.markdown-preview-github-styles
     uuid: 5cbdf58a-694a-4aba-af08-61d00842eb03
+  - id: bungcip.better-toml
+    uuid: 464f4ac7-af65-4aa9-9907-4ba7fa419085
   - id: dbaeumer.vscode-eslint
     uuid: 583b2b34-2c1e-4634-8c0b-0b82e283ea3a
   - id: donjayamanne.githistory

@@ -4,9 +4,11 @@ enabled:
     uuid: 91881318-cfd0-4905-adb7-f4e431ca1ead
   - id: golang.go
     uuid: d6f6cfea-4b6f-41f4-b571-6ad2ab7918da
-  - id: LyonSyonII.rust-syntax
-    uuid: f024f98c-892f-4bcd-9a22-ec1ce23f88bf
+  - id: matklad.rust-analyzer
+    uuid: 06574cb4-e5dc-4631-8174-a543a4533621
   - id: nimsaem.nimvscode
     uuid: be03d67e-ad80-49be-8d43-4980217403b0
+  - id: serayuzgur.crates
+    uuid: 6a95a3fd-3a5d-4326-b8ab-1b1653b1f183
   - id: Swellaby.vscode-rust-test-adapter
     uuid: c167848c-fc11-496e-b432-1fd0a578a408

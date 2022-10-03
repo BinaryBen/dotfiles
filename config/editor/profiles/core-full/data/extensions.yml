@@ -14,6 +14,8 @@ disabled:
     uuid: a41c1549-4053-44d4-bf30-60fc809b4a86
   - id: dsznajder.es7-react-js-snippets
     uuid: 19804510-b475-4dae-b0f7-6ca08fd1af0c
+  - id: kisstkondoros.vscode-codemetrics
+    uuid: 4dd4cb5f-8946-4882-bf7c-e5997ab40481
   - id: ms-vscode.test-adapter-converter
     uuid: 47210ec2-0324-4cbb-9523-9dff02a5f9ec
   - id: msjsdiag.vscode-react-native

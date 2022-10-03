@@ -14,6 +14,8 @@ enabled:
     uuid: 3620b114-6fe8-459b-8c68-99943147069b
   - id: jasonnutter.search-node-modules
     uuid: ee108066-df8b-43ae-9a83-e6c11400a759
+  - id: kisstkondoros.vscode-codemetrics
+    uuid: 4dd4cb5f-8946-4882-bf7c-e5997ab40481
   - id: liamhammett.inline-parameters
     uuid: ff698641-127d-4b67-a8c2-b59179576b9d
   - id: maty.vscode-mocha-sidebar

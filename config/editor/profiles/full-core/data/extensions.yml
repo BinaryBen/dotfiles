@@ -5,22 +5,10 @@ disabled:
   - id: Dart-Code.flutter
     uuid: f6c3ec04-6057-4d9c-b997-69cba07a6158
   # Node
-  - id: austinleegordon.vscode-schema-dot-org
-    uuid: 1d613819-9fec-41c8-a0cf-d83c11c117c6
-  - id: bengreenier.vscode-node-readme
-    uuid: 40d13ed9-34ed-423f-acc1-95d0fe3aa2fa
   - id: christian-kohler.npm-intellisense
     uuid: dff6b801-247e-40e9-82e8-8c9b1d19d1b8
   - id: dsznajder.es7-react-js-snippets
     uuid: 19804510-b475-4dae-b0f7-6ca08fd1af0c
-  - id: hollowtree.vue-snippets
-    uuid: 3620b114-6fe8-459b-8c68-99943147069b
-  - id: jasonnutter.search-node-modules
-    uuid: ee108066-df8b-43ae-9a83-e6c11400a759
-  - id: liamhammett.inline-parameters
-    uuid: ff698641-127d-4b67-a8c2-b59179576b9d
-  - id: maty.vscode-mocha-sidebar
-    uuid: 5c09e657-d8a6-424b-90e3-ffadebe24429
   - id: ms-vscode.test-adapter-converter
     uuid: 47210ec2-0324-4cbb-9523-9dff02a5f9ec
   - id: msjsdiag.vscode-react-native
@@ -29,42 +17,28 @@ disabled:
     uuid: 7997a8ae-1fae-4022-b834-12f6318aeffd
   - id: redhat.fabric8-analytics
     uuid: efcb43ca-77e6-43e4-8ddc-ada617cb34bd
-  - id: vilicvane.es-quotes
-    uuid: 4cf94800-a066-464e-a4e0-97f2927ebca2
   - id: Vue.volar
     uuid: a5223b43-8621-4351-a14e-3d560f85f277
   - id: xabikos.JavaScriptSnippets
     uuid: a2cec723-5349-460d-9de9-0fd1f8d3456f
   # PHP
-  - id: ahinkle.laravel-model-snippets
-    uuid: d23d3650-f2d4-4f2b-ac01-b0e46ffade67
   - id: bmewburn.vscode-intelephense-client
     uuid: ffda6552-0ad5-431b-a4fa-0905a7e4f3f0
   - id: codingyu.laravel-goto-view
     uuid: 0b86e0a5-d2ef-48d8-9a1a-73f96e65f26e
   - id: ikappas.composer
     uuid: d1d38669-b95b-4592-be08-47526ef8b730
-  - id: kokororin.vscode-phpfmt
-    uuid: 8130e01f-ac60-4803-ab86-f05469dd7b4d
-  - id: liamhammett.inline-parameters
-    uuid: ff698641-127d-4b67-a8c2-b59179576b9d
   - id: ms-vscode.test-adapter-converter
     uuid: 47210ec2-0324-4cbb-9523-9dff02a5f9ec
   - id: onecentlin.laravel-blade
     uuid: 3b58a227-618a-4b57-a06b-6984a2a8d1ba
   - id: onecentlin.laravel5-snippets
     uuid: 050d4900-7979-4d10-b7aa-e274f6ae8730
-  - id: ryannaddy.laravel-artisan
-    uuid: 8a3855a5-f258-48ee-87f9-fa4f7a0875b1
-  - id: xdebug.php-debug
-    uuid: 044b4b31-2969-4af3-895d-855433b8b46d
   # Python
   - id: batisteo.vscode-django
     uuid: 4b41a5a8-170e-4156-b2c0-10efb270abbc
   - id: ms-python.python
     uuid: f1f59ae4-9318-4f3c-a9b5-81b2eaa5f8a5
-  - id: ms-python.vscode-pylance
-    uuid: 364d2426-116a-433a-a5d8-a5098dc3afbd
 enabled:
   - id: alefragnani.project-manager
     uuid: 1b747f06-3789-4ebd-ac99-f1fe430c3347
@@ -78,6 +52,8 @@ enabled:
     uuid: a6c97efe-981d-4eee-a0bd-5ffd1dc807f1
   - id: eamodio.gitlens
     uuid: 4de763bd-505d-4978-9575-2b7696ecf94e
+  - id: fabiospampinato.vscode-todo-plus
+    uuid: 0661e679-8a32-433e-baeb-8980f53edb55
   - id: formulahendry.code-runner
     uuid: a6a0c5b2-d078-4bf5-a9ee-4e37054414b3
   - id: genuitecllc.codetogether

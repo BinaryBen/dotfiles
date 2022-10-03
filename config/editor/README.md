@@ -26,7 +26,7 @@ $ code --install-extension zokugun.sync-settings
 
 ### Profiles:
 
-The primary difference between profiles is the plugins that are available. 
+The primary difference between profiles is the plugins that are available.
 
 ```mermaid
 graph TD

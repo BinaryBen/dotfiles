@@ -10,6 +10,10 @@ To put it as simply as possible, I usually prefer to use Code as my default IDE 
 
 I tend to install both VSCode and Codium now. This is because if there is ever an issue with Codium, I prefer to not spend the time at work trying to fix it and need something I can drop into right away. This does mean though that I need to spend some time ensuring both editors behave similarly when setting up my dotfiles. That said, Codium is usually pretty rock solid, and I have found alternative ways (read: FOSS extensions 💪) to get 99% feature parity across both editors.
 
+```bash
+$ code --install-extension zokugun.sync-settings
+```
+
 ### Desired features:
 
 - [x] Live share (pair/mob programming support)

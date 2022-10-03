@@ -81,6 +81,8 @@ enabled:
     uuid: 93be3aa5-b260-4caf-ab9d-8cebc9c463fd
   - id: keesschollaart.vscode-home-assistant
     uuid: d2d3c048-6fab-4e8f-a618-c1b9559cfd56
+  - id: mrmlnc.vscode-scss
+    uuid: beb68b20-7c55-471c-9b63-3486f9423566
   - id: ms-azuretools.vscode-docker
     uuid: 0479fc1c-3d67-49f9-b087-fb9069afe48f
   - id: ms-edgedevtools.vscode-edge-devtools
@@ -103,3 +105,5 @@ enabled:
     uuid: 1d9b1776-4188-4b43-b23f-bab3d47537e9
   - id: yatki.vscode-surround
     uuid: b476195a-5d3b-4a10-af0b-3d94f9c9f924
+  - id: Zignd.html-css-class-completion
+    uuid: 7b71fc1b-190d-4f7d-95d1-93e422649b0a

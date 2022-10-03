@@ -17,8 +17,8 @@ disabled:
     uuid: 7997a8ae-1fae-4022-b834-12f6318aeffd
   - id: redhat.fabric8-analytics
     uuid: efcb43ca-77e6-43e4-8ddc-ada617cb34bd
-  - id: Vue.volar
-    uuid: a5223b43-8621-4351-a14e-3d560f85f277
+  # - id: Vue.volar
+  #   uuid: a5223b43-8621-4351-a14e-3d560f85f277
   - id: xabikos.JavaScriptSnippets
     uuid: a2cec723-5349-460d-9de9-0fd1f8d3456f
   # PHP
@@ -39,6 +39,12 @@ disabled:
     uuid: 4b41a5a8-170e-4156-b2c0-10efb270abbc
   - id: ms-python.python
     uuid: f1f59ae4-9318-4f3c-a9b5-81b2eaa5f8a5
+  - id: ms-toolsai.jupyter
+    uuid: 6c2f1801-1e7f-45b2-9b5c-7782f1e076e8
+  - id: ms-toolsai.jupyter-keymap
+    uuid: 9f6dc8db-620c-4844-b8c5-e74914f1be27
+  - id: ms-toolsai.jupyter-renderers
+    uuid: b15c72f8-d5fe-421a-a4f7-27ed9f6addbf
 enabled:
   - id: alefragnani.project-manager
     uuid: 1b747f06-3789-4ebd-ac99-f1fe430c3347
@@ -82,3 +88,9 @@ enabled:
     uuid: 88b68eeb-8718-4a31-ab0a-cddb7c17c588
   - id: syler.sass-indented
     uuid: 466468c3-1861-4ad1-bf3e-f9ad46545ebb
+  - id: usernamehw.errorlens
+    uuid: 9d8c32ab-354c-4daf-a9bf-20b633734435
+  - id: vsls-contrib.codetour
+    uuid: 1d9b1776-4188-4b43-b23f-bab3d47537e9
+  - id: yatki.vscode-surround
+    uuid: b476195a-5d3b-4a10-af0b-3d94f9c9f924

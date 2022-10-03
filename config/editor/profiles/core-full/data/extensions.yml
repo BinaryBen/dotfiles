@@ -91,6 +91,8 @@ enabled:
     uuid: 2fd56207-78ef-49d4-95d2-9b801eee4dbf
   - id: robole.marky-stats
     uuid: 88b68eeb-8718-4a31-ab0a-cddb7c17c588
+  - id: softwaredotcom.swdc-vscode
+    uuid: c919f1b2-3705-431b-9cfd-bb0f6f3c9720
   - id: syler.sass-indented
     uuid: 466468c3-1861-4ad1-bf3e-f9ad46545ebb
   - id: usernamehw.errorlens

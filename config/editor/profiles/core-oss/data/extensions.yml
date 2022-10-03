@@ -11,6 +11,8 @@ enabled:
     uuid: ce7683f9-a9fd-4fd5-8524-eb2c362b84a7
   - id: Voklen.theme-by-language
     uuid: f2f2ab00-8621-46ea-87fe-0d24e9891571
+  - id: Vtrois.gitmoji-vscode
+    uuid: e47949b4-935d-4a76-b2d1-162267fdff80
 
   # Remote SSH alternative
   - id: jeanp413.open-remote-ssh

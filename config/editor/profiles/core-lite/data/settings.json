@@ -8,6 +8,7 @@
   },
   "advancedNewFile.showInformationMessages": true,
   "advancedNewFile.convenienceOptions": ["last", "current", "root"],
+  "C_Cpp.intelliSenseEngine": "Disabled",
   "codemetrics.basics.DecorationTemplate": "<svg xmlns='http://www.w3.org/2000/svg' width='{{size}}px' height='{{size}}px' viewbox='0 0 {{size}} {{size}}'><circle cx='3' cy='9' r='3' stroke-width='0' fill='{{color}}' /></svg>",
   "codemetrics.basics.ComplexityTemplate": "{1}ㅤ (Score: {0})",
   "codemetrics.basics.CodeLensHiddenUnder": 10,
@@ -20,7 +21,12 @@
   "codemetrics.basics.ComplexityLevelLow": 9,
   "codemetrics.basics.ComplexityLevelLowDescription": "Still good!ㅤ (▰˘◡˘▰)",
   "codeswing.layout": "splitLeft",
-  "cSpell.language": "en-GB","customizeUI.activityBar": "bottom",
+  "cSpell.language": "en-GB",
+  "cSpell.maxNumberOfProblems": 20,
+  "cSpell.numSuggestions": 8,
+  "cSpell.allowCompoundWords": true,
+  "cSpell.spellCheckDelayMs": 10000,
+  "customizeUI.activityBar": "bottom",
   "customizeUI.activityBarHideSettings": true,
   "customizeUI.font.regular": "Helvetica Neue",
   "customizeUI.statusBarPosition": "under-panel",
@@ -69,6 +75,23 @@
   },
   "editor.wordWrap": "bounded",
   "editor.wordWrapColumn": 120,
+  "ego.power-tools": {
+    "commands": {
+      "Show powertools": {
+        "description": "List powertools installed globally and in workspace",
+        "script": "commands/showPowertools.js",
+        "button": {
+          "text": "$(tools) Powertools",
+          "isRight": true,
+          "tooltip": "View all available Powertools"
+        }
+      },
+      "Download extensions": {
+        "description": "Download VSIX files that aren't on the Open VSX Registry",
+        "script": "commands/downloadVSIX.js"
+      }
+    }
+  },
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "extensions.closeExtensionDetailsOnViewChange": true,

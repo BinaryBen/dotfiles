@@ -1,5 +1,6 @@
 .idea
 .DS_Store
+.log
 
 # Only track espanso packages I wrote, but expect to not publish
 # Published packages would need to be in own repo

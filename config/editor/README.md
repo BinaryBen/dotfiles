@@ -105,14 +105,15 @@ Symlink the `./profiles/oss/product.json` file to:
   - [ ] React
   - [ ] Vue
     - [ ] Volar
+    - [ ] Configure [take-over mode](https://github.com/johnsoncodehk/volar/discussions/471)
   - [ ] JSON / YAML
 - [ ] Mobile
   - [ ] React Native
   - [ ] Flutter
   - [ ] Swift
   - [ ] NativeScript Vue
-- [ ] PHP
-  - [ ] Laravel
+- [x] PHP
+  - [x] Laravel
 - [ ] [C/C++](https://viatsko.github.io/awesome-vscode/#c)
   - [ ] Arduino
 - [ ] [C#/.NET](https://viatsko.github.io/awesome-vscode/#c-asp-net-and-net-core)

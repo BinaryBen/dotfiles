@@ -1,7 +1,7 @@
 # Editor Config
 
 > In the docs below, *Code* refers to [the open-source project by Microsoft](https://github.com/microsoft/vscode) as well as other projects that are based on the source code of *Code*. This includes VSCode, Codium.
-> 
+>
 > Where documentation is relevant to a specific *Code* distribution (i.e. VSCode or Codium, but not both), it will be noted. Otherwise assume the docs refer to both VSCode and Codium.
 
 To put it as simply as possible, I usually prefer to use Code as my default IDE and Micro as my default `$EDITOR`. Sometimes I also play with Neo/Vim.
@@ -76,31 +76,42 @@ Symlink the `./profiles/oss/product.json` file to:
 ### Todo
 
 - [ ] Configure "Markdown Preview Github Styling" to use dark mode
+- [ ] Create solid keybindings (using <kbd>⌃Space</kbd> as leader)
+- [ ] Differntiate between similar but different subdirectories
+  - [ColorTabs](https://marketplace.visualstudio.com/items?itemName=orepor.color-tabs-vscode-ext) is promising, but cannot style anything I have showing. Have submitted an [feature request (#68)](https://github.com/oreporan/color-tabs-vscode/issues/68).
 
 **Find extensions for:**
 
-- [ ] Emoji in Markdown (or use espanso emoji?)
+- [x] ~~Emoji in Markdown~~ (Using Espanso instead)
 - [ ] Utilities / Dev toolbox
   - [ ] Regex editor/validator
   - [ ] Time conversion
+  - Will create these as Powertool scripts/commands
 - [ ] Better copy/paste (maybe integrate into OS instead?)
 - [x] Todo lists
 - [x] Markdown notes in Action bar
 - [ ] Dash docs integration
+- [x] Spell checking (may need to investigate [Spell Right](https://marketplace.visualstudio.com/items?itemName=ban.spellright) if Code Spell Check is too slow)
 
 ### Language support
 
-- [ ] HTML
-- [ ] CSS3 / Sass
-- [ ] Markup Languages
+- [ ] Markup Languages (Part of Core Lite)
+  - [ ] HTML
+    - [x] CSS3 / Sass
   - [x] Markdown
     - [x] Mermaid
     - [x] Footnotes
-    - [ ] Github theme
+    - [ ] Github theme <!-- Can I change theme based on git platform in current repo? -->
     - [ ] Stats <!-- Find a better word counter that ignores markup -->
     - [ ] YAML Frontmatter
     - [x] Maths
   - [x] MJML
+  - [ ] Mustache
+- [ ] Data
+  - [ ] SQLite Browser
+  - [ ] GraphQL
+  - [ ] SQL ([SQL Tools?](https://vscode-sqltools.mteixeira.dev/en/home/))
+  - [ ] Redis
 - [ ] Node / Typescript
   - [ ] React
   - [ ] Vue
@@ -114,10 +125,16 @@ Symlink the `./profiles/oss/product.json` file to:
   - [ ] NativeScript Vue
 - [x] PHP
   - [x] Laravel
+- [ ] Python
+  - [ ] R
+  - [ ] [Quarto](https://quarto.org/)
+  - [ ] Academic tools
+  - [ ] Django
+  - [ ] Flask
 - [ ] [C/C++](https://viatsko.github.io/awesome-vscode/#c)
   - [ ] Arduino
 - [ ] [C#/.NET](https://viatsko.github.io/awesome-vscode/#c-asp-net-and-net-core)
-- [x] Other / emerging
+- [x] Emerging (aka "Other")
   - [x] Deno
   - [x] Nim
   - [x] Go

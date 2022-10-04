@@ -1,0 +1,11 @@
+{
+    "name": "music",
+    "displayName": "Music",
+    "description": "Simple Apple Music player for VSCode",
+    "version": "0.0.1",
+    "license": "MIT",
+    "vue": true,
+    "author": {
+        "name": "ben"
+    }
+}

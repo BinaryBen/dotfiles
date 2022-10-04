@@ -1,0 +1,3 @@
+matches:
+  - trigger: ":wr"
+    replace: "Warmest regards,\n\nBenny Michaels"

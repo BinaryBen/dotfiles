@@ -157,6 +157,8 @@
   ],
   "peacock.showColorInStatusBar": false,
   "peacock.surpriseMeOnStartup": true,
+  "powermode.shake.enabled": false,
+  "powermode.presets": "flames",
   "prettier.requireConfig": true,
   "redhat.telemetry.enabled": false,
   "sidebar-markdown-notes.leftMargin": true,

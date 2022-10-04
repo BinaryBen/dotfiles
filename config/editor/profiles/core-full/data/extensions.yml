@@ -77,6 +77,8 @@ enabled:
     uuid: 8bb12ae3-73f8-40cf-86b7-4bd5729c6238
   - id: hediet.vscode-drawio
     uuid: ea6a6046-2132-421f-a984-664909fcf0b8
+  - id: hoovercj.vscode-power-mode
+    uuid: a27ff63d-ff11-478d-b1ab-19aa1ef19882
   - id: huacat.office-theme
     uuid: 93be3aa5-b260-4caf-ab9d-8cebc9c463fd
   - id: keesschollaart.vscode-home-assistant

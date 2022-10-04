@@ -1,2 +1,8 @@
 .idea
 .DS_Store
+
+# Only track espanso packages I wrote, but expect to not publish
+# Published packages would need to be in own repo
+config/snippets/match/packages/*
+!config/snippets/match/packages/emojis
+!config/snippets/match/packages/emojis/**/*

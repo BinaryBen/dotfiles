@@ -1,0 +1,6 @@
+# Personal emoji short codes
+# https://unicode.org/emoji/charts/full-emoji-list.html
+
+imports:
+  - "./_common.yml"
+  - "./_smileys.yml"

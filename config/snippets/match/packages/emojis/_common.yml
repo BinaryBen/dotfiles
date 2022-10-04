@@ -1,0 +1,10 @@
+matches:
+  - trigger: ":dead"
+    replace: "💀"
+  - trigger: ":died"
+    replace: "☠"
+
+  - triggers: [":+1", ":ok"]
+    replace: "👍"
+  - trigger: ":shrug"
+    replace: "🤷"

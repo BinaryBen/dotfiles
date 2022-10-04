@@ -1,0 +1,7 @@
+author: Benny Michaels
+description: A package to get the code snippets from cht.sh.
+name: bioji
+title: "Binaryben's Emojis"
+version: 0.1.0
+homepage: "https://github.com/binaryben/dotfiles/config/snippets/match/packages/emojis"
+tags: ["emoji"]

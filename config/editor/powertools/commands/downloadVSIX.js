@@ -38,7 +38,7 @@ const downloadExtensions = (extensions, vscode, output) => {
       output.append('|=')
 
       res.on('data', function(chunk){
-        output.append(`${new Date().getTime() % 5 === 0 ? '=' : ''}`)
+        output.append(`${new Date().getTime() % 9 === 0 ? '=' : ''}`)
         vsix += chunk
       })
 
@@ -50,9 +50,7 @@ const downloadExtensions = (extensions, vscode, output) => {
           } else {
             output.append(` ✅ ${extension.filename} saved\n\n`)
           }
-          setTimeout(() => {
-            next([], extensions, vscode, output)
-          }, 5500)
+          next([], extensions, vscode, output)
         })
       })
     } else {
@@ -60,7 +58,7 @@ const downloadExtensions = (extensions, vscode, output) => {
       output.appendLine(`   Manually download at: ${extension.url}\n`)
       setTimeout(() => {
         next([], extensions, vscode, output)
-      }, 10000) // Probably 429. Probably because hitting it too hard and fast. Let's slow it down
+      }, 5000) // Slow down in case of rate limiting
     }
   })
 }
@@ -96,7 +94,11 @@ const generateDownloadList = (unprocessedExtensions, processedExtensions, vscode
 
         output.append(`| ✅ ${name} (v${version})`)
 
-        downloadURL = `https://marketplace.visualstudio.com/_apis/public/gallery/publishers/${publisher}/vsextensions/${slug}/${version}/vspackage`
+        downloadURL = `https://${publisher}.gallery.vsassets.io/_apis/public/gallery/publisher/${publisher}/extension/${slug}/${version}/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage`
+
+        // * NOTE: This URL was getting 429 errors more often than not
+
+        // downloadURL = `https://marketplace.visualstudio.com/_apis/public/gallery/publishers/${publisher}/vsextensions/${slug}/${version}/vspackage`
 
         if (!fs.existsSync(path.join(root, filename))) {
           output.appendLine('')

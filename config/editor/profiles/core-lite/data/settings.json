@@ -171,7 +171,7 @@
   "terminal.integrated.fontFamily": "Input NF",
   "terminal.integrated.fontSize": 13,
   "theme-by-language.themes": {
-    "*": "Default Dark+",
+    "*": "Popping and Locking",
     "csv": "Office Theme (Excel)"
   },
   "typescript.suggest.paths": false,
@@ -183,6 +183,7 @@
   "window.commandCenter": true,
   "window.restoreWindows": "one",
   "window.titleBarStyle": "native",
+  "workbench.colorTheme": "Popping and Locking",
   "workbench.editor.closeEmptyGroups": false,
   "workbench.editor.decorations.colors": false,
   "workbench.editor.showTabs": false,
@@ -192,6 +193,7 @@
     "*.xlsx": "gc-excelviewer-csv-editor"
   },
   "workbench.iconTheme": "vscode-great-icons",
+  "workbench.preferredDarkColorTheme": "Popping and Locking",
   "workbench.startupEditor": "none",
   "zenMode.fullScreen": false,
   "[dotenv]": {

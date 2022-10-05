@@ -52,7 +52,7 @@ const downloadExtensions = (extensions, vscode, output) => {
           }
           setTimeout(() => {
             next([], extensions, vscode, output)
-          }, 3500)
+          }, 5500)
         })
       })
     } else {
@@ -60,7 +60,7 @@ const downloadExtensions = (extensions, vscode, output) => {
       output.appendLine(`   Manually download at: ${extension.url}\n`)
       setTimeout(() => {
         next([], extensions, vscode, output)
-      }, 8000) // Probably 429. Probably because hitting it too hard and fast.
+      }, 10000) // Probably 429. Probably because hitting it too hard and fast. Let's slow it down
     }
   })
 }

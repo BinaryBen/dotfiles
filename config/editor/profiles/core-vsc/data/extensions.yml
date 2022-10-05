@@ -4,29 +4,23 @@ disabled:
     uuid: 80c8f9ff-3535-4b4a-b3db-e88f5752bb18
   - id: ms-dotnettools.csharp
     uuid: d0bfc4ab-1d3a-4487-8782-7cf6027b4fff
+
 enabled:
   # Mismatched UU/IDs (official marketplace ≈ community marketplace)
   - id: attilabuti.vscode-mjml
     uuid: efc33846-2498-43d7-9699-47d0a7741345
+  - id: jsaulou.theme-by-language
+    uuid: e5a47a72-5bb1-4139-8080-9c57b37a7e8a
   - id: ms-vscode.test-adapter-converter
     uuid: 47210ec2-0324-4cbb-9523-9dff02a5f9ec
   - id: seatonjiang.gitmoji-vscode
     uuid: d7b0c43a-5aaa-4181-9196-293551f7b37a
-
-  # Unavailable on Open VSX Registry
-  # ! Only add plugins that are coming to Open VSX Registry
-
-  # Print: https://github.com/PDConSec/vsc-print/issues/120
-  - id: pdconsec.vscode-print
-    uuid: 05046d70-8146-42f5-ac9e-b97b37c8c0ef
 
   # Proprietary extensions (Microsoft tools)
   - id: GitHub.codespaces
     uuid: 4023d3e5-c840-4cdd-8b54-51c77548aa3f
   - id: GitHub.copilot
     uuid: 23c4aeee-f844-43cd-b53e-1113e483f1a6
-  - id: jsaulou.theme-by-language
-    uuid: e5a47a72-5bb1-4139-8080-9c57b37a7e8a
   - id: ms-vscode-remote.remote-containers
     uuid: 93ce222b-5f6f-49b7-9ab1-a0463c6238df
   - id: ms-vscode-remote.remote-ssh

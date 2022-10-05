@@ -47,6 +47,7 @@
   },
   "customizeUI.titleBar": "inline",
   "editor.accessibilitySupport": "off",
+  "editor.cursorBlinking": "expand",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontFamily": "Input NF, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
@@ -94,6 +95,7 @@
   },
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
+  "explorer.decorations.badges": false,
   "extensions.closeExtensionDetailsOnViewChange": true,
   "extensions.autoUpdate": "onlyEnabledExtensions",
   "files.associations": {
@@ -182,6 +184,7 @@
   "window.restoreWindows": "one",
   "window.titleBarStyle": "native",
   "workbench.editor.closeEmptyGroups": false,
+  "workbench.editor.decorations.colors": false,
   "workbench.editor.showTabs": false,
   "workbench.editorAssociations": {
     "*.csv": "gc-excelviewer-csv-editor",

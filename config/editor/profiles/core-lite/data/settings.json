@@ -171,7 +171,11 @@
   "terminal.integrated.fontFamily": "Input NF",
   "terminal.integrated.fontSize": 13,
   "theme-by-language.themes": {
+    // #if(editor="visual studio code")
+    "*": "Default Dark+",
+    // #else
     "*": "Popping and Locking",
+    // #endif
     "csv": "Office Theme (Excel)"
   },
   "typescript.suggest.paths": false,
@@ -183,7 +187,11 @@
   "window.commandCenter": true,
   "window.restoreWindows": "one",
   "window.titleBarStyle": "native",
+  // #if(editor="visual studio code")
+  "workbench.colorTheme": "Default Dark+",
+  // #else
   "workbench.colorTheme": "Popping and Locking",
+  // #endif
   "workbench.editor.closeEmptyGroups": false,
   "workbench.editor.decorations.colors": false,
   "workbench.editor.showTabs": false,
@@ -193,7 +201,11 @@
     "*.xlsx": "gc-excelviewer-csv-editor"
   },
   "workbench.iconTheme": "vscode-great-icons",
+  // #if(editor="visual studio code")
+  "workbench.preferredDarkColorTheme": "Default Dark+",
+  // #else
   "workbench.preferredDarkColorTheme": "Popping and Locking",
+  // #endif
   "workbench.startupEditor": "none",
   "zenMode.fullScreen": false,
   "[dotenv]": {

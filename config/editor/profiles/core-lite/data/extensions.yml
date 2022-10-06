@@ -11,6 +11,10 @@ enabled:
     uuid: 464f4ac7-af65-4aa9-9907-4ba7fa419085
   - id: dbaeumer.vscode-eslint
     uuid: 583b2b34-2c1e-4634-8c0b-0b82e283ea3a
+  - id: dendron.dendron
+    uuid: 8e264a73-4cfc-4be1-8f4f-c6a4ede494a4
+  - id: dendron.dendron-paste-image
+    uuid: b08e77c9-221d-41a6-9668-59bc8fd04128
   - id: donjayamanne.githistory
     uuid: 5960f38e-0bbe-4644-8f9c-9c8824e82511
   - id: egomobile.vscode-powertools

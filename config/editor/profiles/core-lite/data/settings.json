@@ -47,6 +47,9 @@
   },
   "customizeUI.titleBar": "inline",
   "editor.accessibilitySupport": "off",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
   "editor.cursorBlinking": "expand",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontFamily": "Input NF, Menlo, Monaco, 'Courier New', monospace",
@@ -57,6 +60,7 @@
   "editor.guides.bracketPairs": "active",
   "editor.inlineSuggest.enabled": true,
   "editor.insertSpaces": true,
+  "editor.linkedEditing": true,
   "editor.minimap.showSlider": "always",
   "editor.rulers": [
     {
@@ -93,6 +97,13 @@
       }
     }
   },
+  "emmet.excludeLanguages": [],
+  "emmet.includeLanguages": {
+    "javascript":"javascriptreact",
+    "markdown": "html",
+    "vue-html": "html"
+  },
+  "emmet.triggerExpansionOnTab": true,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.decorations.badges": false,
@@ -102,6 +113,8 @@
     "*.module": "php"
   },
   "files.autoSave": "onFocusChange",
+  "files.defaultLanguage": "markdown",
+  "files.trimTrailingWhitespace": true,
   "git.autofetch": true,
   "git.confirmSync": false,
   // #if(editor="visual studio code")
@@ -111,9 +124,20 @@
     "markdown": false
   },
   // #endif
-  "gitlens.currentLine.format": "${author, }${agoOrDate}",
+  "gitlens.currentLine.format": "${author} committed this ${agoOrDate}",
+  "gitlens.currentLine.pullRequests.enabled": false,
+  "gitlens.currentLine.uncommittedChangesFormat": "🚧 Last edit ${ago}",
+  "gitlens.defaultDateFormat": null,
+  "gitlens.defaultDateLocale": "en-AU",
+  "gitlens.heatmap.locations": [
+    "gutter"
+  ],
+  "gitlens.hovers.annotations.enabled": false,
+  "gitlens.menus": false,
+  "gitlens.mode.statusBar.alignment": "left",
   "gitlens.plusFeatures.enabled": false,
   "gitlens.showWelcomeOnInstall": false,
+  "gitlens.statusBar.enabled": false,
   "indentRainbow.colors": [
     "rgba(255,255,64,0.3)",
     "rgba(127,255,127,0.3)",
@@ -124,47 +148,21 @@
   "indentRainbow.indicatorStyle": "light",
   "indentRainbow.lightIndicatorStyleLineWidth": 1,
   "javascript.suggest.paths": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
   "keyboard.touchbar.enabled": false,
   "peacock.affectActivityBar": false,
   "peacock.affectStatusBar": true,
   "peacock.affectTitleBar": false,
   "peacock.favoriteColors": [
-    {
-      "name": "Angular Red",
-      "value": "#dd0531"
-    },
-    {
-      "name": "Azure Blue",
-      "value": "#007fff"
-    },
-    {
-      "name": "JavaScript Yellow",
-      "value": "#f9e64f"
-    },
-    {
-      "name": "Mandalorian Blue",
-      "value": "#1857a4"
-    },
-    {
-      "name": "Node Green",
-      "value": "#215732"
-    },
-    {
-      "name": "React Blue",
-      "value": "#61dafb"
-    },
-    {
-      "name": "Something Different",
-      "value": "#832561"
-    },
-    {
-      "name": "Svelte Orange",
-      "value": "#ff3d00"
-    },
-    {
-      "name": "Vue Green",
-      "value": "#42b883"
-    }
+    { "name": "Angular Red", "value": "#dd0531" },
+    { "name": "Azure Blue", "value": "#007fff" },
+    { "name": "JavaScript Yellow", "value": "#f9e64f" },
+    { "name": "Mandalorian Blue", "value": "#1857a4" },
+    { "name": "Node Green", "value": "#215732" },
+    { "name": "React Blue", "value": "#61dafb" },
+    { "name": "Something Different", "value": "#832561" },
+    { "name": "Svelte Orange", "value": "#ff3d00" },
+    { "name": "Vue Green", "value": "#42b883"  }
   ],
   "peacock.showColorInStatusBar": false,
   "peacock.surpriseMeOnStartup": true,
@@ -190,6 +188,7 @@
     "csv": "Office Theme (Excel)"
   },
   "typescript.suggest.paths": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
   // * Prefer to only know about new features when they are also available in Codium
   // #if(editor="vscodium")
   "update.showReleaseNotes": false,
@@ -219,22 +218,25 @@
   // #endif
   "workbench.startupEditor": "none",
   "zenMode.fullScreen": false,
-  "[dotenv]": {
-    "editor.defaultFormatter": "foxundermoon.shell-format"
-  },
   "[dockerfile]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
   },
-  "[shellscript]": {
-    "editor.defaultFormatter": "foxundermoon.shell-format"
-  },
-  "[ignore]": {
+  "[dotenv]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
   },
   "[hosts]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
   },
+  "[ignore]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false
+  },
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
   }
 }

@@ -21,6 +21,7 @@ PeterSchmalfeldt.explorer-exclude
 quicktype.quicktype
 REditorSupport.r
 Rubymaniac.vscode-paste-and-indent
+rust-lang.rust-analyzer
 ryu1kn.text-marker
 seatonjiang.gitmoji-vscode
 softwaredotcom.swdc-vscode

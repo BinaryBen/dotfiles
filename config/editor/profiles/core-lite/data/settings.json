@@ -163,6 +163,7 @@
   "powermode.shake.enabled": false,
   "powermode.presets": "flames",
   "prettier.requireConfig": true,
+  "python.formatting.provider": "none",
   "redhat.telemetry.enabled": false,
   "sidebar-markdown-notes.leftMargin": true,
   "syncSettings.keybindingsPerPlatform": false,
@@ -223,5 +224,8 @@
   },
   "[hosts]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
   }
 }

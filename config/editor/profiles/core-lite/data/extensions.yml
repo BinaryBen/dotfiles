@@ -23,6 +23,8 @@ enabled:
     uuid: 829a192d-496c-44ac-87f3-0a84ce36a853
   - id: esbenp.prettier-vscode
     uuid: 96fa4707-6983-4489-b7c5-d5ffdfdcce90
+  - id: fabiospampinato.vscode-highlight
+    uuid: 5471fe3e-315b-4c05-b41e-8bb493227c2e
   - id: fabiospampinato.vscode-todo-plus
     uuid: 0661e679-8a32-433e-baeb-8980f53edb55
   - id: formulahendry.auto-close-tag
@@ -31,8 +33,12 @@ enabled:
     uuid: 6e440e71-8ed9-4f25-bb78-4b13096b8a03
   - id: foxundermoon.shell-format
     uuid: 5fb19573-2183-4cf2-b53d-0fb869dae7ae
+  - id: Fr43nk.seito-openfile
+    uuid: 531cc46e-a673-425f-9f5a-60ce75187e35
   - id: GraphQL.vscode-graphql
     uuid: 55ef6448-487b-49a0-a66e-4d2d9bb82229
+  - id: Gruntfuggly.activitusbar
+    uuid: 47137038-6832-49c2-a31c-9ad3d95187fc
   - id: Gruntfuggly.todo-tree
     uuid: 261cac81-cd7b-4555-bb41-0c2d2bcd3e70
   - id: hbenl.vscode-test-explorer
@@ -67,6 +73,8 @@ enabled:
     uuid: f05d5b1a-dd2d-4d27-bfd6-e3cff922bd7e
   - id: redhat.vscode-yaml
     uuid: 2061917f-f76a-458a-8da9-f162de22b97e
+  - id: robole.snippets-ranger
+    uuid: 5c3e68a9-0b7e-498f-afed-ed1e0babc5ff
   - id: ryu1kn.edit-with-shell
     uuid: 370f75d3-459d-498a-80ed-e380c87750c5
   - id: shardulm94.trailing-spaces

@@ -1,8 +1,8 @@
 # Editor Config
 
-> In the docs below, *Code* refers to [the open-source project by Microsoft](https://github.com/microsoft/vscode) as well as other projects that are based on the source code of *Code*. This includes VSCode, Codium.
+> In the docs below, *Code* refers to [the open-source project by Microsoft](https://github.com/microsoft/vscode) as well as other projects that are based on the source code of *Code*. This includes desktop variants: *[VSCode](https://code.visualstudio.com/)* and *[VSCodium](https://vscodium.com/)*; and browser-based variants: *[GitHub Codespaces](https://github.com/features/codespaces)* and *[OpenVSCode Server](https://github.com/gitpod-io/openvscode-server)*.
 >
-> Where documentation is relevant to a specific *Code* distribution (i.e. VSCode or Codium, but not both), it will be noted. Otherwise assume the docs refer to both VSCode and Codium.
+> Where documentation is relevant to a specific *Code* distribution (i.e. *VSCode* or *VSCodium*, but not both), it will be noted. Otherwise assume the docs refer to all derrivatives of *Code*.
 
 To put it as simply as possible, I usually prefer to use Code as my default IDE and Micro as my default `$EDITOR`. Sometimes I also play with Neo/Vim.
 
@@ -14,60 +14,61 @@ I tend to install both VSCode and Codium now. This is because if there is ever a
 $ code --install-extension zokugun.sync-settings
 ```
 
-### Desired features:
+### Features:
 
 - [x] Live share (pair/mob programming support)
 - [x] Remote SSH / Container
-- [ ] Code Pair AI (akin to Github Copilot)
+- [x] Code Pair AI (via [Tabnine](https://www.tabnine.com/)[^pair])
 - [x] Synced settings without ties to one cloud provider
-- [ ] 🚧 Support for "profiles" based on persona (home vs. work) and language
+- [x] Support for "profiles" based on persona (home vs. work) and workspace languages [^profiles]
+- [ ] Git platforms integration
+  - [ ] GitHub
+  - [ ] Gitlab
+  - [ ] Atlassian
+  - [ ] Gitea
 
 > Settings and extensions are managed using the [*Sync Settings*](https://open-vsx.org/extension/zokugun/sync-settings) extension. This was chosen over using the built-in sync feature of *VSCode* because the sync feature is unavailable to run on non-Microsoft builds of *Code* and is dependant on *GitHub*.
 
+[^pair]: I may try to replace Tabnine with an open source alternative, but for now I am happy to try something that can be used in various editors.
+
+[^profiles]: More needs to be done on the profiles feature but it is largely workable for now. I need the ability to be able to use several languages together in a workspace.
+
 ### Profiles:
 
-The primary difference between profiles is the plugins that are available.
+The differences between profiles are the plugins that are enabled.
 
 ```mermaid
 graph TD
   Lite-->Full
-  Full-->OSS
-  Full-->VCS
-  OSS-->Emerging
-  OSS-->Mobile
-  OSS-->PHP
-  OSS-->C#/.NET
-  OSS-->C++
-  OSS-->Python/R
-  OSS-->Node/Web
-  VCS----->Emerging
-  VCS-->Mobile
-  VCS-->PHP
-  VCS-->C#/.NET
-  VCS-->C++
-  VCS-->Python/R
-  VCS--->Node/Web
+  Full---->Modern
+  Full-->PHP
+  Full-->C#/.NET
+  Full-->C++
+  Full-->Python/R
+  Full--->Mobile
+  Full---->Node
   C++-->Embedded
   Python/R-->Embedded
   C#/.NET-->Unity
-  Emerging-->Go
-  Emerging-->Rust
-  Emerging-->Deno
-  Emerging-->Nim
-  Node/Web-->React
-  Node/Web-->Svelte
-  Node/Web-->Vue
-  Node/Web-->Electron
-  Node/Web-->Neutrino
-  Mobile-->React_Native
-  Mobile-->NativeScript-Vue
-  Mobile-->Flutter/Dart
-  Mobile-->Swift
+  Modern-->Go
+  Modern-->Rust
+  Modern-->Deno
+  Modern-->Nim
+  Node-->Vue
+  Node-->React
+  Node-->Svelte
+  Node-->Desktop
+  Desktop-->Electron
+  Desktop-->Neutrino
+  Mobile--->React_Native
+  Mobile---->NativeScript-Vue
+  Mobile--->Flutter/Dart
+  Mobile--->Swift
   React-->React_Native
   Vue-->NativeScript-Vue
 ```
 
-Symlink the `./profiles/oss/product.json` file to:
+Symlink the `./product.json` file to:
 
 * **Windows:** `%APPDATA%\VSCodium\product.json` or `%USERPROFILE%\AppData\Roaming\VSCodium\product.json`
 * **macOS:** `~/Library/Application Support/VSCodium/product.json`
@@ -102,7 +103,7 @@ Symlink the `./profiles/oss/product.json` file to:
 
 ### Language support
 
-- [ ] **Markup Languages** (Part of Core Lite)
+- [ ] **Markup Languages** (Part of Lite)
   - [x] HTML
     - [x] CSS3 / Sass
   - [x] **Markdown**
@@ -116,12 +117,12 @@ Symlink the `./profiles/oss/product.json` file to:
   - [x] Handlebars / Mustache
   - [x] JSON / YAML
   - [x] TOML
-- [ ] **Data**
+- [ ] **Data** (Part of Full)
   - [ ] SQLite Browser
-  - [x] GraphQL [^graphql]
+  - [ ] GraphQL
   - [ ] SQL ([SQL Tools?](https://vscode-sqltools.mteixeira.dev/en/home/))
   - [ ] Redis
-  - [ ] REST Explorer
+  - [x] [REST Explorer](https://www.thunderclient.com/)
 - [ ] **Node / Typescript**
   - [ ] React
     - [ ] Next
@@ -131,6 +132,9 @@ Symlink the `./profiles/oss/product.json` file to:
     - [ ] Volar
       - [ ] Configure [take-over mode](https://github.com/johnsoncodehk/volar/discussions/471)
   - [ ] Express
+  - [ ] Desktop
+    - [ ] Electron
+    - [ ] Neutrino
 - [ ] **Mobile**
   - [ ] React Native
   - [ ] Flutter
@@ -158,13 +162,11 @@ Symlink the `./profiles/oss/product.json` file to:
     - [ ] Arduino
     - [ ] ARM
 - [ ] [**C#/.NET**](https://viatsko.github.io/awesome-vscode/#c-asp-net-and-net-core)
-- [x] **Emerging** (aka "Other")
+- [x] **Modern** (aka "Other")
   - [x] Deno
   - [x] Nim
   - [x] Go
   - [x] Rust
-
-[^graphql]: GraphQL is available on both Open VSX Registry and the Microsoft Registry, but is out of date on the former. I've included in the *Core Full* profiles manifest so that a full install will grab the updated version, but in the config for the *Core Lite* profile
 
 ## Micro
 
@@ -177,4 +179,3 @@ I should probably just not. Am I gonna not? 🤷‍♂️
 ## Other
 
 - [ ] Investigate using [Sonarlint](https://www.sonarsource.com/products/sonarlint/)
-

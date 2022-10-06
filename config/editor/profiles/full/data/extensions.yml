@@ -79,7 +79,32 @@ disabled:
     uuid: 4dfff9f4-ff9b-47bb-b0d1-c54e18d8febb
   - id: sourcery.sourcery
     uuid: 0bb8a841-96c3-4e2d-ab43-cffee71480a4
+
 enabled:
+
+  ############################################
+  # ! Major conflicts
+  # These will cause errors in at least 1 IDE
+  ############################################
+
+  # Remote SSH alternative # ! VSCodium only
+  - id: jeanp413.open-remote-ssh
+    uuid: 9fc16cea-08e2-4ae5-bf75-224004d722ff
+
+  # M$ Remote pack # ! Visual Studio Code only
+  - id: ms-vscode-remote.vscode-remote-extensionpack
+    uuid: 23d72dfc-8dd1-4e30-926e-8783b4378f13
+
+  # Proprietary extensions (Microsoft tools)
+  - id: GitHub.codespaces
+    uuid: 4023d3e5-c840-4cdd-8b54-51c77548aa3f
+  - id: GitHub.copilot
+    uuid: 23c4aeee-f844-43cd-b53e-1113e483f1a6
+
+  ############################################
+  # Everything else
+  ############################################
+
   - id: alefragnani.project-manager
     uuid: 1b747f06-3789-4ebd-ac99-f1fe430c3347
   - id: alexcvzz.vscode-sqlite

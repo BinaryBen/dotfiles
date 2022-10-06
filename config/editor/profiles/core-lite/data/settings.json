@@ -159,6 +159,7 @@
   ],
   "peacock.showColorInStatusBar": false,
   "peacock.surpriseMeOnStartup": true,
+  "powermode.enabled": true,
   "powermode.shake.enabled": false,
   "powermode.presets": "flames",
   "prettier.requireConfig": true,

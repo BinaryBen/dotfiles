@@ -28,6 +28,8 @@ enabled:
     uuid: 7997a8ae-1fae-4022-b834-12f6318aeffd
   - id: redhat.fabric8-analytics
     uuid: efcb43ca-77e6-43e4-8ddc-ada617cb34bd
+  - id: unifiedjs.vscode-mdx
+    uuid: 33fc5d59-4646-42cd-9ab8-bca007572f96
   - id: vilicvane.es-quotes
     uuid: 4cf94800-a066-464e-a4e0-97f2927ebca2
   - id: Vue.volar

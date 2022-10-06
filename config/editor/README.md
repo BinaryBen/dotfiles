@@ -78,7 +78,7 @@ Symlink the `./profiles/oss/product.json` file to:
 - [ ] Configure "Markdown Preview Github Styling" to use dark mode
 - [ ] Create solid keybindings (using <kbd>⌃Space</kbd> as leader)
 - [ ] Differntiate between similar but different subdirectories
-  - [ColorTabs](https://marketplace.visualstudio.com/items?itemName=orepor.color-tabs-vscode-ext) is promising, but cannot style anything I have showing. Have submitted an [feature request (#68)](https://github.com/oreporan/color-tabs-vscode/issues/68).
+  - [ColorTabs](https://marketplace.visualstudio.com/items?itemName=orepor.color-tabs-vscode-ext) is promising, but cannot style anything I have showing. Have submitted a [feature request (#68)](https://github.com/oreporan/color-tabs-vscode/issues/68).
 
 **Find extensions for:**
 
@@ -95,10 +95,10 @@ Symlink the `./profiles/oss/product.json` file to:
 
 ### Language support
 
-- [ ] Markup Languages (Part of Core Lite)
+- [ ] **Markup Languages** (Part of Core Lite)
   - [ ] HTML
     - [x] CSS3 / Sass
-  - [x] Markdown
+  - [x] **Markdown**
     - [x] Mermaid
     - [x] Footnotes
     - [ ] Github theme <!-- Can I change theme based on git platform in current repo? -->
@@ -107,34 +107,41 @@ Symlink the `./profiles/oss/product.json` file to:
     - [x] Maths
   - [x] MJML
   - [ ] Mustache
-- [ ] Data
+  - [x] JSON / YAML
+  - [x] TOML
+- [ ] **Data**
   - [ ] SQLite Browser
   - [ ] GraphQL
   - [ ] SQL ([SQL Tools?](https://vscode-sqltools.mteixeira.dev/en/home/))
   - [ ] Redis
-- [ ] Node / Typescript
+- [ ] **Node / Typescript**
   - [ ] React
   - [ ] Vue
     - [ ] Volar
     - [ ] Configure [take-over mode](https://github.com/johnsoncodehk/volar/discussions/471)
-  - [ ] JSON / YAML
-- [ ] Mobile
+- [ ] **Mobile**
   - [ ] React Native
   - [ ] Flutter
   - [ ] Swift
   - [ ] NativeScript Vue
-- [x] PHP
+- [x] **PHP**
   - [x] Laravel
-- [ ] Python
+- [ ] **Python**
   - [ ] R
   - [ ] [Quarto](https://quarto.org/)
   - [ ] Academic tools
   - [ ] Django
   - [ ] Flask
-- [ ] [C/C++](https://viatsko.github.io/awesome-vscode/#c)
-  - [ ] Arduino
-- [ ] [C#/.NET](https://viatsko.github.io/awesome-vscode/#c-asp-net-and-net-core)
-- [x] Emerging (aka "Other")
+- [ ] **C/C++**
+  - [ ] [Debugger](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) (Intellisense disabled; plus [Test Explorer Adapter/s](https://github.com/hbenl/vscode-test-explorer#c))
+  - [ ] [Syntax](https://marketplace.visualstudio.com/items?itemName=jeff-hykin.better-cpp-syntax)
+  - [ ] [CMake](https://marketplace.visualstudio.com/items?itemName=twxs.cmake)
+  - [ ] [Intellisense](https://marketplace.visualstudio.com/items?itemName=tdennis4496.cmantic) (with [Clangd](https://marketplace.visualstudio.com/items?itemName=llvm-vs-code-extensions.vscode-clangd))
+  - [ ] **Embedded**
+    - [ ] Arduino
+    - [ ] ARM
+- [ ] [**C#/.NET**](https://viatsko.github.io/awesome-vscode/#c-asp-net-and-net-core)
+- [x] **Emerging** (aka "Other")
   - [x] Deno
   - [x] Nim
   - [x] Go
@@ -147,3 +154,7 @@ This is installed via Dropbear. I am not currently using any plugins, so there i
 ## Vim
 
 I should probably just not. Am I gonna not? 🤷‍♂️
+
+## Other
+
+- [ ] Investigate using [Sonarlint](https://www.sonarsource.com/products/sonarlint/)

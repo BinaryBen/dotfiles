@@ -111,7 +111,7 @@ Symlink the `./profiles/oss/product.json` file to:
   - [x] TOML
 - [ ] **Data**
   - [ ] SQLite Browser
-  - [ ] GraphQL
+  - [x] GraphQL [^graphql]
   - [ ] SQL ([SQL Tools?](https://vscode-sqltools.mteixeira.dev/en/home/))
   - [ ] Redis
 - [ ] **Node / Typescript**
@@ -147,6 +147,8 @@ Symlink the `./profiles/oss/product.json` file to:
   - [x] Go
   - [x] Rust
 
+[^graphql]: GraphQL is available on both Open VSX Registry and the Microsoft Registry, but is out of date on the former. I've included in the *Core Full* profiles manifest so that a full install will grab the updated version, but in the config for the *Core Lite* profile
+
 ## Micro
 
 This is installed via Dropbear. I am not currently using any plugins, so there is nothing to do here.
@@ -158,3 +160,4 @@ I should probably just not. Am I gonna not? 🤷‍♂️
 ## Other
 
 - [ ] Investigate using [Sonarlint](https://www.sonarsource.com/products/sonarlint/)
+

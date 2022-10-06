@@ -4,6 +4,8 @@ enabled:
     uuid: 4b41a5a8-170e-4156-b2c0-10efb270abbc
   - id: cstrap.flask-snippets
     uuid: 059992b6-f77c-4828-817c-1397b29cdeec
+  - id: littlefoxteam.vscode-python-test-adapter
+    uuid: 912fd5ae-d9f2-4c31-8a0b-d7fb669afbb4
   - id: ms-python.black-formatter
     uuid: 859e640c-c157-47da-8699-9080b81c8371
   - id: ms-python.python

@@ -9,4 +9,4 @@ config/snippets/match/packages/*
 !config/snippets/match/packages/emojis/**/*
 
 # Don't track locally cached VSIX files
-config/editor/profiles/core-full/data/extensions/*.vsix
+config/editor/profiles/full/data/extensions/*.vsix

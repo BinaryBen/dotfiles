@@ -2,7 +2,7 @@ const https = require('https')
 const fs = require('fs')
 const path = require('path')
 
-const root = `${process.env.XDG_DOTFILES}/config/editor/profiles/core-full/data/extensions`
+const root = `${process.env.XDG_DOTFILES}/config/editor/profiles/full/data/extensions`
 
 const next = (unprocessedExtensions, processedExtensions, vscode, output) => {
   if (unprocessedExtensions.length === 1) { // They're all done, this is just a remnant

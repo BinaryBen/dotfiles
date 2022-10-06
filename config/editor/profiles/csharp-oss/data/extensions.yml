@@ -1,6 +1,0 @@
-disabled: []
-enabled:
-  - id: jsw.csharpextensions
-    uuid: c24bbd37-32cd-47dc-ae5f-cadd1106cdd1
-  - id: muhammad-sammy.csharp
-    uuid: 57b4ceec-c35a-4a96-ab38-23c6338df406

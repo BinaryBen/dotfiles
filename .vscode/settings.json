@@ -7,5 +7,18 @@
     "statusBarItem.remoteBackground": "#bb6151",
     "statusBarItem.remoteForeground": "#e7e7e7"
   },
-  "peacock.color": "#bb6151"
+  "peacock.color": "#bb6151",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "config/editor/profiles/full/data/extensions/*.vsix": true,
+    "modules": true,
+    ".gitmodules": true,
+    ".gitattributes": true
+  },
+  "explorerExclude.backup": {}
 }

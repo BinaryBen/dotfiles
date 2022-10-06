@@ -1,13 +1,15 @@
 BriteSnow.vscode-toggle-quotes
 fabiospampinato.vscode-diff
 fabiospampinato.vscode-git-history
+graphql.vscode-graphql
 imagio.vscode-dimmer-block
 johnpapa.vscode-cloak
 kisstkondoros.vscode-codemetrics
+ms-python.black-formatter
+ms-python.vscode-pylance
 pdconsec.vscode-print
 Rubymaniac.vscode-paste-and-indent
 ryu1kn.text-marker
 softwaredotcom.swdc-vscode
 spmeesseman.vscode-taskexplorer
 tusaeff.vscode-iterm2-theme-sync
-graphql.vscode-graphql

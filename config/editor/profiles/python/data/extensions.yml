@@ -10,6 +10,8 @@ enabled:
     uuid: 912fd5ae-d9f2-4c31-8a0b-d7fb669afbb4
   - id: ms-python.black-formatter
     uuid: 859e640c-c157-47da-8699-9080b81c8371
+  - id: ms-python.flake8
+    uuid: 856a00d7-c18a-406c-8461-d4914a12e193
   - id: ms-python.python
     uuid: f1f59ae4-9318-4f3c-a9b5-81b2eaa5f8a5
   - id: ms-python.vscode-pylance

@@ -8,3 +8,7 @@ enabled:
     uuid: f1f59ae4-9318-4f3c-a9b5-81b2eaa5f8a5
   - id: ms-python.vscode-pylance
     uuid: 364d2426-116a-433a-a5d8-a5098dc3afbd
+  - id: RDebugger.r-debugger
+    uuid: 85647dc5-f1f8-4639-b7e3-b16c62769db7
+  - id: REditorSupport.r
+    uuid: 4dfff9f4-ff9b-47bb-b0d1-c54e18d8febb

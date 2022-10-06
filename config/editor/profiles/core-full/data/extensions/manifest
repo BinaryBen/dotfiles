@@ -1,4 +1,4 @@
-BriteSnow.vscode-toggle-quotes
+britesnow.vscode-toggle-quotes
 fabiospampinato.vscode-diff
 fabiospampinato.vscode-git-history
 graphql.vscode-graphql
@@ -8,7 +8,8 @@ kisstkondoros.vscode-codemetrics
 ms-python.black-formatter
 ms-python.vscode-pylance
 pdconsec.vscode-print
-Rubymaniac.vscode-paste-and-indent
+reditorsupport.r
+rubymaniac.vscode-paste-and-indent
 ryu1kn.text-marker
 softwaredotcom.swdc-vscode
 spmeesseman.vscode-taskexplorer

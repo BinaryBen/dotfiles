@@ -18,6 +18,10 @@ enabled:
     uuid: 364d2426-116a-433a-a5d8-a5098dc3afbd
   - id: njpwerner.autodocstring
     uuid: 2d6fea35-f68e-461d-9b7b-5cd05be99451
+  - id: notZaki.pandocciter
+    uuid: 9e967ecb-9329-4a69-bb7a-520692ba1327
+  - id: quarto.quarto
+    uuid: a1be81fc-0f3a-4f2e-92ee-3fdc7ab96c73
   - id: RDebugger.r-debugger
     uuid: 85647dc5-f1f8-4639-b7e3-b16c62769db7
   - id: REditorSupport.r

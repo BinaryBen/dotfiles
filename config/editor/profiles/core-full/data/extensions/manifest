@@ -1,9 +1,12 @@
+attilabuti.mustache-syntax-vscode
+bradgashler.htmltagwrap
 BriteSnow.vscode-toggle-quotes
 cstrap.flask-snippets
 fabiospampinato.vscode-diff
 fabiospampinato.vscode-git-history
 graphql.vscode-graphql
 imagio.vscode-dimmer-block
+ItsMeAdarsh.vsc-handlebars-ext
 johnpapa.vscode-cloak
 kisstkondoros.vscode-codemetrics
 ms-python.black-formatter
@@ -11,6 +14,8 @@ ms-python.flake8
 ms-python.vscode-pylance
 notzaki.pandocciter
 pdconsec.vscode-print
+PeterSchmalfeldt.explorer-exclude
+quicktype.quicktype
 REditorSupport.r
 Rubymaniac.vscode-paste-and-indent
 ryu1kn.text-marker

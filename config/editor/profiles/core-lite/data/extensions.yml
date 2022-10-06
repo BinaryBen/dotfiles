@@ -3,10 +3,14 @@ enabled:
     uuid: 7a0110bb-231a-4598-aa1b-0769ea46d28b
   - id: alefragnani.Bookmarks
     uuid: b689fcc8-d494-4dbf-a228-2c694a578afc
+  - id: attilabuti.mustache-syntax-vscode
+    uuid: 39745952-aa3c-497d-9d03-e0d1164eb7dc
   - id: bierner.markdown-mermaid
     uuid: f8d0ffc4-66bb-4a9c-8149-ef8f043691a1
   - id: bierner.markdown-preview-github-styles
     uuid: 5cbdf58a-694a-4aba-af08-61d00842eb03
+  - id: bradgashler.htmltagwrap
+    uuid: c16f95f6-9b42-4a24-9bf4-245d4ea54fc5
   - id: bungcip.better-toml
     uuid: 464f4ac7-af65-4aa9-9907-4ba7fa419085
   - id: dbaeumer.vscode-eslint
@@ -37,6 +41,8 @@ enabled:
     uuid: 531cc46e-a673-425f-9f5a-60ce75187e35
   - id: GraphQL.vscode-graphql
     uuid: 55ef6448-487b-49a0-a66e-4d2d9bb82229
+  - id: Greenbyte.handlebars-preview
+    uuid: adbf6f58-de3b-48de-ab6a-8c2895a14925
   - id: Gruntfuggly.activitusbar
     uuid: 47137038-6832-49c2-a31c-9ad3d95187fc
   - id: Gruntfuggly.todo-tree
@@ -55,6 +61,8 @@ enabled:
     uuid: ac44dd75-bdb7-433b-9d86-23f9f070c07a
   - id: iocave.monkey-patch
     uuid: 736c2316-7f4f-4b6a-8e5c-70527d82cf51
+  - id: ItsMeAdarsh.vsc-handlebars-ext
+    uuid: 78631b91-133e-4cb1-bf01-0fffcdd539be
   - id: jock.svg
     uuid: 4ae6dc82-7981-4f10-bd81-2d72aec37f39
   - id: johnpapa.vscode-peacock
@@ -67,10 +75,14 @@ enabled:
     uuid: eaa2127d-cb69-4ab9-8505-a60c9ee5f28b
   - id: patbenatar.advanced-new-file
     uuid: 2cbad5ee-b4ab-4de8-a1c7-77fede846155
+  - id: PeterSchmalfeldt.explorer-exclude
+    uuid: cd42c488-2afb-4d43-a5a5-98b1e482978a
   - id: pranaygp.vscode-css-peek
     uuid: 0b8f8d63-11a2-4194-969c-ca7488b3413a
   - id: qcz.text-power-tools
     uuid: f05d5b1a-dd2d-4d27-bfd6-e3cff922bd7e
+  - id: quicktype.quicktype
+    uuid: e05d98bf-3735-4c1e-9fae-86ef0a52e19f
   - id: redhat.vscode-yaml
     uuid: 2061917f-f76a-458a-8da9-f162de22b97e
   - id: robole.snippets-ranger

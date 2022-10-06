@@ -97,6 +97,7 @@ const generateDownloadList = (unprocessedExtensions, processedExtensions, vscode
         downloadURL = `https://${publisher}.gallery.vsassets.io/_apis/public/gallery/publisher/${publisher}/extension/${slug}/${version}/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage`
 
         // * NOTE: This URL was getting 429 errors more often than not
+        // ? NOTE: Also, this URL gets gzipped files rather than zipped files
 
         // downloadURL = `https://marketplace.visualstudio.com/_apis/public/gallery/publishers/${publisher}/vsextensions/${slug}/${version}/vspackage`
 

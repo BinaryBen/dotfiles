@@ -14,3 +14,5 @@ enabled:
     uuid: 85647dc5-f1f8-4639-b7e3-b16c62769db7
   - id: REditorSupport.r
     uuid: 4dfff9f4-ff9b-47bb-b0d1-c54e18d8febb
+  - id: sourcery.sourcery
+    uuid: 0bb8a841-96c3-4e2d-ab43-cffee71480a4

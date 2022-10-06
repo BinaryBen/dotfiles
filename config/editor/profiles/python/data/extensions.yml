@@ -1,5 +1,7 @@
 disabled: []
 enabled:
+  - id: almenon.arepl
+    uuid: 88eb8072-5ab1-457b-9835-6d92196388a3
   - id: batisteo.vscode-django
     uuid: 4b41a5a8-170e-4156-b2c0-10efb270abbc
   - id: cstrap.flask-snippets

@@ -75,10 +75,14 @@ Symlink the `./profiles/oss/product.json` file to:
 
 ### Todo
 
-- [ ] Configure "Markdown Preview Github Styling" to use dark mode
+- [ ] Configure Markdown
+  - [ ] "Markdown Preview Github Styling" to use dark mode
+  - [x] Open in preview instead of edit
+  - [ ] Open in edit when viewing diff
 - [ ] Create solid keybindings (using <kbd>⌃Space</kbd> as leader)
-- [ ] Differntiate between similar but different subdirectories
+- [ ] Differentiate between similar but different subdirectories
   - [ColorTabs](https://marketplace.visualstudio.com/items?itemName=orepor.color-tabs-vscode-ext) is promising, but cannot style anything I have showing. Have submitted a [feature request (#68)](https://github.com/oreporan/color-tabs-vscode/issues/68).
+- [ ] Confirm [Flake8/Black working well together](https://sbarnea.com/lint/black/)
 
 **Find extensions for:**
 
@@ -92,14 +96,14 @@ Symlink the `./profiles/oss/product.json` file to:
 - [x] Markdown notes in Action bar
 - [ ] Dash docs integration
 - [ ] Test Explorer Adapters
-  - [ ] Python
+  - [x] Python
   - [ ] Node
 - [x] Spell checking (may need to investigate [Spell Right](https://marketplace.visualstudio.com/items?itemName=ban.spellright) if Code Spell Check is too slow)
 
 ### Language support
 
 - [ ] **Markup Languages** (Part of Core Lite)
-  - [ ] HTML
+  - [x] HTML
     - [x] CSS3 / Sass
   - [x] **Markdown**
     - [x] Mermaid
@@ -109,7 +113,7 @@ Symlink the `./profiles/oss/product.json` file to:
     - [ ] YAML Frontmatter
     - [x] Maths
   - [x] MJML
-  - [ ] Mustache
+  - [x] Handlebars / Mustache
   - [x] JSON / YAML
   - [x] TOML
 - [ ] **Data**
@@ -120,9 +124,13 @@ Symlink the `./profiles/oss/product.json` file to:
   - [ ] REST Explorer
 - [ ] **Node / Typescript**
   - [ ] React
+    - [ ] Next
+  - [ ] Svelte
   - [ ] Vue
+    - [ ] Nuxt
     - [ ] Volar
-    - [ ] Configure [take-over mode](https://github.com/johnsoncodehk/volar/discussions/471)
+      - [ ] Configure [take-over mode](https://github.com/johnsoncodehk/volar/discussions/471)
+  - [ ] Express
 - [ ] **Mobile**
   - [ ] React Native
   - [ ] Flutter
@@ -138,7 +146,9 @@ Symlink the `./profiles/oss/product.json` file to:
     - [ ] LaTeX support
   - [x] Django
   - [x] Flask
-  - [x] Linting (Need to confirm [Flake8/Black working well together](https://sbarnea.com/lint/black/))
+  - [x] Linting
+  - [ ] **Embedded**
+    - [ ] Micropython (RPi Pico, etc)
 - [ ] **C/C++**
   - [ ] [Debugger](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) (Intellisense disabled; plus [Test Explorer Adapter/s](https://github.com/hbenl/vscode-test-explorer#c))
   - [ ] [Syntax](https://marketplace.visualstudio.com/items?itemName=jeff-hykin.better-cpp-syntax)

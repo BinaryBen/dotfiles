@@ -1,2 +1,14 @@
 disabled: []
 enabled: []
+
+# VSC
+  # - id: kreativ-software.csharpextensions
+  #   uuid: 80c8f9ff-3535-4b4a-b3db-e88f5752bb18
+  # - id: ms-dotnettools.csharp
+  #   uuid: d0bfc4ab-1d3a-4487-8782-7cf6027b4fff
+
+# OSS
+  # - id: jsw.csharpextensions
+  #   uuid: c24bbd37-32cd-47dc-ae5f-cadd1106cdd1
+  # - id: muhammad-sammy.csharp
+  #   uuid: 57b4ceec-c35a-4a96-ab38-23c6338df406

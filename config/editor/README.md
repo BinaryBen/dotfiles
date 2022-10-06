@@ -91,6 +91,9 @@ Symlink the `./profiles/oss/product.json` file to:
 - [x] Todo lists
 - [x] Markdown notes in Action bar
 - [ ] Dash docs integration
+- [ ] Test Explorer Adapters
+  - [ ] Python
+  - [ ] Node
 - [x] Spell checking (may need to investigate [Spell Right](https://marketplace.visualstudio.com/items?itemName=ban.spellright) if Code Spell Check is too slow)
 
 ### Language support
@@ -114,6 +117,7 @@ Symlink the `./profiles/oss/product.json` file to:
   - [x] GraphQL [^graphql]
   - [ ] SQL ([SQL Tools?](https://vscode-sqltools.mteixeira.dev/en/home/))
   - [ ] Redis
+  - [ ] REST Explorer
 - [ ] **Node / Typescript**
   - [ ] React
   - [ ] Vue
@@ -126,12 +130,15 @@ Symlink the `./profiles/oss/product.json` file to:
   - [ ] NativeScript Vue
 - [x] **PHP**
   - [x] Laravel
-- [ ] **Python**
-  - [ ] R
-  - [ ] [Quarto](https://quarto.org/)
+- [ ] **Python / Data Science / Academic**
+  - [x] R
   - [ ] Academic tools
-  - [ ] Django
-  - [ ] Flask
+    - [ ] BibTex Reference Manager
+    - [x] [Quarto](https://quarto.org/)
+    - [ ] LaTeX support
+  - [x] Django
+  - [x] Flask
+  - [x] Linting (Need to confirm [Flake8/Black working well together](https://sbarnea.com/lint/black/))
 - [ ] **C/C++**
   - [ ] [Debugger](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) (Intellisense disabled; plus [Test Explorer Adapter/s](https://github.com/hbenl/vscode-test-explorer#c))
   - [ ] [Syntax](https://marketplace.visualstudio.com/items?itemName=jeff-hykin.better-cpp-syntax)

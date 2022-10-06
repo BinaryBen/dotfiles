@@ -57,6 +57,8 @@ enabled:
     uuid: 8ab81d13-c812-4a2f-8f19-c32e3655e53c
   - id: mikestead.dotenv
     uuid: 532533c9-a894-4a58-9eee-bbfbe7c06f71
+  - id: oderwat.indent-rainbow
+    uuid: eaa2127d-cb69-4ab9-8505-a60c9ee5f28b
   - id: patbenatar.advanced-new-file
     uuid: 2cbad5ee-b4ab-4de8-a1c7-77fede846155
   - id: pranaygp.vscode-css-peek

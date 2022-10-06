@@ -114,6 +114,7 @@
   "gitlens.currentLine.format": "${author, }${agoOrDate}",
   "gitlens.plusFeatures.enabled": false,
   "gitlens.showWelcomeOnInstall": false,
+  "indentRainbow.includedLanguages": ["nim", "nims", "python"],
   "javascript.suggest.paths": false,
   "keyboard.touchbar.enabled": false,
   "peacock.affectActivityBar": false,

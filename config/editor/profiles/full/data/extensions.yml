@@ -12,8 +12,22 @@ disabled:
   - id: Dart-Code.flutter
     uuid: f6c3ec04-6057-4d9c-b997-69cba07a6158
   # C#
+  - id: fredericbonnet.cmake-test-adapter
+    uuid: f8167994-f3f6-4b89-93b1-5e6b68b34882
+  - id: jeff-hykin.better-cpp-syntax
+    uuid: 73767f91-7dcb-43cb-90b3-596d073eea1f
   - id: llvm-vs-code-extensions.vscode-clangd
     uuid: 103154cb-b81d-4e1b-8281-c5f4fa563d37
+  - id: matepek.vscode-catch2-test-adapter
+    uuid: 9431c072-9b03-4fb0-a71e-6ee895066c44
+  - id: moosecasa.vscode-acutest-test-adapter
+    uuid: e767d04c-c1cd-4f8d-beaf-a4124ce41ef7
+  - id: ms-vscode.cpptools
+    uuid: 690b692e-e8a9-493f-b802-8089d50ac1b2
+  - id: tdennis4496.cmantic
+    uuid: 0e95c0fe-a577-4091-8339-9faece454473
+  - id: twxs.cmake
+    uuid: 2be7cf14-2603-402e-9771-fd79df83cdf8
   # Node
   - id: christian-kohler.npm-intellisense
     uuid: dff6b801-247e-40e9-82e8-8c9b1d19d1b8

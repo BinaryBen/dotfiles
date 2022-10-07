@@ -153,11 +153,11 @@ Symlink the `./product.json` file to:
   - [x] Linting
   - [ ] **Embedded**
     - [ ] Micropython (RPi Pico, etc)
-- [ ] **C/C++**
-  - [ ] [Debugger](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) (Intellisense disabled; plus [Test Explorer Adapter/s](https://github.com/hbenl/vscode-test-explorer#c))
-  - [ ] [Syntax](https://marketplace.visualstudio.com/items?itemName=jeff-hykin.better-cpp-syntax)
-  - [ ] [CMake](https://marketplace.visualstudio.com/items?itemName=twxs.cmake)
-  - [ ] [Intellisense](https://marketplace.visualstudio.com/items?itemName=tdennis4496.cmantic) (with [Clangd](https://marketplace.visualstudio.com/items?itemName=llvm-vs-code-extensions.vscode-clangd))
+- [x] **C/C++**
+  - [x] [Debugger](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) (Intellisense disabled; plus [Test Explorer Adapter/s](https://github.com/hbenl/vscode-test-explorer#c))
+  - [x] [Syntax](https://marketplace.visualstudio.com/items?itemName=jeff-hykin.better-cpp-syntax)
+  - [x] [CMake](https://marketplace.visualstudio.com/items?itemName=twxs.cmake)
+  - [x] [Intellisense](https://marketplace.visualstudio.com/items?itemName=tdennis4496.cmantic) (with [Clangd](https://marketplace.visualstudio.com/items?itemName=llvm-vs-code-extensions.vscode-clangd))
   - [ ] **Embedded**
     - [ ] Arduino
     - [ ] ARM

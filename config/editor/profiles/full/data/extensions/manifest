@@ -11,6 +11,7 @@ ItsMeAdarsh.vsc-handlebars-ext
 johnpapa.vscode-cloak
 jsaulou.theme-by-language
 kisstkondoros.vscode-codemetrics
+ms-vscode.cpptools
 ms-python.black-formatter
 ms-python.flake8
 ms-python.vscode-pylance
@@ -26,4 +27,5 @@ ryu1kn.text-marker
 seatonjiang.gitmoji-vscode
 softwaredotcom.swdc-vscode
 spmeesseman.vscode-taskexplorer
+tdennis4496.cmantic
 tusaeff.vscode-iterm2-theme-sync

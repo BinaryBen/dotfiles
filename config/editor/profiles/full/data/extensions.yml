@@ -218,3 +218,5 @@ enabled:
     uuid: b476195a-5d3b-4a10-af0b-3d94f9c9f924
   - id: Zignd.html-css-class-completion
     uuid: 7b71fc1b-190d-4f7d-95d1-93e422649b0a
+  - id: ziyasal.vscode-open-in-github
+    uuid: 1d4d80c9-0d33-48a1-88a8-19ff80bc8e2a

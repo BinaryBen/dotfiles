@@ -144,6 +144,8 @@ Symlink the `./product.json` file to:
   - [ ] Desktop
     - [ ] Electron
     - [ ] Neutrino
+  - [ ] Vite
+  - [ ] Webpack
 - [ ] **Mobile**
   - [ ] React Native
   - [ ] Flutter

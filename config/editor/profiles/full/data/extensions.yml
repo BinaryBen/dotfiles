@@ -144,6 +144,8 @@ enabled:
     uuid: 8d088af2-ecd1-4b8f-93e9-322125c47b3c
   - id: codespaces-contrib.codeswing
     uuid: a6c97efe-981d-4eee-a0bd-5ffd1dc807f1
+  - id: cschleiden.vscode-github-actions
+    uuid: 04f49bfc-8330-4eee-8237-ea938fb755ef
   - id: eamodio.gitlens
     uuid: 4de763bd-505d-4978-9575-2b7696ecf94e
   - id: fabiospampinato.vscode-diff
@@ -156,6 +158,8 @@ enabled:
     uuid: a6a0c5b2-d078-4bf5-a9ee-4e37054414b3
   - id: genuitecllc.codetogether
     uuid: 406af941-64c7-49b5-8091-d579dc77a913
+  - id: GitHub.vscode-pull-request-github
+    uuid: 69ddd764-339a-4ecc-97c1-9c4ece58e36d
   - id: GrapeCity.gc-excelviewer
     uuid: 8bb12ae3-73f8-40cf-86b7-4bd5729c6238
   - id: hediet.vscode-drawio

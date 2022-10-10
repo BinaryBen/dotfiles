@@ -36,3 +36,5 @@ enabled:
     uuid: a5223b43-8621-4351-a14e-3d560f85f277
   - id: xabikos.JavaScriptSnippets
     uuid: a2cec723-5349-460d-9de9-0fd1f8d3456f
+  - id: VisualStudioExptTeam.vscodeintellicode
+    uuid: 876e8f93-74d0-4f4f-91b7-34a09f19f444

@@ -45,6 +45,8 @@ disabled:
     uuid: 7997a8ae-1fae-4022-b834-12f6318aeffd
   - id: redhat.fabric8-analytics
     uuid: efcb43ca-77e6-43e4-8ddc-ada617cb34bd
+  - id: VisualStudioExptTeam.vscodeintellicode
+    uuid: 876e8f93-74d0-4f4f-91b7-34a09f19f444
   # - id: Vue.volar
   #   uuid: a5223b43-8621-4351-a14e-3d560f85f277
   - id: xabikos.JavaScriptSnippets

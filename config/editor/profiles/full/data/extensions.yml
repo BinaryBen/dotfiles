@@ -35,6 +35,8 @@ disabled:
     uuid: a41c1549-4053-44d4-bf30-60fc809b4a86
   - id: dsznajder.es7-react-js-snippets
     uuid: 19804510-b475-4dae-b0f7-6ca08fd1af0c
+  - id: jeff-hykin.better-js-syntax
+    uuid: 4a70114c-7f91-4773-91b9-6915a44c4042
   - id: kisstkondoros.vscode-codemetrics
     uuid: 4dd4cb5f-8946-4882-bf7c-e5997ab40481
   - id: ms-vscode.test-adapter-converter

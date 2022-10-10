@@ -14,6 +14,8 @@ enabled:
     uuid: 3620b114-6fe8-459b-8c68-99943147069b
   - id: jasonnutter.search-node-modules
     uuid: ee108066-df8b-43ae-9a83-e6c11400a759
+  - id: jeff-hykin.better-js-syntax
+    uuid: 4a70114c-7f91-4773-91b9-6915a44c4042
   - id: kisstkondoros.vscode-codemetrics
     uuid: 4dd4cb5f-8946-4882-bf7c-e5997ab40481
   - id: liamhammett.inline-parameters

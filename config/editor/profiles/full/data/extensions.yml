@@ -99,6 +99,23 @@ disabled:
     uuid: 4dfff9f4-ff9b-47bb-b0d1-c54e18d8febb
   - id: sourcery.sourcery
     uuid: 0bb8a841-96c3-4e2d-ab43-cffee71480a4
+  # Modern
+  - id: denoland.vscode-deno
+    uuid: 91881318-cfd0-4905-adb7-f4e431ca1ead
+  - id: dustypomerleau.rust-syntax
+    uuid: 235e8b64-5222-49db-978c-cb45e727cd14
+  - id: golang.go
+    uuid: d6f6cfea-4b6f-41f4-b571-6ad2ab7918da
+  - id: jeff-hykin.better-go-syntax
+    uuid: c464cb2f-bf2a-49e7-a9f0-18a3599696a8
+  - id: nimsaem.nimvscode
+    uuid: be03d67e-ad80-49be-8d43-4980217403b0
+  - id: rust-lang.rust-analyzer
+    uuid: 06574cb4-e5dc-4631-8174-a543a4533621
+  - id: serayuzgur.crates
+    uuid: 6a95a3fd-3a5d-4326-b8ab-1b1653b1f183
+  - id: Swellaby.vscode-rust-test-adapter
+    uuid: c167848c-fc11-496e-b432-1fd0a578a408
   # Other
   - id: atlassian.atlascode
     uuid: ede0d8fe-2180-4cf5-85f5-075dc43d4b8f

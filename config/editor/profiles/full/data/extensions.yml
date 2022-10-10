@@ -158,6 +158,8 @@ enabled:
     uuid: cb1fa3f3-fe7d-4197-8632-9f02fe817728
   - id: fabiospampinato.vscode-todo-plus
     uuid: 0661e679-8a32-433e-baeb-8980f53edb55
+  - id: filiptronicek.open-in-gitpod
+    uuid: e0fa0a96-6527-4123-80be-e35b8be752be
   - id: formulahendry.code-runner
     uuid: a6a0c5b2-d078-4bf5-a9ee-4e37054414b3
   - id: genuitecllc.codetogether

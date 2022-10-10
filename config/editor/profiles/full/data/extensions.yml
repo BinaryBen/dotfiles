@@ -100,6 +100,8 @@ disabled:
     uuid: 8e264a73-4cfc-4be1-8f4f-c6a4ede494a4
   - id: dendron.dendron-paste-image
     uuid: b08e77c9-221d-41a6-9668-59bc8fd04128
+  - id: GitLab.gitlab-workflow
+    uuid: 01826860-d71c-4734-9cf8-dc1c07baa5f9
   - id: ms-kubernetes-tools.vscode-kubernetes-tools
     uuid: 4837e4f3-1b01-4732-b1a6-daa57ef64cab
 

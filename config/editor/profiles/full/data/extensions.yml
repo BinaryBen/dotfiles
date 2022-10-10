@@ -225,8 +225,6 @@ enabled:
     uuid: 05046d70-8146-42f5-ac9e-b97b37c8c0ef
   - id: rangav.vscode-thunder-client
     uuid: 2fd56207-78ef-49d4-95d2-9b801eee4dbf
-  - id: robole.marky-stats
-    uuid: 88b68eeb-8718-4a31-ab0a-cddb7c17c588
   - id: Rubymaniac.vscode-paste-and-indent
     uuid: 03b20f74-9504-4130-a12f-af9808985b37
   - id: ryu1kn.text-marker

@@ -90,6 +90,7 @@ Symlink the `./product.json` file to:
 - [ ] Differentiate between similar but different subdirectories
   - [ColorTabs](https://marketplace.visualstudio.com/items?itemName=orepor.color-tabs-vscode-ext) is promising, but cannot style anything I have showing. Have submitted a [feature request (#68)](https://github.com/oreporan/color-tabs-vscode/issues/68).
 - [ ] Confirm [Flake8/Black working well together](https://sbarnea.com/lint/black/)
+- [ ] Get a "true" word count of Markdown documents (reading time is bonus)
 
 **Find extensions for:**
 
@@ -119,8 +120,6 @@ Symlink the `./product.json` file to:
     - [x] Mermaid
     - [x] Footnotes
     - [x] Github theme <!-- Can I change theme based on git platform in current repo? -->
-    - [ ] Stats <!-- Find a better word counter that ignores markup -->
-    - [ ] YAML Frontmatter
     - [x] Maths
   - [x] MJML
   - [x] Handlebars / Mustache

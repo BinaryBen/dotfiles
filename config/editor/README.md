@@ -113,7 +113,7 @@ Symlink the `./product.json` file to:
 
 ### Language support
 
-- [ ] **Markup Languages** (Part of Lite)
+- [x] **Markup Languages** (Part of Lite)
   - [x] HTML
     - [x] CSS3 / Sass
   - [x] **Markdown**

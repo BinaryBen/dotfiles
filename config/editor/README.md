@@ -2,7 +2,7 @@
 
 > In the docs below, *Code* refers to [the open-source project by Microsoft](https://github.com/microsoft/vscode) as well as other projects that are based on the source code of *Code*. This includes desktop variants: *[VSCode](https://code.visualstudio.com/)* and *[VSCodium](https://vscodium.com/)*; and browser-based variants: *[GitHub Codespaces](https://github.com/features/codespaces)* and *[OpenVSCode Server](https://github.com/gitpod-io/openvscode-server)*.
 >
-> Where documentation is relevant to a specific *Code* distribution (i.e. *VSCode* or *VSCodium*, but not both), it will be noted. Otherwise assume the docs refer to all derrivatives of *Code*.
+> Where documentation is relevant to a specific *Code* distribution (i.e. *VSCode* or *VSCodium*, but not both), it will be noted. Otherwise assume the docs refer to all derivatives of *Code*.
 
 To put it as simply as possible, I usually prefer to use Code as my default IDE and Micro as my default `$EDITOR`. Sometimes I also play with Neo/Vim.
 
@@ -21,15 +21,20 @@ $ code --install-extension zokugun.sync-settings
 - [x] Code Pair AI (via [Tabnine](https://www.tabnine.com/)[^pair])
 - [x] Synced settings without ties to one cloud provider
 - [x] Support for "profiles" based on persona (home vs. work) and workspace languages [^profiles]
-- [ ] Git platforms integration
-  - [ ] GitHub
-  - [ ] Gitlab
-  - [ ] Atlassian
+- [ ] **Git platforms integration**
+  - [x] GitHub
+  - [x] Gitlab
+  - [x] Atlassian
   - [ ] Gitea
+- [ ] **Comprehensive languages support**
+  - [ ] Syntax highlighting
+  - [ ] [Test integrations](https://github.com/hbenl/vscode-test-explorer#test-adapters)
+  - [ ] Integrated debugging
+  - [ ] Linting
 
 > Settings and extensions are managed using the [*Sync Settings*](https://open-vsx.org/extension/zokugun/sync-settings) extension. This was chosen over using the built-in sync feature of *VSCode* because the sync feature is unavailable to run on non-Microsoft builds of *Code* and is dependant on *GitHub*.
 
-[^pair]: I may try to replace Tabnine with an open source alternative, but for now I am happy to try something that can be used in various editors.
+[^pair]: I may try to replace Tabnine with an open source alternative, but for now I am happy just being able to try something that can be used in various editors.
 
 [^profiles]: More needs to be done on the profiles feature but it is largely workable for now. I need the ability to be able to use several languages together in a workspace.
 
@@ -77,10 +82,11 @@ Symlink the `./product.json` file to:
 ### Todo
 
 - [ ] Configure Markdown
-  - [ ] "Markdown Preview Github Styling" to use dark mode
+  - [x] "Markdown Preview Github Styling" to use dark mode
   - [x] Open in preview instead of edit
   - [ ] Open in edit when viewing diff
 - [ ] Create solid keybindings (using <kbd>⌃Space</kbd> as leader)
+  - [ ] [Terminal](https://itnext.io/easy-enhancements-for-vs-codes-terminal-6dda2c22ee5c)
 - [ ] Differentiate between similar but different subdirectories
   - [ColorTabs](https://marketplace.visualstudio.com/items?itemName=orepor.color-tabs-vscode-ext) is promising, but cannot style anything I have showing. Have submitted a [feature request (#68)](https://github.com/oreporan/color-tabs-vscode/issues/68).
 - [ ] Confirm [Flake8/Black working well together](https://sbarnea.com/lint/black/)
@@ -96,9 +102,12 @@ Symlink the `./product.json` file to:
 - [x] Todo lists
 - [x] Markdown notes in Action bar
 - [ ] Dash docs integration
-- [ ] Test Explorer Adapters
+- [ ] [Test Explorer Adapters](https://github.com/hbenl/vscode-test-explorer#test-adapters)
   - [x] Python
   - [ ] Node
+  - [x] C++
+  - [ ] PHP
+  - [ ] Modern languages
 - [x] Spell checking (may need to investigate [Spell Right](https://marketplace.visualstudio.com/items?itemName=ban.spellright) if Code Spell Check is too slow)
 
 ### Language support
@@ -109,7 +118,7 @@ Symlink the `./product.json` file to:
   - [x] **Markdown**
     - [x] Mermaid
     - [x] Footnotes
-    - [ ] Github theme <!-- Can I change theme based on git platform in current repo? -->
+    - [x] Github theme <!-- Can I change theme based on git platform in current repo? -->
     - [ ] Stats <!-- Find a better word counter that ignores markup -->
     - [ ] YAML Frontmatter
     - [x] Maths
@@ -117,11 +126,11 @@ Symlink the `./product.json` file to:
   - [x] Handlebars / Mustache
   - [x] JSON / YAML
   - [x] TOML
-- [ ] **Data** (Part of Full)
-  - [ ] SQLite Browser
-  - [ ] GraphQL
-  - [ ] SQL ([SQL Tools?](https://vscode-sqltools.mteixeira.dev/en/home/))
-  - [ ] Redis
+- [x] **Data** (Part of Full)
+  - [x] SQLite Browser
+  - [x] GraphQL
+  - [x] [SQL Tools](https://vscode-sqltools.mteixeira.dev/en/home/)
+  - [x] Redis
   - [x] [REST Explorer](https://www.thunderclient.com/)
 - [ ] **Node / Typescript**
   - [ ] React
@@ -129,6 +138,7 @@ Symlink the `./product.json` file to:
   - [ ] Svelte
   - [ ] Vue
     - [ ] Nuxt
+    - [ ] Vue Peek
     - [ ] Volar
       - [ ] Configure [take-over mode](https://github.com/johnsoncodehk/volar/discussions/471)
   - [ ] Express
@@ -162,12 +172,15 @@ Symlink the `./product.json` file to:
     - [ ] Arduino
     - [ ] ARM
 - [ ] [**C#/.NET**](https://viatsko.github.io/awesome-vscode/#c-asp-net-and-net-core)
+  - [ ] [Roslynator](https://marketplace.visualstudio.com/items?itemName=josefpihrt-vscode.roslynator)
+  - [ ] **Unity** [^unity]
 - [x] **Modern** (aka "Other")
   - [x] Deno
   - [x] Nim
   - [x] Go
   - [x] Rust
 
+[^unity]: Helpful tip about getting Unity plugins working from within VSCodium [can be found here on Reddit](https://www.reddit.com/r/vsCodium/comments/t33sj9/comment/hz8n7ou/?utm_source=share&utm_medium=web2x&context=3). Also some pointers about possible plugins to use.
 ## Micro
 
 This is installed via Dropbear. I am not currently using any plugins, so there is nothing to do here.

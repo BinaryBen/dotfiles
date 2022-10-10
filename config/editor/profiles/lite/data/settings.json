@@ -1,4 +1,44 @@
 {
+  "activitusbar.activeColour": "statusBar.foreground",
+  "activitusbar.alignment": "Right",
+  "activitusbar.combineWorkspaceSettings": true,
+  "activitusbar.inactiveColour": "statusBar.foreground",
+  "activitusbar.priority": -99999,
+  "activitusbar.toggleSidebar": false,
+  "activitusbar.views": [
+    {
+      "name": "search",
+      "tooltip": "Search (⌃Space, ⌃F)"
+    }, {
+      "name": "debug"
+    }, {
+      "name": "extensions",
+      "tooltip": "Extensions (⌃Space, ⌃X)"
+    }, {
+      "name": "terminal"
+    }, {
+      "name": "problems"
+    }, {
+      "codicon": "tools",
+      "tooltip": "Powertools"
+    }, {
+      "codicon": "cloud-download",
+      "tooltip": "Update Extensions"
+    }, {
+      "codicon": "compass",
+      "tooltip": "Projects"
+    }, {
+      "name": "extension.bookmarksExplorer",
+      "codicon": "bookmark",
+      "tooltip": "Navigate"
+    }, {
+      "codicon": "pass",
+      "tooltip": "Todo"
+    }, {
+      "codicon": "database",
+      "tooltip": "Data"
+    }
+  ],
   "advancedNewFile.exclude": {
     "node_modules": true,
     "node_modules_electron": true,
@@ -34,7 +74,6 @@
     ".monaco-pane-view .monaco-split-view2.vertical>.monaco-scrollable-element.mac": "height: calc(100% - 90px) !important;",
     ".monaco-split-view2.vertical>.monaco-scrollable-element.mac>.split-view-container>.split-view-view.visible>.part.sidebar.left>.content": "height: 100vh !important",
     "div.monaco-grid-view > div > div > div.monaco-scrollable-element.mac > div.split-view-container > div.split-view-view.visible > div > div > div.monaco-scrollable-element.mac > div.split-view-container > div:nth-child(1) > div > div > div.monaco-scrollable-element.mac > div.split-view-container > div:nth-child(2)": "bottom: 0px !important; top: unset !important; height: 48px !important",
-    ".monaco-pane-view .monaco-scrollable-element.mac > div.split-view-container > div:not(:first-child)": "transform: translateY(-20px) !important",
     ".part.activitybar.left": "background-color: unset !important",
     "body.activity-bar-at-bottom .monaco-workbench .activitybar > .content .composite-bar": "margin-left: 0 !important",
     "body.inline-title-bar .part>.title>.title-actions .action-label": "min-width: unset !important",
@@ -86,12 +125,7 @@
     "commands": {
       "Show powertools": {
         "description": "List powertools installed globally and in workspace",
-        "script": "commands/showPowertools.js",
-        "button": {
-          "text": "$(tools) Powertools",
-          "isRight": true,
-          "tooltip": "View all available Powertools"
-        }
+        "script": "commands/showPowertools.js"
       },
       "Download extensions": {
         "description": "Download VSIX files that aren't on the Open VSX Registry",

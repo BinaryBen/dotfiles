@@ -171,6 +171,8 @@ enabled:
     uuid: a6c97efe-981d-4eee-a0bd-5ffd1dc807f1
   - id: cschleiden.vscode-github-actions
     uuid: 04f49bfc-8330-4eee-8237-ea938fb755ef
+  - id: cweijan.vscode-redis-client
+    uuid: 6c8a94fa-972f-4089-b688-78f8e2875023
   - id: eamodio.gitlens
     uuid: 4de763bd-505d-4978-9575-2b7696ecf94e
   - id: fabiospampinato.vscode-diff

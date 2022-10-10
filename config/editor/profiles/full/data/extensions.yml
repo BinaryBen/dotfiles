@@ -96,6 +96,8 @@ disabled:
   - id: sourcery.sourcery
     uuid: 0bb8a841-96c3-4e2d-ab43-cffee71480a4
   # Other
+  - id: atlassian.atlascode
+    uuid: ede0d8fe-2180-4cf5-85f5-075dc43d4b8f
   - id: dendron.dendron
     uuid: 8e264a73-4cfc-4be1-8f4f-c6a4ede494a4
   - id: dendron.dendron-paste-image

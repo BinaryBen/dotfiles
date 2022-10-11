@@ -10,9 +10,43 @@ To put it as simply as possible, I usually prefer to use Code as my default IDE 
 
 I tend to install both VSCode and Codium now. This is because if there is ever an issue with Codium, I prefer to not spend the time at work trying to fix it and need something I can drop into right away. This does mean though that I need to spend some time ensuring both editors behave similarly when setting up my dotfiles. That said, Codium is usually pretty rock solid, and I have found alternative ways (read: FOSS extensions 💪) to get 99% feature parity across both editors.
 
+### Getting started
+
+Install the Sync Settings extensions
+
 ```bash
 $ code --install-extension zokugun.sync-settings
 ```
+
+From Code:
+
+```bash
+> Sync Settings: Open the repository settings
+```
+
+Edit and save the file with the following (replace $DOTFILES with local path to this repo):
+
+```yaml
+profile: full
+repository:
+  type: file
+  path: $DOTFILES/config/editor
+```
+
+```bash
+> Sync Settings: Switch to profile
+```
+
+Choose the Lite profile (let it install/restart - make a coffee)
+
+TODO: Symlink the Power Tools config file
+
+```bash
+> Power Tools: Commands
+```
+
+Choose Download Extensions. You can now use any profile.
+
 
 ### Features:
 

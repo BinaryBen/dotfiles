@@ -144,8 +144,10 @@
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.decorations.badges": false,
-  "extensions.closeExtensionDetailsOnViewChange": true,
   "extensions.autoUpdate": "onlyEnabledExtensions",
+  "extensions.closeExtensionDetailsOnViewChange": true,
+  "extensions.ignoreRecommendations": true,
+  "extensions.showRecommendationsOnlyOnDemand": true,
   "files.associations": {
     "*.module": "php"
   },

@@ -7,7 +7,7 @@ export PATH=
 
 path() { # List $PATH line by line, or add argument to $PATH
   if [[ -z $1 ]]; then
-    echo -e ${PATH//:/\\n}  
+    echo -e ${PATH//:/\\n}
   else # Add something to the path if it exists
     [ -d $1 ] && export PATH="$1:$PATH"
   fi
@@ -30,7 +30,7 @@ path ${XDG_DOTFILES}/modules/tux/bin
 path ${XDG_DOTFILES}/modules/sysadmin-util
 
 # Composer binaries
-path $HOME/.composer/vendor/bin 
+path $HOME/.composer/vendor/bin
 
 # Add Node Version Manager
 if [ -d $HOME/.nvm ]; then
@@ -51,6 +51,9 @@ fi
 # Homebrew
 path /opt/homebrew/sbin
 path /opt/homebrew/bin
+
+# Ruby installed via Homebrew
+path /opt/homebrew/lib/ruby/gems/2.7.0/bin
 
 # GNU coreutils for macOS without g prefix
 path "$(brew --prefix)/opt/coreutils/libexec/gnubin"
@@ -79,4 +82,4 @@ path $XDG_DOTFILES/bin
 # https://specifications.freedesktop.org/basedir-spec/latest/index.html
 
 path $HOME/.local/bin
-path $HOME/bin            # Added in case it exists, but prefer above!
+path $HOME/bin # Added in case it exists, but prefer above!

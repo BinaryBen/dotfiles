@@ -52,8 +52,8 @@ fi
 path /opt/homebrew/sbin
 path /opt/homebrew/bin
 
-# Ruby installed via Homebrew
-path /opt/homebrew/lib/ruby/gems/2.7.0/bin
+# Ruby gems
+path /usr/local/lib/ruby/gems/2.7.0/bin
 
 # GNU coreutils for macOS without g prefix
 path "$(brew --prefix)/opt/coreutils/libexec/gnubin"

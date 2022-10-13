@@ -1,8 +1,9 @@
 # shellcheck shell=sh
 
-# Construct the $PATH explicitly
-# Tip: Comment out things you never use
+# Construct the $PATH explicitly ...
+# 💡 Tip: Comment out things you never use
 
+export DEFAULT_PATH=$PATH
 export PATH=
 
 path() { # List $PATH line by line, or add argument to $PATH
@@ -23,15 +24,6 @@ path /usr/local/bin
 path /opt/sbin
 path /opt/bin
 
-# Submodules from dotfiles
-path ${XDG_DOTFILES}/modules/beeline/bin
-path ${XDG_DOTFILES}/modules/gud/bin
-path ${XDG_DOTFILES}/modules/tux/bin
-path ${XDG_DOTFILES}/modules/sysadmin-util
-
-# Composer binaries
-path $HOME/.composer/vendor/bin
-
 # Add Node Version Manager
 if [ -d $HOME/.nvm ]; then
   export NVM_DIR="$HOME/.nvm"
@@ -39,10 +31,9 @@ if [ -d $HOME/.nvm ]; then
   [ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"
   # This loads nvm bash_completion
   [ -s "$NVM_DIR/bash_completion" ] && source "$NVM_DIR/bash_completion"
-fi
 
 # As above, but if installed via Homebrew
-if [ -d /opt/homebrew/opt/nvm ]; then
+elif [ -d /opt/homebrew/opt/nvm ]; then
   export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"
   [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
@@ -52,14 +43,15 @@ fi
 path /opt/homebrew/sbin
 path /opt/homebrew/bin
 
-# Ruby gems
-path /usr/local/lib/ruby/gems/2.7.0/bin
+# Language specific binaries
+path $HOME/.composer/vendor/bin         # PHP / Composer
+path $HOME/.nimble/bin                  # Nimlang
+path /usr/local/lib/ruby/gems/2.7.0/bin # Ruby
+path $HOME/.deno/bin                    # Deno
+path /usr/local/share/dotnet            # .NET
 
 # GNU coreutils for macOS without g prefix
 path "$(brew --prefix)/opt/coreutils/libexec/gnubin"
-
-# Deno binaries
-path $HOME/.deno/bin
 
 # Windows Subsystem for Linux:
 
@@ -75,7 +67,13 @@ path $HOME/.deno/bin
 # /mnt/c/Program Files/dotnet/
 # /mnt/c/Users/Ben/AppData/Local/Microsoft/WindowsApps
 
-# Add functions from dotfiles
+# Submodules from dotfiles
+path ${XDG_DOTFILES}/modules/beeline/bin
+path ${XDG_DOTFILES}/modules/gud/bin
+path ${XDG_DOTFILES}/modules/tux/bin
+path ${XDG_DOTFILES}/modules/sysadmin-util
+
+# Add other functions from dotfiles
 path $XDG_DOTFILES/bin
 
 # Add my user-specific executable files in XDG Base Directory Spec

@@ -3,7 +3,7 @@
 # Confirm $XDG_DOTFILES is set
 if [[ -z "${XDG_DOTFILES}" ]]; then
   echo "\$XDG_DOTFILES is not set. Exiting..."
-  exit 1;
+  exit 1
 fi
 
 reload() { # Helper to (re)load source files
@@ -14,25 +14,24 @@ reload() { # Helper to (re)load source files
 
     # Note: The order matters! Don't change it...
 
-    reload utilities  # Utility fn to help the rest of the setup
+    reload utilities # Utility fn to help the rest of the setup
     reload env
     reload path
-    reload functions  # Simple fn that don't need their own script
+    reload functions # Simple fn that don't need their own script
     reload aliases
-    
+
     # Load beeline (TODO: Find a better way)
     . b6 init # Here so prompt can access the set env
-    
+
     reload prompt
 
-  
-  else # Load scope from ...
+  else
+    # Load scope from ...
 
-  # $HOME/.local first in case there are any local overrides ...
+    # $HOME/.local first in case there are any local overrides ...
 
     if [ -d $HOME/.local/system/$1 ]; then
-      for FILE in `find $HOME/.local/system/$1`
-      do
+      for FILE in $(find $HOME/.local/system/$1); do
         [ -f “$FILE” ] && source “$FILE”
       done
     fi
@@ -42,8 +41,7 @@ reload() { # Helper to (re)load source files
     # ... and then $XDG_DOTFILES
 
     if [ -d $XDG_DOTFILES/system/$1 ]; then
-      for FILE in $(find $XDG_DOTFILES/system/$1)
-      do
+      for FILE in $(find $XDG_DOTFILES/system/$1); do
         [ -f $FILE ] && source $FILE
       done
     fi
@@ -52,6 +50,10 @@ reload() { # Helper to (re)load source files
 
   fi
 
-}; reload;
+}
+reload
 
-sysport # Display the welcome animation
+# Display the welcome animation
+if [[ -z "${B7N_NO_SPLASH}" ]]; then
+  sysport
+fi

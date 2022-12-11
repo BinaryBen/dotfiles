@@ -189,6 +189,7 @@
   "javascript.suggest.paths": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "keyboard.touchbar.enabled": false,
+  "nim.provider": "lsp",
   "peacock.affectActivityBar": false,
   "peacock.affectStatusBar": true,
   "peacock.affectTitleBar": false,
@@ -243,6 +244,7 @@
   "typescript.suggest.paths": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
   // * Prefer to only know about new features when they are also available in Codium
+  "update.mode": "none",
   // #if(editor="vscodium")
   "update.showReleaseNotes": false,
   // #endif

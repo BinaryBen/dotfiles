@@ -65,7 +65,9 @@
   "cSpell.maxNumberOfProblems": 20,
   "cSpell.numSuggestions": 8,
   "cSpell.allowCompoundWords": true,
-  "cSpell.spellCheckDelayMs": 10000,
+  "cSpell.showStatus": false,
+  "cSpell.spellCheckDelayMs": 5000,
+  "cSpell.spellCheckOnlyWorkspaceFiles": true,
   "customizeUI.activityBar": "bottom",
   "customizeUI.activityBarHideSettings": true,
   "customizeUI.font.regular": "Helvetica Neue",
@@ -116,6 +118,9 @@
   "editor.scrollbar.vertical": "hidden",
   "editor.scrollbar.verticalScrollbarSize": 0,
   "editor.tabSize": 2,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": []
+  },
   "editor.unicodeHighlight.allowedCharacters": {
     "️": true
   },
@@ -213,6 +218,7 @@
   "python.formatting.provider": "none",
   "redhat.telemetry.enabled": false,
   "sidebar-markdown-notes.leftMargin": true,
+  "security.workspace.trust.untrustedFiles": "open",
   "syncSettings.keybindingsPerPlatform": false,
   "syncSettings.resources": ["extensions", "keybindings", "settings"],
   "telemetry.telemetryLevel": "off",
@@ -249,6 +255,305 @@
   "update.showReleaseNotes": false,
   // #endif
   "vscode-edge-devtools.mirrorEdits": true,
+  "vsix.sources": {
+    "ms": {
+      "type": "marketplace",
+      "serviceUrl": "https://marketplace.visualstudio.com/_apis/public/gallery"
+    },
+    "vsx": {
+      "type": "marketplace",
+      "serviceUrl": "https://open-vsx.org/vscode/gallery"
+    }
+  },
+  "vsix.groups": {
+    "ai": [
+      "vsx:danielsanmedium.dscodegpt",
+      // #if(editor="visual studio code")
+      "ms:GitHub.copilot",
+      // #else
+      "vsx:TabNine.tabnine-vscode"
+      // #endif
+    ],
+    "data": [
+      "ms:GraphQL.vscode-graphql",
+      "vsx:mtxr.sqltools",
+      "vsx:mtxr.sqltools-driver-mysql",
+      "vsx:mtxr.sqltools-driver-pg",
+      "vsx:alexcvzz.vscode-sqlite",
+      "vsx:cweijan.vscode-redis-client",
+      "vsx:rangav.vscode-thunder-client",
+    ],
+    "debugging": [
+      "vsx:formulahendry.code-runner",
+      // Built-in browsing
+      "vsx:antfu.browse-lite",
+      "vsx:ms-edgedevtools.vscode-edge-devtools",
+      "vsx:ms-vscode.live-server",
+    ],
+    "format": [ // And linting
+      "ms:bradgashler.htmltagwrap",
+      "ms:Rubymaniac.vscode-paste-and-indent",
+      "vsx:dbaeumer.vscode-eslint",
+      "vsx:esbenp.prettier-vscode",
+      "vsx:formulahendry.auto-close-tag",
+      "vsx:formulahendry.auto-rename-tag",
+      "vsx:shardulm94.trailing-spaces",
+      "vsx:stylelint.vscode-stylelint",
+      "vsx:usernamehw.errorlens",
+      "vsx:wwm.better-align"
+    ],
+    "markup": [ // Mainly Markdown with a few other markup languages
+      "ms:bierner.markdown-preview-github-styles",
+      "vsx:redhat.vscode-yaml",
+      "vsx:bierner.markdown-mermaid",
+      "vsx:yzhang.markdown-all-in-one",
+      "vsx:bierner.markdown-preview-github-styles",
+      "vsx:bungcip.better-toml",
+      "vsx:houkanshan.vscode-markdown-footnote",
+    ],
+    "present": [
+
+    ],
+    "preview": [
+      "vsx:Greenbyte.handlebars-preview",
+      "vsx:mjmlio.vscode-mjml",
+      "vsx:hediet.vscode-drawio",
+      // Use Code instead of Excel
+      "vsx:GrapeCity.gc-excelviewer",
+      "vsx:huacat.office-theme",
+    ],
+    "remote": [
+      "vsx:genuitecllc.codetogether",
+      "vsx:filiptronicek.open-in-gitpod",
+      // #if(editor="visual studio code")
+      "ms:GitHub.codespaces",
+      "ms:ms-vscode-remote.vscode-remote-extensionpack",
+      // #else
+      "vsx:jeanp413.open-remote-ssh"
+      // #endif
+    ],
+    "tools": [
+      "ms:pdconsec.vscode-print",
+      "vsx:streetsidesoftware.code-spell-checker",
+      "vsx:alefragnani.project-manager",
+      "vsx:assisrMatheus.sidebar-markdown-notes",
+      "vsx:codespaces-contrib.codeswing",
+      "vsx:egomobile.vscode-powertools",
+    ],
+    "ui": [
+      "ms:hedinne.popping-and-locking-vscode",
+      "ms:iocave.monkey-patch",
+      "ms:PeterSchmalfeldt.explorer-exclude",
+      "vsx:aaron-bond.better-comments",
+      "vsx:emmanuelbeziat.vscode-great-icons",
+      "vsx:Gruntfuggly.activitusbar",
+      "vsx:Gruntfuggly.todo-tree",
+      "vsx:IBM.output-colorizer",
+      "vsx:iocave.customize-ui",
+      "vsx:johnpapa.vscode-peacock",
+      "vsx:oderwat.indent-rainbow",
+      "vsx:Voklen.theme-by-language", // Arduino & Excel
+      "vsx:wayou.vscode-todo-highlight",
+    ],
+    "workflow": [
+      // Tasks
+      "ms:spmeesseman.vscode-taskexplorer",
+      "vsx:cschleiden.vscode-github-actions",
+
+      // Navigation
+      "vsx:alefragnani.Bookmarks",
+      "vsx:Fr43nk.seito-openfile",
+      "vsx:patbenatar.advanced-new-file",
+      "vsx:sleistner.vscode-fileutils",
+
+      // Testing
+      "vsx:hbenl.vscode-test-explorer",
+      "vsx:hbenl.test-adapter-converter",
+
+      // Containers
+      "vsx:ms-azuretools.vscode-docker",
+      "vsx:ms-kubernetes-tools.vscode-kubernetes-tools",
+
+      // Git
+      "ms:fabiospampinato.vscode-diff",
+      "ms:fabiospampinato.vscode-git-history",
+      "vsx:ziyasal.vscode-open-in-github", // Cross platform despite name
+      "vsx:donjayamanne.githistory",
+      "vsx:eamodio.gitlens",
+      "vsx:Vtrois.gitmoji-vscode",
+
+      // Code Platforms
+      "vsx:atlassian.atlascode", // Atlassian
+      "vsx:GitHub.vscode-pull-request-github",
+      "vsx:GitLab.gitlab-workflow"
+    ],
+
+    // Language Extensions
+
+    "core": [
+      "vsx:attilabuti.mustache-syntax-vscode",
+      "vsx:foxundermoon.shell-format",
+      "vsx:jock.svg",
+      "vsx:mikestead.dotenv"
+    ],
+    "css": [
+      "vsx:mrmlnc.vscode-scss",
+      "vsx:pranaygp.vscode-css-peek",
+      "vsx:syler.sass-indented",
+      "vsx:Zignd.html-css-class-completion"
+    ],
+    "cpp": [
+      "ms:jeff-hykin.better-c-syntax",
+      "ms:ms-vscode.cpptools",
+      "ms:tdennis4496.cmantic",
+      "vsx:fredericbonnet.cmake-test-adapter",
+      "vsx:jeff-hykin.better-cpp-syntax",
+      "vsx:llvm-vs-code-extensions.vscode-clangd",
+      "vsx:matepek.vscode-catch2-test-adapter",
+      "vsx:moosecasa.vscode-acutest-test-adapter",
+      "vsx:twxs.cmake"
+    ],
+    "csharp": [
+      // #if(editor="visual studio code")
+      "ms:kreativ-software.csharpextensions",
+      "ms:ms-dotnettools.csharp",
+      // #else
+      "vsx:jsw.csharpextensions",
+      "vsx:muhammad-sammy.csharp"
+      // #endif
+    ],
+    "deno": [
+      "vsx:denoland.vscode-deno"
+    ],
+    "embedded": [ // Arduino, ARM, Particle, etc.
+      "vsx:lintangwisesa.arduino",
+      "vsx:vsciot-vscode.vscode-arduino"
+    ],
+    "go": [
+      "ms:jeff-hykin.better-go-syntax",
+      "vsx:golang.go"
+    ],
+    "mobile": [ // App development
+      "vsx:Dart-Code.dart-code",
+      "vsx:Dart-Code.flutter"
+    ],
+    "nim": [
+      "vsx:nimsaem.nimvscode"
+    ],
+    "node": [
+      // Only available in Microsoft Marketplace
+      "ms:jeff-hykin.better-js-syntax",
+      "ms:kisstkondoros.vscode-codemetrics",
+      "ms:VisualStudioExptTeam.vscodeintellicode",
+      "ms:Vue.volar",
+      // Available in OpenVSX
+      "vsx:antfu.vite",
+      "vsx:austinleegordon.vscode-schema-dot-org",
+      "vsx:bengreenier.vscode-node-readme",
+      "vsx:christian-kohler.npm-intellisense",
+      "vsx:christian-kohler.path-intellisense",
+      "vsx:dsznajder.es7-react-js-snippets",
+      "vsx:hollowtree.vue-snippets",
+      "vsx:jasonnutter.search-node-modules",
+      "vsx:liamhammett.inline-parameters",
+      "vsx:maty.vscode-mocha-sidebar",
+      "vsx:ms-vscode.test-adapter-converter",
+      "vsx:msjsdiag.vscode-react-native",
+      "vsx:Orta.vscode-jest",
+      "vsx:redhat.fabric8-analytics",
+      "vsx:steoates.autoimport",
+      "vsx:unifiedjs.vscode-mdx",
+      "vsx:vilicvane.es-quotes",
+      "vsx:xabikos.JavaScriptSnippets"
+    ],
+    "php": [
+      "vsx:ahinkle.laravel-model-snippets",
+      "vsx:bmewburn.vscode-intelephense-client",
+      "vsx:codingyu.laravel-goto-view",
+      "vsx:ikappas.composer",
+      "vsx:kokororin.vscode-phpfmt",
+      "vsx:liamhammett.inline-parameters",
+      "vsx:ms-vscode.test-adapter-converter",
+      "vsx:onecentlin.laravel-blade",
+      "vsx:onecentlin.laravel5-snippets",
+      "vsx:ryannaddy.laravel-artisan",
+      "vsx:xdebug.php-debug"
+    ],
+    "python": [ // Also R, Data science and academic writing for now
+      // Only available in Microsoft Marketplace
+      "ms:cstrap.flask-snippets",
+      "ms:ms-python.black-formatter",
+      "ms:ms-python.flake8",
+      "ms:ms-python.vscode-pylance",
+      "ms:notZaki.pandocciter",
+      "ms:REditorSupport.r",
+      // Available in OpenVSX
+      "vsx:almenon.arepl",
+      "vsx:batisteo.vscode-django",
+      "vsx:littlefoxteam.vscode-python-test-adapter",
+      "vsx:ms-python.python",
+      "vsx:njpwerner.autodocstring",
+      "vsx:quarto.quarto",
+      "vsx:RDebugger.r-debugger",
+      "vsx:sourcery.sourcery"
+    ],
+    "rust": [
+      // Only available in Microsoft Marketplace
+      "ms:dustypomerleau.rust-syntax",
+      "ms:rust-lang.rust-analyzer",
+      // Available in OpenVSX
+      "vsx:serayuzgur.crates",
+      "vsx:Swellaby.vscode-rust-test-adapter"
+    ],
+
+    // Framework extensions
+
+    // Node
+    "react": [],
+    "vue": [],
+    "svelte": [],
+    "express": [],
+    "desktop": [],
+
+    "unsorted": [
+      "ms:ItsMeAdarsh.vsc-handlebars-ext",
+      "ms:quicktype.quicktype",
+      "ms:imagio.vscode-dimmer-block",
+      "ms:johnpapa.vscode-cloak",
+      "ms:ryu1kn.text-marker",
+      "ms:softwaredotcom.swdc-vscode",
+
+      // Text manipulation (things that need manual input/key presses)
+      "ms:BriteSnow.vscode-toggle-quotes",
+      "vsx:robole.snippets-ranger",
+      "vsx:yatki.vscode-surround",
+      "vsx:qcz.text-power-tools",
+      "vsx:ryu1kn.edit-with-shell",
+
+      "vsx:fabiospampinato.vscode-highlight",
+      "vsx:fabiospampinato.vscode-todo-plus",
+      "vsx:hideoo.toggler",
+      "vsx:lokalise.i18n-ally",
+      "vsx:fabiospampinato.vscode-todo-plus",
+      "vsx:hoovercj.vscode-power-mode",
+      "vsx:keesschollaart.vscode-home-assistant",
+      "vsx:vsls-contrib.codetour"
+    ]
+  },
+  "vsix.extensions": [
+    // Workflows
+
+    // Customisations
+
+    // Languages
+
+    // #enable(os="mac")
+    "sebsojeda.vscode-apple-music",
+
+    // #rewrite-next-line
+    // { "group": "#{env.DEV_LANG}" },
+    "node"
+  ],
   "window.commandCenter": true,
   "window.restoreWindows": "one",
   "window.titleBarStyle": "native",

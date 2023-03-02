@@ -1,0 +1,3 @@
+builtin:
+  disabled:
+  - vscode.php-language-features

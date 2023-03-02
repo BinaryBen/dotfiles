@@ -187,7 +187,7 @@ Symlink the `./product.json` file to:
   - [ ] NativeScript Vue
 - [x] **PHP**
   - [x] Laravel
-- [ ] **Python / Data Science / Academic**
+- [ ] **Python / [Data Science](https://python.land/data-science) / Academic**
   - [x] R
   - [ ] Academic tools
     - [ ] BibTex Reference Manager

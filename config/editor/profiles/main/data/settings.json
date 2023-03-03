@@ -250,9 +250,11 @@
   "typescript.suggest.paths": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
   // * Prefer to only know about new features when they are also available in Codium
-  "update.mode": "none",
   // #if(editor="vscodium")
+  "update.mode": "default",
   "update.showReleaseNotes": false,
+  // #else
+  "update.mode": "manual",
   // #endif
   "vscode-edge-devtools.mirrorEdits": true,
   "vsix.sources": {

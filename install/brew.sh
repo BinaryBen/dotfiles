@@ -95,6 +95,7 @@ brew install git-lfs
 git lfs install
 # Some kind of git profile management
 brew install direnv
+brew install mkcert
 brew install --cask docker
 brew install --cask visual-studio-code
 brew install --cask vscodium
@@ -129,7 +130,7 @@ Media production
 
 brew install --cask ableton-live-standard
 # Tracktion Waveform
-# Rewire? 
+# Rewire?
 brew install --cask rekordbox
 # Other DJ software?
 # Davinci
@@ -192,4 +193,3 @@ brew install --cask around
 # MAS
 
 # Home Assistant
-

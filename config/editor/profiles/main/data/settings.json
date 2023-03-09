@@ -252,12 +252,16 @@
   // * Prefer to only know about new features when they are also available in Codium
   // #if(editor="vscodium")
   "update.mode": "default",
-  "update.showReleaseNotes": false,
   // #else
   "update.mode": "manual",
+  "update.showReleaseNotes": false,
   // #endif
   "vscode-edge-devtools.mirrorEdits": true,
   "vsix.sources": {
+    "local": {
+      "type": "file",
+      "path": "~/.files/config/editor/extensions"
+    },
     "ms": {
       "type": "marketplace",
       "serviceUrl": "https://marketplace.visualstudio.com/_apis/public/gallery"
@@ -271,9 +275,9 @@
     "ai": [
       "vsx:danielsanmedium.dscodegpt",
       // #if(editor="visual studio code")
-      "ms:GitHub.copilot",
+      // "ms:GitHub.copilot",
       // #else
-      "vsx:TabNine.tabnine-vscode"
+      // "vsx:TabNine.tabnine-vscode"
       // #endif
     ],
     "data": [
@@ -328,10 +332,10 @@
       "vsx:genuitecllc.codetogether",
       "vsx:filiptronicek.open-in-gitpod",
       // #if(editor="visual studio code")
-      "ms:GitHub.codespaces",
-      "ms:ms-vscode-remote.vscode-remote-extensionpack",
+      // "ms:GitHub.codespaces",
+      // "ms:ms-vscode-remote.vscode-remote-extensionpack",
       // #else
-      "vsx:jeanp413.open-remote-ssh"
+      // "vsx:jeanp413.open-remote-ssh"
       // #endif
     ],
     "tools": [
@@ -344,18 +348,22 @@
     ],
     "ui": [
       "ms:hedinne.popping-and-locking-vscode",
-      "ms:iocave.monkey-patch",
       "ms:PeterSchmalfeldt.explorer-exclude",
       "vsx:aaron-bond.better-comments",
       "vsx:emmanuelbeziat.vscode-great-icons",
-      "vsx:Gruntfuggly.activitusbar",
       "vsx:Gruntfuggly.todo-tree",
       "vsx:IBM.output-colorizer",
-      "vsx:iocave.customize-ui",
       "vsx:johnpapa.vscode-peacock",
       "vsx:oderwat.indent-rainbow",
       "vsx:Voklen.theme-by-language", // Arduino & Excel
       "vsx:wayou.vscode-todo-highlight",
+
+      // UI Layout for VSCodium
+      // #if(editor="vscodium")
+      // "local:iocave.monkey-patch", // TODO: Use marketplace when v0.1.23 is published
+      // "vsx:Gruntfuggly.activitusbar",
+      // "vsx:iocave.customize-ui"
+      // #endif
     ],
     "workflow": [
       // Tasks
@@ -417,11 +425,11 @@
     ],
     "csharp": [
       // #if(editor="visual studio code")
-      "ms:kreativ-software.csharpextensions",
-      "ms:ms-dotnettools.csharp",
+      // "ms:kreativ-software.csharpextensions",
+      // "ms:ms-dotnettools.csharp",
       // #else
-      "vsx:jsw.csharpextensions",
-      "vsx:muhammad-sammy.csharp"
+      // "vsx:jsw.csharpextensions",
+      // "vsx:muhammad-sammy.csharp"
       // #endif
     ],
     "deno": [
@@ -448,8 +456,9 @@
       "ms:kisstkondoros.vscode-codemetrics",
       "ms:VisualStudioExptTeam.vscodeintellicode",
       "ms:Vue.volar",
+      // Available as a GitHub Release
+      "github:antfu/vscode-vite",
       // Available in OpenVSX
-      "vsx:antfu.vite",
       "vsx:austinleegordon.vscode-schema-dot-org",
       "vsx:bengreenier.vscode-node-readme",
       "vsx:christian-kohler.npm-intellisense",
@@ -544,17 +553,18 @@
   },
   "vsix.extensions": [
     // Workflows
+    // "ai",
+    // "data",
+    // "debugging",
+    // "format",
+    // "markup",
 
     // Customisations
+    "ui",
+    // "present",
 
     // Languages
-
-    // #enable(os="mac")
-    "sebsojeda.vscode-apple-music",
-
-    // #rewrite-next-line
-    // { "group": "#{env.DEV_LANG}" },
-    "node"
+    // "node"
   ],
   "window.commandCenter": true,
   "window.restoreWindows": "one",
@@ -563,9 +573,9 @@
     "terminalCursor.foreground": "#00ffaa"
   },
   // #if(editor="visual studio code")
-  "workbench.colorTheme": "Default Dark+",
+  // "workbench.colorTheme": "Default Dark+",
   // #else
-  "workbench.colorTheme": "Popping and Locking",
+  // "workbench.colorTheme": "Popping and Locking",
   // #endif
   "workbench.editor.closeEmptyGroups": false,
   "workbench.editor.decorations.colors": false,
@@ -577,9 +587,9 @@
   },
   "workbench.iconTheme": "vscode-great-icons",
   // #if(editor="visual studio code")
-  "workbench.preferredDarkColorTheme": "Default Dark+",
+  // "workbench.preferredDarkColorTheme": "Default Dark+",
   // #else
-  "workbench.preferredDarkColorTheme": "Popping and Locking",
+  // "workbench.preferredDarkColorTheme": "Popping and Locking",
   // #endif
   "workbench.startupEditor": "none",
   "zenMode.fullScreen": false,

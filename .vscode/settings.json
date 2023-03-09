@@ -15,10 +15,7 @@
     "**/CVS": true,
     "**/.DS_Store": true,
     "**/Thumbs.db": true,
-    "config/editor/profiles/full/data/extensions/*.vsix": true,
-    "modules": true,
-    ".gitmodules": true,
-    ".gitattributes": true
+    "**/*.git": true
   },
   "explorerExclude.backup": {}
 }

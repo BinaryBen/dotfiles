@@ -44,12 +44,12 @@ path /opt/homebrew/sbin
 path /opt/homebrew/bin
 
 # Language specific binaries
-path $HOME/.composer/vendor/bin         # PHP / Composer
-path $HOME/.nimble/bin                  # Nim
-path $NIMBLEDIR/bin                     # Nim
-path /usr/local/lib/ruby/gems/2.7.0/bin # Ruby
-path $HOME/.deno/bin                    # Deno
-path /usr/local/share/dotnet            # .NET
+path $HOME/.composer/vendor/bin # PHP / Composer
+path $HOME/.nimble/bin          # Nim
+path $NIMBLEDIR/bin             # Nim
+# path /usr/local/lib/ruby/gems/2.7.0/bin # Ruby (Broken)
+path $HOME/.deno/bin         # Deno
+path /usr/local/share/dotnet # .NET
 
 # GNU coreutils for macOS without g prefix
 path "$(brew --prefix)/opt/coreutils/libexec/gnubin"

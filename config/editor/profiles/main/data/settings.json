@@ -552,16 +552,17 @@
     ]
   },
   "vsix.extensions": [
+
+    // Customisations
+    "ui",
+    // "present",
+
     // Workflows
     // "ai",
     // "data",
     // "debugging",
     // "format",
     // "markup",
-
-    // Customisations
-    "ui",
-    // "present",
 
     // Languages
     // "node"

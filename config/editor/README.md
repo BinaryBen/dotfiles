@@ -8,45 +8,41 @@ To put it as simply as possible, I usually prefer to use Code as my default IDE 
 
 ## Code
 
-I tend to install both VSCode and Codium now. This is because if there is ever an issue with Codium, I prefer to not spend the time at work trying to fix it and need something I can drop into right away. This does mean though that I need to spend some time ensuring both editors behave similarly when setting up my dotfiles. That said, Codium is usually pretty rock solid, and I have found alternative ways (read: FOSS extensions 💪) to get 99% feature parity across both editors.
+I tend to install both Codium *and* VSCode now. This is because if there is ever an issue with Codium, I rarely have the time to immediately fix it and need something I can drop into and keep working right away. This does mean though that I need to spend some time ensuring both editors behave similarly when setting up my dotfiles. That said, Codium is usually pretty rock solid, and I have found alternative ways (read: FOSS extensions 💪) to get 99% feature parity across both editors.
 
 ### Getting started
 
-Install the Sync Settings extensions
+Install the Sync Settings extension by Zokugun
 
 ```bash
+$ codium --install-extension zokugun.sync-settings
+# or
 $ code --install-extension zokugun.sync-settings
 ```
 
-From Code:
+From within Code, open the command palette and run:
 
 ```bash
 > Sync Settings: Open the repository settings
 ```
 
-Edit and save the file with the following (replace $DOTFILES with local path to this repo):
+Edit and save the file with the following (replace `$DOTFILES` with the local path to this repo as the extension does not expand `$ENV_VARIABLES`):
 
 ```yaml
-profile: full
+# hostname: (optional)
+profile: main
 repository:
   type: file
   path: $DOTFILES/config/editor
 ```
 
-```bash
-> Sync Settings: Switch to profile
-```
-
-Choose the Lite profile (let it install/restart - make a coffee)
-
-TODO: Symlink the Power Tools config file
+Then run this from the command pallette:
 
 ```bash
-> Power Tools: Commands
+> Sync Settings: Download (repository -> user)
 ```
 
-Choose Download Extensions. You can now use any profile.
-
+> ☕️ &nbsp; You probably want to make a coffee after running the last command. You can see logs of what it is doing under the Output tab (Shared).
 
 ### Features:
 
@@ -74,38 +70,9 @@ Choose Download Extensions. You can now use any profile.
 
 ### Profiles:
 
-The differences between profiles are the plugins that are enabled.
-
-```mermaid
-graph TD
-  Lite-->Full
-  Full---->Modern
-  Full-->PHP
-  Full-->C#/.NET
-  Full-->C++
-  Full-->Python/R
-  Full--->Mobile
-  Full---->Node
-  C++-->Embedded
-  Python/R-->Embedded
-  C#/.NET-->Unity
-  Modern-->Go
-  Modern-->Rust
-  Modern-->Deno
-  Modern-->Nim
-  Node-->Vue
-  Node-->React
-  Node-->Svelte
-  Node-->Desktop
-  Desktop-->Electron
-  Desktop-->Neutrino
-  Mobile--->React_Native
-  Mobile---->NativeScript-Vue
-  Mobile--->Flutter/Dart
-  Mobile--->Swift
-  React-->React_Native
-  Vue-->NativeScript-Vue
-```
+> 🚧 This is being changed. Possibly looking at using [native profiles](https://code.visualstudio.com/docs/editor/profiles).
+> 
+> Ultimately, profiles will mainly be used to control which extensions are active. Possibly also for demo purposes
 
 Symlink the `./product.json` file to:
 

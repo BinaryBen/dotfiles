@@ -157,8 +157,9 @@ brew install --cask standard-notes
 # Grammarly
 brew install --cask eloston-chromium
 
-# Academic
+# Academic / Writing
 
+brew install --cask quarto
 # Reference Manager
 # jamovi
 

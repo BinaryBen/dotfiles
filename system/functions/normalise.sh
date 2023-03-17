@@ -55,7 +55,7 @@ function pbpaste () {
   elif (( ${+commands[xsel]} )); then
     xsel -b
   elif (( ${+commands[wl-paste]} )); then
-    wl-paste  
+    wl-paste
   elif [[ $OSTYPE == darwin* ]]; then
     command pbpaste
   elif [[ $OSTYPE == (cygwin*|msys) ]]; then

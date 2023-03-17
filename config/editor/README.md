@@ -4,7 +4,7 @@
 >
 > Where documentation is relevant to a specific *Code* distribution (i.e. *VSCode* or *VSCodium*, but not both), it will be noted. Otherwise assume the docs refer to all derivatives of *Code*.
 
-To put it as simply as possible, I usually prefer to use Code as my default IDE and Micro as my default `$EDITOR`. Sometimes I also play with Neo/Vim.
+To put it as simply as possible, I usually prefer to use Code as my default IDE and Micro as my default `$EDITOR`. Sometimes I1 also play with Neo/Vim.
 
 ## Code
 

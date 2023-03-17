@@ -17,5 +17,12 @@
     "**/Thumbs.db": true,
     "**/*.git": true
   },
-  "explorerExclude.backup": {}
+  "cSpell.words": [
+    "activitusbar",
+    "color",
+    "esbenp",
+    "Neue",
+    "rgba",
+    "VSIX"
+  ]
 }

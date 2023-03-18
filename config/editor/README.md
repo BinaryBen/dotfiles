@@ -42,7 +42,11 @@ Then run this from the command pallette:
 > Sync Settings: Download (repository -> user)
 ```
 
-> ☕️ &nbsp; You probably want to make a coffee after running the last command. You can see logs of what it is doing under the Output tab (Shared).
+> **Note**
+> You probably want to make a coffee ☕️ after running the last command. You can see logs of what it is doing under the Output tab (Shared).
+
+> **Warning**
+> Do not restart the editor from the Monkey Patch notification. It will still be installing more extensions and will automatically restart on its' own.
 
 ### Features:
 

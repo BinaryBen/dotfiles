@@ -1,24 +1,32 @@
 # Editor Config
 
-> In the docs below, *Code* refers to [the open-source project by Microsoft](https://github.com/microsoft/vscode) as well as other projects that are based on the source code of *Code*. This includes desktop variants: *[VSCode](https://code.visualstudio.com/)* and *[VSCodium](https://vscodium.com/)*; and browser-based variants: *[GitHub Codespaces](https://github.com/features/codespaces)* and *[OpenVSCode Server](https://github.com/gitpod-io/openvscode-server)*.
+> In the docs below, *Code* refers to [the open-source project by Microsoft](https://github.com/microsoft/vscode) as well as other projects that are based on the source code of *Code*. This includes desktop variants: *[Visual Studio Code](https://code.visualstudio.com/)* (VS Code) and *[VSCodium](https://vscodium.com/)* (Codium); and browser-based variants: *[GitHub Codespaces](https://github.com/features/codespaces)* and *[OpenVSCode Server](https://github.com/gitpod-io/openvscode-server)*.
 >
 > Where documentation is relevant to a specific *Code* distribution (i.e. *VSCode* or *VSCodium*, but not both), it will be noted. Otherwise assume the docs refer to all derivatives of *Code*.
 
-To put it as simply as possible, I usually prefer to use Code as my default IDE and Micro as my default `$EDITOR`. Sometimes I1 also play with Neo/Vim.
+I prefer to use Code as my default IDE — with a LOT of extensions — and [Micro](https://micro-edito.github.io/) as my default `$EDITOR`. Sometimes I play with Neo/Vim but less often lately.
 
 ## Code
 
-I tend to install both Codium *and* VSCode now. This is because if there is ever an issue with Codium, I rarely have the time to immediately fix it and need something I can drop into and keep working right away. This does mean though that I need to spend some time ensuring both editors behave similarly when setting up my dotfiles. That said, Codium is usually pretty rock solid, and I have found alternative ways (read: FOSS extensions 💪) to get 99% feature parity across both editors.
+I install both Codium *and* VS Code on any computer I control. This is because if there is ever an issue with Codium, I rarely have the time to immediately fix it and need something I can drop into and keep working right away.
+
+This does mean that I need to spend some time ensuring both editors behave similarly when setting up my dotfiles. That said, Codium is usually pretty rock solid, and I have found alternative ways (read: FOSS extensions 💪 and some hacks 😢) to get 99% feature parity across both editors.
 
 ### Getting started
 
-Install the Sync Settings extension by Zokugun
+<!-- TODO: This should automatically be handled by Dropbear -->
+
+Install the [Sync Settings](https://github.com/zokugun/vscode-sync-settings) extension by Baptiste Augrain ([@daiyam](https://github.com/daiyam))
+
+<!-- TODO: Does code/codium get installed to the path automatically? -->
 
 ```bash
 $ codium --install-extension zokugun.sync-settings
-# or
+# and
 $ code --install-extension zokugun.sync-settings
 ```
+
+***
 
 From within Code, open the command palette and run:
 
@@ -26,17 +34,22 @@ From within Code, open the command palette and run:
 > Sync Settings: Open the repository settings
 ```
 
-Edit and save the file with the following (replace `$DOTFILES` with the local path to this repo as the extension does not expand `$ENV_VARIABLES`):
+Edit and save the file with the following:
+
+> **Note**
+> Replace `$XDG_DOTFILES` with the local path to this repo as the extension does not expand environment variables
 
 ```yaml
 # hostname: (optional)
 profile: main
 repository:
   type: file
-  path: $DOTFILES/config/editor
+  path: $XDG_DOTFILES/config/editor
 ```
 
-Then run this from the command pallette:
+***
+
+Then run this from the command palette:
 
 ```bash
 > Sync Settings: Download (repository -> user)

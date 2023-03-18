@@ -269,7 +269,8 @@
     },
     "vsx": {
       "type": "marketplace",
-      "serviceUrl": "https://open-vsx.org/vscode/gallery"
+      "serviceUrl": "https://open-vsx.org/vscode/gallery",
+      "fallback": "ms"
     }
   },
   "vsix.groups": {
@@ -294,11 +295,9 @@
       "ms:spmeesseman.vscode-taskexplorer",
       "vsx:cschleiden.vscode-github-actions",
       "vsx:formulahendry.code-runner",
-
       // Testing:
       "vsx:hbenl.test-adapter-converter",
       "vsx:hbenl.vscode-test-explorer",
-
       // Built-in browsing:
       "vsx:antfu.browse-lite",
       "vsx:ms-edgedevtools.vscode-edge-devtools",
@@ -325,13 +324,13 @@
       "vsx:seatonjiang.gitmoji-vscode",
 
       // Code Platforms
+      "vsx:redhat.vscode-yaml", // Dependency of Atlascode and needed anyway
       "vsx:atlassian.atlascode", // Atlassian
       "vsx:GitHub.vscode-pull-request-github",
       "vsx:GitLab.gitlab-workflow"
     ],
     "markup": [ // Mainly Markdown with a few other markup languages
       "ms:bierner.markdown-preview-github-styles",
-      "vsx:redhat.vscode-yaml",
       "vsx:bierner.markdown-mermaid",
       "vsx:yzhang.markdown-all-in-one",
       "vsx:bungcip.better-toml",
@@ -355,6 +354,12 @@
       // "ms:GitHub.codespaces",
       // #endif
     ],
+    "syntax": [
+      "vsx:attilabuti.mustache-syntax-vscode",
+      "vsx:foxundermoon.shell-format",
+      "vsx:jock.svg",
+      "vsx:mikestead.dotenv"
+    ],
     "tools": [
       "github:PDConSec/vsc-print",
       "vsx:streetsidesoftware.code-spell-checker",
@@ -368,7 +373,7 @@
       // #if(editor="vscodium")
       // "ms:hedinne.popping-and-locking-vscode",
       // // TODO: Use vsx: when v0.1.23 is published on Open VSX Marketplace
-      // "local:iocave.monkey-patch", // TODO: Use ms: when VSIX Manager is stable
+      // "ms:iocave.monkey-patch",
       // "vsx:Gruntfuggly.activitusbar",
       // "vsx:iocave.customize-ui",
       // #endif
@@ -394,13 +399,7 @@
 
       // Containers
       "vsx:ms-azuretools.vscode-docker",
-      "vsx:ms-kubernetes-tools.vscode-kubernetes-tools",
-    ],
-    "syntax": [
-      "vsx:attilabuti.mustache-syntax-vscode",
-      "vsx:foxundermoon.shell-format",
-      "vsx:jock.svg",
-      "vsx:mikestead.dotenv"
+      "vsx:ms-kubernetes-tools.vscode-kubernetes-tools"
     ],
 
     // Language Extensions

@@ -68,6 +68,13 @@
   "cSpell.showStatus": false,
   "cSpell.spellCheckDelayMs": 5000,
   "cSpell.spellCheckOnlyWorkspaceFiles": true,
+  "cSpell.userWords": [
+    "Arduino",
+    "drawio",
+    "laravel",
+    "mjml",
+    "sass"
+  ],
   "customizeUI.activityBar": "bottom",
   "customizeUI.activityBarHideSettings": true,
   "customizeUI.font.regular": "Helvetica Neue",
@@ -280,9 +287,10 @@
       "vsx:DanielSanMedium.dscodegpt",
       "vsx:gencay.vscode-chatgpt"
     ],
-    "data": [
+    "data": [ // #core
       "ms:GraphQL.vscode-graphql-syntax",
       "ms:GraphQL.vscode-graphql",
+      "ms:softwaredotcom.swdc-vscode",
       "vsx:mtxr.sqltools",
       "vsx:mtxr.sqltools-driver-mysql",
       "vsx:mtxr.sqltools-driver-pg",
@@ -290,20 +298,25 @@
       "vsx:cweijan.vscode-redis-client",
       "vsx:rangav.vscode-thunder-client"
     ],
-    "debug": [
+    "debug": [ // #core
       // Tasks:
       "ms:spmeesseman.vscode-taskexplorer",
       "vsx:cschleiden.vscode-github-actions",
       "vsx:formulahendry.code-runner",
       // Testing:
-      "vsx:hbenl.test-adapter-converter",
+      {
+        "id": [
+          "vsx:hbenl.test-adapter-converter",
+          "ms:ms-vscode.test-adapter-converter"
+        ]
+      },
       "vsx:hbenl.vscode-test-explorer",
       // Built-in browsing:
       "vsx:antfu.browse-lite",
       "vsx:ms-edgedevtools.vscode-edge-devtools",
       "vsx:ms-vscode.live-server"
     ],
-    "format": [ // And linting
+    "format": [ // #core
       "ms:bradgashler.htmltagwrap",
       "ms:Rubymaniac.vscode-paste-and-indent",
       "vsx:dbaeumer.vscode-eslint",
@@ -315,7 +328,7 @@
       "vsx:usernamehw.errorlens",
       "vsx:wwm.better-align"
     ],
-    "git": [
+    "git": [ // #core - And linting!
       "ms:fabiospampinato.vscode-diff",
       "ms:fabiospampinato.vscode-git-history",
       "vsx:ziyasal.vscode-open-in-github", // Cross platform despite name
@@ -324,48 +337,108 @@
       "vsx:seatonjiang.gitmoji-vscode",
 
       // Code Platforms
-      "vsx:redhat.vscode-yaml", // Dependency of Atlascode and needed anyway
-      "vsx:atlassian.atlascode", // Atlassian
-      "vsx:GitHub.vscode-pull-request-github",
-      "vsx:GitLab.gitlab-workflow"
+      "vsx:redhat.vscode-yaml", // Dependency of Atlascode (and needed anyway)
+      {
+        "id": [
+          "vsx:atlassian.atlascode",
+          "ms:Atlassian.atlascode"
+        ],
+        "enabled": true
+      }, {
+        "id": "vsx:GitHub.vscode-pull-request-github",
+        "enabled": true
+      }, {
+        "id": "vsx:GitLab.gitlab-workflow",
+        "enabled": true
+      }
     ],
-    "markup": [ // Mainly Markdown with a few other markup languages
+    "infrastructure": [
+      "vsx:ms-azuretools.vscode-docker",
+      "vsx:ms-kubernetes-tools.vscode-kubernetes-tools"
+    ],
+    "markup": [ // #core - Mainly Markdown with a few other markup languages
       "ms:bierner.markdown-preview-github-styles",
       "vsx:bierner.markdown-mermaid",
       "vsx:yzhang.markdown-all-in-one",
       "vsx:bungcip.better-toml",
       "vsx:houkanshan.vscode-markdown-footnote"
     ],
+    "powertools": [ // #core
+      // Navigation
+      {
+        "id": [
+          "ms:alefragnani.Bookmarks",
+          "vsx:alefragnani.Bookmarks"
+        ]
+      },
+      "vsx:Fr43nk.seito-openfile",
+      "vsx:patbenatar.advanced-new-file",
+      "vsx:sleistner.vscode-fileutils",
+      // Text manipulation (things that need manual input/key presses)
+      "ms:BriteSnow.vscode-toggle-quotes",
+      "ms:quicktype.quicktype",
+      "vsx:robole.snippets-ranger",
+      {
+        "id": [
+          "ms:yatki.vscode-surround",
+          "vsx:yatki.vscode-surround"
+        ]
+      },
+      "vsx:qcz.text-power-tools",
+      "vsx:ryu1kn.edit-with-shell"
+    ],
     "present": [
-
+      "ms:imagio.vscode-dimmer-block",
+      "ms:johnpapa.vscode-cloak",
+      "ms:ryu1kn.text-marker",
+      "vsx:hoovercj.vscode-power-mode",
+      "vsx:vsls-contrib.codetour"
     ],
     "preview": [
-      "vsx:Greenbyte.handlebars-preview",
+      {
+        "id": [
+          "vsx:Greenbyte.handlebars-preview",
+          "ms:greenbyte.handlebars-preview"
+        ]
+      },
       "vsx:mjmlio.vscode-mjml",
       "vsx:hediet.vscode-drawio",
       "vsx:GrapeCity.gc-excelviewer", // Let's use Code instead of Excel
       "vsx:huacat.office-theme"
     ],
     "remote": [
-      "vsx:genuitecllc.codetogether",
-      "vsx:filiptronicek.open-in-gitpod",
-      "vsx:jeanp413.open-remote-ssh"
       // #if(editor="visual studio code")
-      // "ms:GitHub.codespaces",
+      "ms:GitHub.codespaces",
+      "ms:ms-vscode-remote.vscode-remote-extensionpack",
+      // #else
+      "vsx:jeanp413.open-remote-ssh",
       // #endif
+      "vsx:genuitecllc.codetogether",
+      "vsx:filiptronicek.open-in-gitpod"
     ],
     "syntax": [
+      "ms:ItsMeAdarsh.vsc-handlebars-ext",
       "vsx:attilabuti.mustache-syntax-vscode",
       "vsx:foxundermoon.shell-format",
       "vsx:jock.svg",
       "vsx:mikestead.dotenv"
     ],
     "tools": [
-      "github:PDConSec/vsc-print",
+      {
+        "id": [
+          "ms:pdconsec.vscode-print",
+          "github:PDConSec/vsc-print"
+        ]
+      },
       "vsx:streetsidesoftware.code-spell-checker",
       "vsx:alefragnani.project-manager",
       // "vsx:assisrMatheus.sidebar-markdown-notes", // Not as helpful as I hoped
-      "vsx:codespaces-contrib.codeswing"
+      {
+        "id": [
+          "vsx:codespaces-contrib.codeswing",
+          "ms:codespaces-Contrib.codeswing"
+        ]
+      }
       // "vsx:egomobile.vscode-powertools", // Was used to install extensions, may use again
     ],
     "ui": [
@@ -373,33 +446,39 @@
       // #if(editor="vscodium")
       // "ms:hedinne.popping-and-locking-vscode",
       // // TODO: Use vsx: when v0.1.23 is published on Open VSX Marketplace
-      // "ms:iocave.monkey-patch",
+      // {
+      //   "id": [
+      //     "ms:iocave.monkey-patch",
+      //     "local:iocave.monkey-patch"
+      //   ]
+      // },
       // "vsx:Gruntfuggly.activitusbar",
       // "vsx:iocave.customize-ui",
       // #endif
 
-      "ms:sfccdevops.explorer-exclude-vscode-extension",
+      "ms:PeterSchmalfeldt.explorer-exclude",
       "vsx:aaron-bond.better-comments",
       "vsx:emmanuelbeziat.vscode-great-icons",
       "vsx:Gruntfuggly.todo-tree",
       "vsx:IBM.output-colorizer",
       "vsx:johnpapa.vscode-peacock",
       "vsx:oderwat.indent-rainbow",
-      "vsx:Voklen.theme-by-language", // Arduino & Excel
+      { // For Arduino & Excel themes
+        "id": [
+          "vsx:Voklen.theme-by-language",
+          "ms:jsaulou.theme-by-language"
+        ]
+      },
       "vsx:wayou.vscode-todo-highlight"
-
     ],
-    "workflow": [
 
-      // Navigation
-      "vsx:alefragnani.Bookmarks",
-      "vsx:Fr43nk.seito-openfile",
-      "vsx:patbenatar.advanced-new-file",
-      "vsx:sleistner.vscode-fileutils",
-
-      // Containers
-      "vsx:ms-azuretools.vscode-docker",
-      "vsx:ms-kubernetes-tools.vscode-kubernetes-tools"
+    "unsorted": [
+      "vsx:fabiospampinato.vscode-highlight",
+      "vsx:fabiospampinato.vscode-todo-plus",
+      "vsx:hideoo.toggler",
+      "vsx:lokalise.i18n-ally",
+      "vsx:fabiospampinato.vscode-todo-plus",
+      "vsx:keesschollaart.vscode-home-assistant",
     ],
 
     // Language Extensions
@@ -452,9 +531,14 @@
       "ms:kisstkondoros.vscode-codemetrics",
       "ms:liamhammett.inline-parameters",
       "ms:VisualStudioExptTeam.vscodeintellicode",
-      // Available as a GitHub Release
-      "github:antfu/vscode-vite",
       // Available in OpenVSX
+      {
+        "id": [
+          "vsx:antfu.vscode-vite",
+          "ms:antfu.vite",
+          "github:antfu/vscode-vite"
+        ]
+      },
       "vsx:christian-kohler.npm-intellisense",
       "vsx:christian-kohler.path-intellisense",
       "vsx:maty.vscode-mocha-sidebar",
@@ -512,7 +596,6 @@
       "vsx:msjsdiag.vscode-react-native"
     ],
     "react": [
-      "node",
       "vsx:dsznajder.es7-react-js-snippets",
       "vsx:unifiedjs.vscode-mdx"
     ],
@@ -524,51 +607,36 @@
     "express": [],
     "desktop": [],
 
-    "unsorted": [
-      "ms:ItsMeAdarsh.vsc-handlebars-ext",
-      "ms:quicktype.quicktype",
-      "ms:imagio.vscode-dimmer-block",
-      "ms:johnpapa.vscode-cloak",
-      "ms:ryu1kn.text-marker",
-      "ms:softwaredotcom.swdc-vscode",
-
-      // Text manipulation (things that need manual input/key presses)
-      "ms:BriteSnow.vscode-toggle-quotes",
-      "vsx:robole.snippets-ranger",
-      "vsx:yatki.vscode-surround",
-      "vsx:qcz.text-power-tools",
-      "vsx:ryu1kn.edit-with-shell",
-
-      "vsx:fabiospampinato.vscode-highlight",
-      "vsx:fabiospampinato.vscode-todo-plus",
-      "vsx:hideoo.toggler",
-      "vsx:lokalise.i18n-ally",
-      "vsx:fabiospampinato.vscode-todo-plus",
-      "vsx:hoovercj.vscode-power-mode",
-      "vsx:keesschollaart.vscode-home-assistant",
-      "vsx:vsls-contrib.codetour"
-    ],
-
     // Organisation
+
     "core": [
-      "ai",
       "data",
       "debug",
       "format",
       "git",
       "markup",
-      // "present",
+      "powertools",
+      "ui"
+    ],
+    "extended": [
+      "ai",
+      "infrastructure",
+      "present",
       "preview",
       "remote",
-      "tools",
-      "ui"
+      "syntax",
+      "tools"
     ]
   },
   "vsix.extensions": [
-    "core"
+    "core",
+    "extended",
 
     // Languages
-    // "node"
+    {
+      "id": "node",
+      "enabled": false
+    }
   ],
   "window.commandCenter": true,
   "window.restoreWindows": "one",

@@ -290,15 +290,15 @@
     "data": [ // #core
       "ms:GraphQL.vscode-graphql-syntax",
       "ms:GraphQL.vscode-graphql",
-      "ms:softwaredotcom.swdc-vscode",
-      "vsx:mtxr.sqltools",
-      "vsx:mtxr.sqltools-driver-mysql",
-      "vsx:mtxr.sqltools-driver-pg",
       "vsx:alexcvzz.vscode-sqlite",
       "vsx:cweijan.vscode-redis-client",
+      "vsx:mtxr.sqltools-driver-mysql",
+      "vsx:mtxr.sqltools-driver-pg",
+      "vsx:mtxr.sqltools",
       "vsx:rangav.vscode-thunder-client"
     ],
     "debug": [ // #core
+      "vsx:usernamehw.errorlens",
       // Tasks:
       "ms:spmeesseman.vscode-taskexplorer",
       "vsx:cschleiden.vscode-github-actions",
@@ -325,13 +325,12 @@
       "vsx:formulahendry.auto-rename-tag",
       "vsx:shardulm94.trailing-spaces",
       "vsx:stylelint.vscode-stylelint",
-      "vsx:usernamehw.errorlens",
       "vsx:wwm.better-align"
     ],
     "git": [ // #core - And linting!
       "ms:fabiospampinato.vscode-diff",
       "ms:fabiospampinato.vscode-git-history",
-      "vsx:ziyasal.vscode-open-in-github", // Cross platform despite name
+      "vsx:ziyasal.vscode-open-in-github", // Cross platform despite ID
       "vsx:donjayamanne.githistory",
       "vsx:eamodio.gitlens",
       "vsx:seatonjiang.gitmoji-vscode",
@@ -343,49 +342,32 @@
           "vsx:atlassian.atlascode",
           "ms:Atlassian.atlascode"
         ],
-        "enabled": true
+        "enabled": false
       }, {
         "id": "vsx:GitHub.vscode-pull-request-github",
         "enabled": true
       }, {
         "id": "vsx:GitLab.gitlab-workflow",
-        "enabled": true
+        "enabled": false
       }
     ],
     "infrastructure": [
       "vsx:ms-azuretools.vscode-docker",
-      "vsx:ms-kubernetes-tools.vscode-kubernetes-tools"
+      {
+        "id": "vsx:ms-kubernetes-tools.vscode-kubernetes-tools",
+        "enabled": false
+      }
     ],
-    "markup": [ // #core - Mainly Markdown with a few other markup languages
-      "ms:bierner.markdown-preview-github-styles",
-      "vsx:bierner.markdown-mermaid",
-      "vsx:yzhang.markdown-all-in-one",
-      "vsx:bungcip.better-toml",
-      "vsx:houkanshan.vscode-markdown-footnote"
-    ],
-    "powertools": [ // #core
-      // Navigation
+    "navigation": [ // #core
       {
         "id": [
           "ms:alefragnani.Bookmarks",
-          "vsx:alefragnani.Bookmarks"
+          "vsx:alefragnani.Bookmarks" // Not up to date
         ]
       },
-      "vsx:Fr43nk.seito-openfile",
+      "vsx:Fr43nk.seito-openfile", // Right click to open file under cursor
       "vsx:patbenatar.advanced-new-file",
-      "vsx:sleistner.vscode-fileutils",
-      // Text manipulation (things that need manual input/key presses)
-      "ms:BriteSnow.vscode-toggle-quotes",
-      "ms:quicktype.quicktype",
-      "vsx:robole.snippets-ranger",
-      {
-        "id": [
-          "ms:yatki.vscode-surround",
-          "vsx:yatki.vscode-surround"
-        ]
-      },
-      "vsx:qcz.text-power-tools",
-      "vsx:ryu1kn.edit-with-shell"
+      "vsx:sleistner.vscode-fileutils"
     ],
     "present": [
       "ms:imagio.vscode-dimmer-block",
@@ -406,6 +388,13 @@
       "vsx:GrapeCity.gc-excelviewer", // Let's use Code instead of Excel
       "vsx:huacat.office-theme"
     ],
+    "prose": [ // #core
+      "ms:bierner.markdown-preview-github-styles",
+      "vsx:bierner.markdown-mermaid",
+      "vsx:houkanshan.vscode-markdown-footnote",
+      "vsx:lokalise.i18n-ally",
+      "vsx:yzhang.markdown-all-in-one"
+    ],
     "remote": [
       // #if(editor="visual studio code")
       "ms:GitHub.codespaces",
@@ -416,21 +405,37 @@
       "vsx:genuitecllc.codetogether",
       "vsx:filiptronicek.open-in-gitpod"
     ],
-    "syntax": [
+    "shortcuts": [ // #core
+      "ms:BriteSnow.vscode-toggle-quotes",
+      "ms:quicktype.quicktype",
+      "vsx:hideoo.toggler",
+      "vsx:qcz.text-power-tools",
+      "vsx:robole.snippets-ranger",
+      "vsx:ryu1kn.edit-with-shell",
+      {
+        "id": [
+          "ms:yatki.vscode-surround",
+          "vsx:yatki.vscode-surround"
+        ]
+      }
+    ],
+    "syntax": [ // Core syntax only
       "ms:ItsMeAdarsh.vsc-handlebars-ext",
       "vsx:attilabuti.mustache-syntax-vscode",
+      "vsx:bungcip.better-toml",
       "vsx:foxundermoon.shell-format",
       "vsx:jock.svg",
+      "vsx:keesschollaart.vscode-home-assistant",
       "vsx:mikestead.dotenv"
     ],
     "tools": [
+      "ms:softwaredotcom.swdc-vscode",
       {
         "id": [
           "ms:pdconsec.vscode-print",
           "github:PDConSec/vsc-print"
         ]
       },
-      "vsx:streetsidesoftware.code-spell-checker",
       "vsx:alefragnani.project-manager",
       // "vsx:assisrMatheus.sidebar-markdown-notes", // Not as helpful as I hoped
       {
@@ -438,17 +443,18 @@
           "vsx:codespaces-contrib.codeswing",
           "ms:codespaces-Contrib.codeswing"
         ]
-      }
-      // "vsx:egomobile.vscode-powertools", // Was used to install extensions, may use again
+      },
+      "vsx:egomobile.vscode-powertools",
+      "vsx:Gruntfuggly.todo-tree",
+      "vsx:streetsidesoftware.code-spell-checker"
     ],
     "ui": [
       // Custom UI Layout for VSCodium
       // #if(editor="vscodium")
       // "ms:hedinne.popping-and-locking-vscode",
-      // // TODO: Use vsx: when v0.1.23 is published on Open VSX Marketplace
       // {
       //   "id": [
-      //     "ms:iocave.monkey-patch",
+      //     "ms:iocave.monkey-patch", // TODO: Use vsx: when v0.1.23 is published
       //     "local:iocave.monkey-patch"
       //   ]
       // },
@@ -459,7 +465,6 @@
       "ms:PeterSchmalfeldt.explorer-exclude",
       "vsx:aaron-bond.better-comments",
       "vsx:emmanuelbeziat.vscode-great-icons",
-      "vsx:Gruntfuggly.todo-tree",
       "vsx:IBM.output-colorizer",
       "vsx:johnpapa.vscode-peacock",
       "vsx:oderwat.indent-rainbow",
@@ -469,16 +474,7 @@
           "ms:jsaulou.theme-by-language"
         ]
       },
-      "vsx:wayou.vscode-todo-highlight"
-    ],
-
-    "unsorted": [
-      "vsx:fabiospampinato.vscode-highlight",
-      "vsx:fabiospampinato.vscode-todo-plus",
-      "vsx:hideoo.toggler",
-      "vsx:lokalise.i18n-ally",
-      "vsx:fabiospampinato.vscode-todo-plus",
-      "vsx:keesschollaart.vscode-home-assistant",
+      "vsx:wayou.vscode-todo-highlight" // ? Is this needed - better comments may be better
     ],
 
     // Language Extensions
@@ -614,29 +610,34 @@
       "debug",
       "format",
       "git",
-      "markup",
-      "powertools",
+      "navigation",
+      "prose",
+      "shortcuts",
+      "syntax",
       "ui"
     ],
-    "extended": [
+    "enhancements": [
       "ai",
       "infrastructure",
-      "present",
-      "preview",
+      {
+        "id": "present",
+        "enabled": false
+      },
+      "preview", // Too heavy to be core
       "remote",
-      "syntax",
       "tools"
+    ],
+    "languages": [
+      {
+        "id": "node",
+        "enabled": false
+      }
     ]
   },
   "vsix.extensions": [
     "core",
-    "extended",
-
-    // Languages
-    {
-      "id": "node",
-      "enabled": false
-    }
+    "enhancements",
+    "languages"
   ],
   "window.commandCenter": true,
   "window.restoreWindows": "one",

@@ -282,10 +282,10 @@
   },
   "vsix.groups": {
     "ai": [
+      "local:gencay.vscode-chatgpt",
       // https://ranguna.prose.sh/vscodium-and-copilot
       // "ms:GitHub.copilot",
-      "vsx:DanielSanMedium.dscodegpt",
-      "vsx:gencay.vscode-chatgpt"
+      "vsx:DanielSanMedium.dscodegpt"
     ],
     "data": [ // #core
       "ms:GraphQL.vscode-graphql-syntax",

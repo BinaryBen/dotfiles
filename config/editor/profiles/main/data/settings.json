@@ -48,6 +48,10 @@
   },
   "advancedNewFile.showInformationMessages": true,
   "advancedNewFile.convenienceOptions": ["last", "current", "root"],
+  "auto-close-tag.SublimeText3Mode": true,
+  "auto-close-tag.enableAutoCloseSelfClosingTag": true,
+  "auto-close-tag.insertSpaceBeforeSelfClosingTag": true,
+  "aws.telemetry": false,
   "C_Cpp.intelliSenseEngine": "Disabled",
   "codemetrics.basics.DecorationTemplate": "<svg xmlns='http://www.w3.org/2000/svg' width='{{size}}px' height='{{size}}px' viewbox='0 0 {{size}} {{size}}'><circle cx='3' cy='9' r='3' stroke-width='0' fill='{{color}}' /></svg>",
   "codemetrics.basics.ComplexityTemplate": "{1}ㅤ (Score: {0})",
@@ -97,6 +101,7 @@
   },
   "customizeUI.titleBar": "inline",
   "editor.accessibilitySupport": "off",
+  "editor.bracketPairColorization.enabled": true,
   "editor.codeActionsOnSave": {
     "source.organizeImports": true
   },
@@ -188,6 +193,7 @@
   "gitlens.plusFeatures.enabled": false,
   "gitlens.showWelcomeOnInstall": false,
   "gitlens.statusBar.enabled": false,
+  "html.autoClosingTags": true,
   "indentRainbow.colors": [
     "rgba(255,255,64,0.3)",
     "rgba(127,255,127,0.3)",
@@ -197,9 +203,33 @@
   "indentRainbow.includedLanguages": ["nim", "nims", "python", "sass"],
   "indentRainbow.indicatorStyle": "light",
   "indentRainbow.lightIndicatorStyleLineWidth": 1,
-  "javascript.suggest.paths": false,
+  "javascript.autoClosingTags": false,
+  "javascript.suggest.paths": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "keyboard.touchbar.enabled": false,
+  "local-history.absolute": false,
+  "local-history.dateLocale": "en-AU",
+  "local-history.daysLimit": 7,
+  "local-history.exclude": [
+    "**/.history/**",
+    "**/.vscode**",
+    "**/node_modules/**",
+    "**/typings/**",
+    "**/out/**"
+  ],
+  "local-history.path": "%XDG_CACHE_HOME%/code/",
+  "local-history.treeLocation": "localHistory",
+  "markdownlint.config": {
+      "default": true,
+      "no-inline-html": { // MD033
+        "allowed_elements": [
+          "br",
+          "detail",
+          "kbd",
+          "summary"
+        ]
+      }
+  },
   "nim.provider": "lsp",
   "peacock.affectActivityBar": false,
   "peacock.affectStatusBar": true,
@@ -217,6 +247,7 @@
   ],
   "peacock.showColorInStatusBar": false,
   "peacock.surpriseMeOnStartup": true,
+  "platformio.enableTelemetry": false,
   "powermode.enabled": true,
   "powermode.shake.enabled": false,
   "powermode.presets": "flames",
@@ -225,6 +256,7 @@
   "redhat.telemetry.enabled": false,
   "sidebar-markdown-notes.leftMargin": true,
   "security.workspace.trust.untrustedFiles": "open",
+  "svelte.enable-ts-plugin": true,
   "syncSettings.keybindingsPerPlatform": false,
   "syncSettings.resources": ["extensions", "keybindings", "settings"],
   "telemetry.telemetryLevel": "off",
@@ -253,7 +285,8 @@
     // #endif
     "csv": "Office Theme (Excel)"
   },
-  "typescript.suggest.paths": false,
+  "typescript.autoClosingTags": false,
+  "typescript.suggest.paths": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
   // * Prefer to only know about new features when they are also available in Codium
   // #if(editor="vscodium")
@@ -318,6 +351,7 @@
     ],
     "format": [ // #core
       "ms:bradgashler.htmltagwrap",
+      "ms:DavidAnson.vscode-markdownlint",
       "ms:Rubymaniac.vscode-paste-and-indent",
       "vsx:dbaeumer.vscode-eslint",
       "vsx:esbenp.prettier-vscode",
@@ -346,15 +380,23 @@
       }, {
         "id": "vsx:GitHub.vscode-pull-request-github",
         "enabled": true
-      }, {
-        "id": "vsx:GitLab.gitlab-workflow",
-        "enabled": false
-      }
+        }, {
+          "id": "vsx:GitLab.gitlab-workflow",
+          "enabled": false
+      },
+      "vsx:xyz.local-history"
     ],
     "infrastructure": [
       "vsx:ms-azuretools.vscode-docker",
       {
         "id": "vsx:ms-kubernetes-tools.vscode-kubernetes-tools",
+        "enabled": false
+      },
+      {
+        "id": [
+          "vsx.amazonwebservices.aws-toolkit-vscode",
+          "ms:AmazonWebServices.aws-toolkit-vscode"
+        ],
         "enabled": false
       }
     ],
@@ -373,6 +415,7 @@
       "ms:imagio.vscode-dimmer-block",
       "ms:johnpapa.vscode-cloak",
       "ms:ryu1kn.text-marker",
+      "vsx:coderoad.coderoad",
       "vsx:hoovercj.vscode-power-mode",
       "vsx:vsls-contrib.codetour"
     ],
@@ -393,6 +436,7 @@
       "vsx:bierner.markdown-mermaid",
       "vsx:houkanshan.vscode-markdown-footnote",
       "vsx:lokalise.i18n-ally",
+      "vsx:quarto.quarto",
       "vsx:yzhang.markdown-all-in-one"
     ],
     "remote": [
@@ -408,6 +452,7 @@
     "shortcuts": [ // #core
       "ms:BriteSnow.vscode-toggle-quotes",
       "ms:quicktype.quicktype",
+      "vsx:albert.TabOut",
       "vsx:hideoo.toggler",
       "vsx:qcz.text-power-tools",
       "vsx:robole.snippets-ranger",
@@ -430,6 +475,7 @@
     ],
     "tools": [
       "ms:softwaredotcom.swdc-vscode",
+      "ms:VisualStudioExptTeam.vscodeintellicode",
       {
         "id": [
           "ms:pdconsec.vscode-print",
@@ -473,8 +519,7 @@
           "vsx:Voklen.theme-by-language",
           "ms:jsaulou.theme-by-language"
         ]
-      },
-      "vsx:wayou.vscode-todo-highlight" // ? Is this needed - better comments may be better
+      }
     ],
 
     // Language Extensions
@@ -504,8 +549,9 @@
       "vsx:denoland.vscode-deno"
     ],
     "embedded": [ // Arduino, ARM, Particle, etc.
-      "vsx:lintangwisesa.arduino",
-      "vsx:vsciot-vscode.vscode-arduino"
+      "ms:formulahendry.platformio",
+      "ms:vsciot-vscode.vscode-arduino",
+      "vsx:lintangwisesa.arduino" // Theme
     ],
     "go": [
       "ms:jeff-hykin.better-go-syntax",
@@ -526,7 +572,6 @@
       "ms:jeff-hykin.better-js-syntax",
       "ms:kisstkondoros.vscode-codemetrics",
       "ms:liamhammett.inline-parameters",
-      "ms:VisualStudioExptTeam.vscodeintellicode",
       // Available in OpenVSX
       {
         "id": [
@@ -537,11 +582,10 @@
       },
       "vsx:christian-kohler.npm-intellisense",
       "vsx:christian-kohler.path-intellisense",
-      "vsx:maty.vscode-mocha-sidebar",
+      // "vsx:maty.vscode-mocha-sidebar",
       "vsx:ms-vscode.test-adapter-converter",
       "vsx:Orta.vscode-jest",
       "vsx:redhat.fabric8-analytics",
-      "vsx:steoates.autoimport",
       "vsx:xabikos.JavaScriptSnippets"
     ],
     "php": [
@@ -571,7 +615,6 @@
       "vsx:littlefoxteam.vscode-python-test-adapter",
       "vsx:ms-python.python",
       "vsx:njpwerner.autodocstring",
-      "vsx:quarto.quarto",
       "vsx:RDebugger.r-debugger",
       "vsx:sourcery.sourcery"
     ],
@@ -599,7 +642,9 @@
       "ms:Vue.volar",
       "vsx:hollowtree.vue-snippets"
     ],
-    "svelte": [],
+    "svelte": [
+      "vsx:svelte.svelte-vscode"
+    ],
     "express": [],
     "desktop": [],
 
@@ -630,8 +675,10 @@
     "languages": [
       {
         "id": "node",
-        "enabled": false
-      }
+        "enabled": true
+      },
+      "vsx.sumneko.lua",
+      "svelte"
     ]
   },
   "vsix.extensions": [
@@ -679,12 +726,17 @@
     "editor.defaultFormatter": "foxundermoon.shell-format"
   },
   "[markdown]": {
-    "files.trimTrailingWhitespace": false
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true
   },
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
   "[shellscript]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
   }
 }

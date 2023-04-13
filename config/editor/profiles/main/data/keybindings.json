@@ -1,47 +1,51 @@
 [
-  { "key": "ctrl+tab", "command": "workbench.action.openPreviousEditorFromHistory" },
+  // Tab between open editors and panel views
   {
+    "key": "ctrl+tab",
+    "command": "workbench.action.openPreviousEditorFromHistory"
+  }, {
     "key": "ctrl+tab",
     "command": "workbench.action.quickOpenNavigateNext",
     "when": "inQuickOpen"
   },
+
   {
     "key": "ctrl+space",
     "command": "-editor.action.triggerSuggest",
     "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
-  },
-  {
+  }, {
     "key": "ctrl+space",
     "command": "-toggleSuggestionDetails",
     "when": "suggestWidgetVisible && textInputFocus"
-  },
-  {
+  }, {
     "key": "ctrl+alt+space",
     "command": "-toggleSuggestionFocus",
     "when": "suggestWidgetVisible && textInputFocus"
-  },
-  {
+  }, {
     "key": "ctrl+space",
     "command": "-workbench.action.terminal.sendSequence",
     "when": "terminalFocus && terminalShellIntegrationEnabled && !accessibilityModeEnabled && terminalShellType == 'pwsh'"
-  },
-  {
+  }, {
     "key": "ctrl+space ctrl+space",
     "command": "workbench.action.quickOpen"
-  },
-  {
+  }, {
+    "key": "ctrl+space ctrl+enter",
+    "command": "workbench.action.terminal.focus",
+    "when": "editorTextFocus"
+  }, {
+      "key": "ctrl+space ctrl+enter",
+      "command": "workbench.action.focusActiveEditorGroup",
+      "when": "terminalFocus"
+  }, {
     "key": "cmd+p",
     "command": "-workbench.action.quickOpen"
-  },
-  {
+  }, {
     "key": "ctrl+space space",
     "command": "workbench.action.showCommands"
-  },
-  {
+  }, {
     "key": "shift+cmd+p",
     "command": "-workbench.action.showCommands"
-  },
-  {
+  }, {
     "key": "ctrl+space n",
     "command": "extension.advancedNewFile"
   }

@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=./../source/models/schema/config.json
+
+version: '0.5'
+collection:
+  name: Scripting Languages
+  description: Install the required runtime environments to support essential scripts
+  maintainer:
+    name: Benny Michaels
+    email: dotfiles@bnry.be
+    url: dotfile.bnry.be/dropbear
+  environment: sdf
+drops:
+  - name: Python 3
+  - name: Node Version Manager
+    install:
+      brew: nvm
+    postinstall:
+      - title: Creating the directory for NVM
+        exec: mkdir ~/.nvm

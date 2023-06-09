@@ -1,0 +1,50 @@
+
+collection: Productivity
+
+groups:
+  - name: Office
+    drops:
+      - name: Resilio Sync
+        install:
+          cask: resilio-sync
+      - name: Acrobat Reader
+        install:
+          cask: adobe-acrobat-reader
+      - name: Microsoft Office
+        install:
+          cask: microsoft-office
+      - name: Mailspring
+        install:
+          cask: mailspring
+      - name: Draw.io
+        install:
+          cask: drawio
+      - name: Standard Notes
+        install:
+          cask: standard-notes
+      - name: Ungoogled Chromium
+        install:
+          cask: eloston-chromium
+          apt: ungoogled-chromium
+          pacman: ungoogled-chromium
+
+  - name: Communication
+    drops:
+      - name: Ferdium
+        install:
+          cask: ferdium
+      - name: Caprine
+        install:
+          brew: caprine
+      - name: Around
+        install:
+          cask: around
+
+  - name: Academic
+    drops:
+    - name: Jamovi
+      install:
+        cask: jamovi
+    # TODO: Reference Manager(s)
+    # TODO: Python scientific packages
+    # TODO: R, Radian

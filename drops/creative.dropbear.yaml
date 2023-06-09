@@ -1,0 +1,93 @@
+# yaml-language-server: $schema=./../source/models/schema/config.json
+
+version: '0.5'
+collection:
+  name: Creative
+  description: Software to create graphics, audio, video and physical items 
+  environment: Desktop
+  maintainer:
+    name: Benny Michaels
+    email: dotfiles@bnry.be
+    url: dotfile.bnry.be/dropbear
+groups:
+  - name: Visual Design
+    drops: 
+    - name: Affinity Designer
+      install:
+        cask: affinity-designer
+    - name: Affinity Publisher
+    - name: Figma
+      install:
+        cask: figma
+    - name: FontForge
+      install:
+        brew: fontforge
+    - name: FontBase
+      install:
+        cask: fontbase
+    - name: ImageOptim
+      install:
+        cask: imageoptim
+
+  - name: Audio Engineering
+    drops:
+    - name: Ableton Live Standard
+      install:
+        cask: ableton-live-standard
+    - name: Tracktion Waveform
+    - name: Ardour
+    - name: Rekordbox
+      install:
+        cask: rekordbox
+    - name: Rewire
+    - name: Audapolis
+      homepage: https://github.com/audapolis/audapolis
+    # TODO: RipX alternative
+
+  - name: VST Plugins
+    drops:
+    - name: Spitfire Audio Portal
+      install:
+        cask: spitfire-audio
+    # Helm synth
+
+  - name: Maker
+    drops:
+    - name: Autodesk Fusion 360
+    - name: Circuit Studio
+    - name: EasyEDA
+    - name: Bomist
+      description: Parts and BOM manager
+    - name: Raspberry Pi Imager
+      tags:
+        - SD card imager
+    - name: Balener Etcher
+      tags:
+        - SD card imager
+    - name: ChiTuBox
+    - name: Blender
+    - name: Arduino CLI
+      install:
+        brew: arduino-cli
+      tags:
+        - Embedded SDK
+    - name: Teensy
+      install:
+        cask: teensy
+      tags:
+        - Embedded SDK
+
+  - name: 3D Modelling
+    drops:
+    - name: Blender
+
+  - name: Video Production
+    drops:
+    - name: Davinci Resolve
+    - name: Open Broadcasting Studio
+      install:
+        cask: obs
+  
+  - name: Misc. Creative Tools
+    drops:
+      # TODO: Ebook creator

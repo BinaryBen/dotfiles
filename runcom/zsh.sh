@@ -1,11 +1,12 @@
 # This file should be symlinked to ~/.zshrc
 
-# Fig pre block. Keep at the top of this file.
-[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && source "$HOME/.fig/shell/zshrc.pre.zsh"
-
 # Zsh specific config
 
 export SHELL_TYPE='zsh'
+
+# https://stackoverflow.com/a/74323525
+autoload -Uz compinit
+compinit
 
 # don't put duplicate lines or lines starting with space in the history.
 # See https://zsh.sourceforge.io/Doc/Release/Options.html for more options
@@ -56,10 +57,7 @@ plugins=(
 plugin-load $plugins
 
 # What to run when told not to run a thing
-function magic-enter-cmd {
-  preamble="👋 Hello $(whoami)!\n📂 $PWD\n"
+function magic-enter-cmd() {
+  preamble="\n👋 Hello $(whoami)!\n📂 $PWD\n"
   echo "clear && echo \"$preamble\" | lolcat && l"
 }
-
-# Fig post block. Keep at the bottom of this file.
-[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && source "$HOME/.fig/shell/zshrc.post.zsh"

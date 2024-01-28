@@ -1,4 +1,6 @@
 {
+  "accessibility.dimUnfocused.enabled": true,
+  "accessibility.dimUnfocused.opacity": 0.9,
   "activitusbar.activeColour": "statusBar.foreground",
   "activitusbar.alignment": "Right",
   "activitusbar.combineWorkspaceSettings": true,
@@ -48,10 +50,66 @@
   },
   "advancedNewFile.showInformationMessages": true,
   "advancedNewFile.convenienceOptions": ["last", "current", "root"],
+  "apc.activityBar": {
+    "hideSettings": true,
+    "position": "bottom",
+    "size": 35,
+    "itemSize": 30
+  },
+  "apc.electron": {
+    "apc.font.family": "SF Pro",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "frame": false,
+    "titleBarStyle": "customButtonsOnHover",
+    "transparent": true,
+    "vibrancy": "sidebar",
+    "visualEffectState": "active"
+  },
+  "apc.header": {
+    "height": 35
+  },
+  "apc.menubar.compact": false,
+  "apc.statusBar": {
+    "fontSize": 12,
+    "height": 35,
+    "position": "editor-bottom"
+  },
+  "apc.stylesheet": {
+    ".monaco-workbench .part.sidebar>.title>.title-label h2": "display: none;",
+    ".title.tabs.title-border-bottom .tabs-container": "cursor: default; -webkit-app-region: no-drag;",
+    ".editor-actions": "display: none;",
+    ".monaco-list-rows": "background-color: transparent !important;",
+    ".nosidebar .tabs": "padding-left: 80px;",
+    ".scrollbar": " width: 10px !important",
+    ".scrollbar .slider": "border-radius: 6px; width: calc(100% - 2px) !important;",
+    ".activitybar .composite-bar > .monaco-action-bar > .actions-container": "justify-content: space-evenly; max-width: 300px;",
+    ".monaco-editor .margin": "opacity: 1;",
+    // ".pane-header": "padding-left: 10px;",
+    ".activitybar > .content": "flex-direction: column !important",
+    // Toolbars hidden unless needed
+    "#workbench\\.parts\\.sidebar > .composite.title": "opacity: 0;",
+    "#workbench\\.parts\\.sidebar > .composite.title:hover": "opacity: 1;",
+    // Move notifications above taller status bar
+    // TODO: Move over editor if right sidebar is open (Needs fixed sidebar widths)
+    ".monaco-workbench>.notifications-center": "bottom: 45px; right: 0px",
+    ".monaco-workbench>.notifications-toasts": "bottom: 45px",
+    // Dim inactive terminal panes further
+    ".terminal": "border-left: 1px solid #00ffaa; padding-left: 1em; opacity: 1;",
+    ".terminal:not(.focus)": "border-color: transparent; opacity: 0.4;",
+    // Translucent sidebars
+    ".editor .title": "background: transparent !important;",
+    ".editor .title .label-container": "visibility: hidden;",
+    ".editor .scrollbar .slider": "visibility: hidden",
+    ".editor .scrollbar:hover .slider": "visibility: initial",
+    ".monaco-editor .scroll-decoration": "visibility: hidden",
+    ".monaco-scrollable-element>.shadow.top": "visibility: hidden",
+    ".inline-no-tabs-placeholder": "background: transparent !important;"
+  },
   "auto-close-tag.SublimeText3Mode": true,
   "auto-close-tag.enableAutoCloseSelfClosingTag": true,
   "auto-close-tag.insertSpaceBeforeSelfClosingTag": true,
   "aws.telemetry": false,
+  "breadcrumbs.enabled": false,
   "C_Cpp.intelliSenseEngine": "Disabled",
   "codemetrics.basics.DecorationTemplate": "<svg xmlns='http://www.w3.org/2000/svg' width='{{size}}px' height='{{size}}px' viewbox='0 0 {{size}} {{size}}'><circle cx='3' cy='9' r='3' stroke-width='0' fill='{{color}}' /></svg>",
   "codemetrics.basics.ComplexityTemplate": "{1}ㅤ (Score: {0})",
@@ -79,33 +137,15 @@
     "mjml",
     "sass"
   ],
-  "customizeUI.activityBar": "bottom",
-  "customizeUI.activityBarHideSettings": true,
-  "customizeUI.font.regular": "Helvetica Neue",
-  "customizeUI.statusBarPosition": "under-panel",
-  "customizeUI.stylesheet": {
-    ".monaco-pane-view .monaco-split-view2.vertical>.monaco-scrollable-element.mac": "height: calc(100% - 90px) !important;",
-    ".monaco-split-view2.vertical>.monaco-scrollable-element.mac>.split-view-container>.split-view-view.visible>.part.sidebar.left>.content": "height: 100vh !important",
-    "div.monaco-grid-view > div > div > div.monaco-scrollable-element.mac > div.split-view-container > div.split-view-view.visible > div > div > div.monaco-scrollable-element.mac > div.split-view-container > div:nth-child(1) > div > div > div.monaco-scrollable-element.mac > div.split-view-container > div:nth-child(2)": "bottom: 0px !important; top: unset !important; height: 48px !important",
-    ".part.activitybar.left": "background-color: unset !important",
-    "body.activity-bar-at-bottom .monaco-workbench .activitybar > .content .composite-bar": "margin-left: 0 !important",
-    "body.inline-title-bar .part>.title>.title-actions .action-label": "min-width: unset !important",
-    ".monaco-workbench .part.sidebar>.title>.title-label h2": "display: none;",
-    ".part.activitybar.left.bordered": "border: 1px solid transparent!important",
-    ".activitybar .composite-bar > .monaco-action-bar": "padding: 0 10px 0 6px",
-    ".activitybar .composite-bar > .monaco-action-bar > .actions-container": "justify-content: space-evenly; max-width: 300px; border: 1px solid #ffffff1c; border-radius: 6px",
-    ".pane-header": "padding-left: 10px;",
-    "body.activity-bar-at-bottom .monaco-workbench .activitybar > .content": "flex-direction: column !important",
-    ".terminal": "border-left: 1px solid #00ffaa; padding-left: 1em; opacity: 1;",
-    ".terminal:not(.focus)": "border-color: transparent; opacity: 0.3;"
-  },
-  "customizeUI.titleBar": "inline",
+  "diffEditor.renderSideBySide": false,
+  "editor.acceptSuggestionOnEnter": "off",
   "editor.accessibilitySupport": "off",
   "editor.bracketPairColorization.enabled": true,
   "editor.codeActionsOnSave": {
     "source.organizeImports": true
   },
   "editor.cursorBlinking": "expand",
+  "editor.cursorSmoothCaretAnimation": "explicit",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontFamily": "Input NF, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
@@ -115,18 +155,22 @@
   "editor.guides.bracketPairs": "active",
   "editor.inlineSuggest.enabled": true,
   "editor.insertSpaces": true,
+  "editor.lineNumbers": "interval",
   "editor.linkedEditing": true,
   "editor.minimap.showSlider": "always",
+  "editor.padding.top": 20,
+  "editor.renderLineHighlight": "all",
   "editor.rulers": [
     {
       "column": 80,
-      "color": "#312e2e"
+      "color": "#2e2e31"
     },
     {
       "column": 120,
       "color": "#3f0101"
     }
   ],
+  "editor.scrollbar.horizontal": "hidden",
   "editor.scrollbar.vertical": "hidden",
   "editor.scrollbar.verticalScrollbarSize": 0,
   "editor.tabSize": 2,
@@ -158,6 +202,7 @@
     "vue-html": "html"
   },
   "emmet.triggerExpansionOnTab": true,
+  "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.decorations.badges": false,
@@ -254,6 +299,9 @@
   "prettier.requireConfig": true,
   "python.formatting.provider": "none",
   "redhat.telemetry.enabled": false,
+  "scm.countBadge": "off",
+  "scm.defaultViewMode": "tree",
+  "scm.diffDecorationsGutterVisibility": "hover", // TODO: Only in Zen mode?
   "sidebar-markdown-notes.leftMargin": true,
   "security.workspace.trust.untrustedFiles": "open",
   "svelte.enable-ts-plugin": true,
@@ -315,17 +363,17 @@
   },
   "vsix.groups": {
     "ai": [
-      "local:gencay.vscode-chatgpt",
+      // "local:gencay.vscode-chatgpt",
       // https://ranguna.prose.sh/vscodium-and-copilot
       // "ms:GitHub.copilot",
-      "vsx:DanielSanMedium.dscodegpt"
+      // "vsx:DanielSanMedium.dscodegpt"
     ],
     "data": [ // #core
       "ms:GraphQL.vscode-graphql-syntax",
       "ms:GraphQL.vscode-graphql",
       "vsx:alexcvzz.vscode-sqlite",
       "vsx:cweijan.vscode-redis-client",
-      "vsx:mtxr.sqltools-driver-mysql",
+      // "vsx:mtxr.sqltools-driver-mysql",
       "vsx:mtxr.sqltools-driver-pg",
       "vsx:mtxr.sqltools",
       "vsx:rangav.vscode-thunder-client"
@@ -371,34 +419,35 @@
 
       // Code Platforms
       "vsx:redhat.vscode-yaml", // Dependency of Atlascode (and needed anyway)
+      // {
+      //   "id": [
+      //     "vsx:atlassian.atlascode",
+      //     "ms:Atlassian.atlascode"
+      //   ],
+      //   "enabled": false
+      // },
       {
-        "id": [
-          "vsx:atlassian.atlascode",
-          "ms:Atlassian.atlascode"
-        ],
-        "enabled": false
-      }, {
         "id": "vsx:GitHub.vscode-pull-request-github",
         "enabled": true
         }, {
           "id": "vsx:GitLab.gitlab-workflow",
           "enabled": false
-      },
-      "vsx:xyz.local-history"
+      }
+      // "vsx:xyz.local-history"
     ],
     "infrastructure": [
-      "vsx:ms-azuretools.vscode-docker",
-      {
-        "id": "vsx:ms-kubernetes-tools.vscode-kubernetes-tools",
-        "enabled": false
-      },
-      {
-        "id": [
-          "vsx.amazonwebservices.aws-toolkit-vscode",
-          "ms:AmazonWebServices.aws-toolkit-vscode"
-        ],
-        "enabled": false
-      }
+      "vsx:ms-azuretools.vscode-docker"
+      // {
+      //   "id": "vsx:ms-kubernetes-tools.vscode-kubernetes-tools",
+      //   "enabled": false
+      // },
+      // {
+      //   "id": [
+      //     "vsx.amazonwebservices.aws-toolkit-vscode",
+      //     "ms:AmazonWebServices.aws-toolkit-vscode"
+      //   ],
+      //   "enabled": false
+      // }
     ],
     "navigation": [ // #core
       {
@@ -498,19 +547,12 @@
       // Custom UI Layout for VSCodium
       // #if(editor="vscodium")
       // "ms:hedinne.popping-and-locking-vscode",
-      // {
-      //   "id": [
-      //     "ms:iocave.monkey-patch", // TODO: Use vsx: when v0.1.23 is published
-      //     "local:iocave.monkey-patch"
-      //   ]
-      // },
-      // "vsx:Gruntfuggly.activitusbar",
-      // "vsx:iocave.customize-ui",
       // #endif
-
       "ms:PeterSchmalfeldt.explorer-exclude",
       "vsx:aaron-bond.better-comments",
+      "vsx:drcika.apc-extension",
       "vsx:emmanuelbeziat.vscode-great-icons",
+      "vsx:Gruntfuggly.activitusbar",
       "vsx:IBM.output-colorizer",
       "vsx:johnpapa.vscode-peacock",
       "vsx:oderwat.indent-rainbow",
@@ -525,10 +567,10 @@
     // Language Extensions
 
     "css": [
-      "vsx:mrmlnc.vscode-scss",
+      "ms:mrmlnc.vscode-scss",
       "vsx:pranaygp.vscode-css-peek",
-      "vsx:syler.sass-indented",
-      "vsx:Zignd.html-css-class-completion"
+      "vsx:syler.sass-indented"
+      // "vsx:Zignd.html-css-class-completion"
     ],
     "cpp": [
       "ms:jeff-hykin.better-c-syntax",
@@ -639,8 +681,9 @@
       "vsx:unifiedjs.vscode-mdx"
     ],
     "vue": [
-      "ms:Vue.volar",
-      "vsx:hollowtree.vue-snippets"
+      "ms:Vue.vscode-typescript-vue-plugin",
+      "ms:hollowtree.vue-snippets",
+      "vsx:Vue.volar"
     ],
     "svelte": [
       "vsx:svelte.svelte-vscode"
@@ -664,21 +707,23 @@
     "enhancements": [
       "ai",
       "infrastructure",
-      {
-        "id": "present",
-        "enabled": false
-      },
+      // {
+      //   "id": "present",
+      //   "enabled": false
+      // },
       "preview", // Too heavy to be core
       "remote",
       "tools"
     ],
     "languages": [
+      "css",
       {
         "id": "node",
         "enabled": true
       },
       "vsx.sumneko.lua",
-      "svelte"
+      "svelte",
+      "vue"
     ]
   },
   "vsix.extensions": [
@@ -687,9 +732,14 @@
     "languages"
   ],
   "window.commandCenter": true,
+  "window.dialogStyle": "custom",
   "window.restoreWindows": "one",
   "window.titleBarStyle": "native",
   "workbench.colorCustomizations": {
+    "activityBar.background": "#51547b20",
+    "editorIndentGuide.background1": "#2e2e31",
+    "sideBar.background": "#51547b20",
+    "sideBarSectionHeader.background": "#00000000",
     "terminalCursor.foreground": "#00ffaa"
   },
   // #if(editor="visual studio code")
@@ -698,8 +748,15 @@
   // "workbench.colorTheme": "Popping and Locking",
   // #endif
   "workbench.editor.closeEmptyGroups": false,
+  "workbench.editor.decorations.badges": false,
   "workbench.editor.decorations.colors": false,
-  "workbench.editor.showTabs": false,
+  "workbench.editor.editorActionsLocation": "hidden",
+  "workbench.editor.showTabs": "single",
+  "workbench.editor.tabSizing": "fixed",
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.excludeDirty": true,
+  "workbench.editor.limit.perEditorGroup": true,
+  "workbench.editor.limit.value": 6,
   "workbench.editorAssociations": {
     "*.csv": "gc-excelviewer-csv-editor",
     "*.md": "vscode.markdown.preview.editor",
@@ -712,7 +769,10 @@
   // "workbench.preferredDarkColorTheme": "Popping and Locking",
   // #endif
   "workbench.startupEditor": "none",
+  "workbench.tips.enabled": false,
   "zenMode.fullScreen": false,
+  "zenMode.restore": false,
+  "zenMode.showTabs": "single",
   "[dockerfile]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
   },

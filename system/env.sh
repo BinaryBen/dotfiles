@@ -14,7 +14,8 @@ export XDG_RUNTIME_DIR=${XDG_RUNTIME_DIR:-$HOME/.xdg}
 
 # Non-standard additions:
 
-export XDG_DOTFILES=${XDG_DOTFILES:-$HOME/.files}
+export XDG_DOTFILES=${DOTFILES:-$HOME/.files}
+export DOTFILES=${DOTFILES:-$HOME/.files}
 export XDG_SYNC_HOME=${XDG_SYNC_ROOT:-$HOME/.files}
 export XDG_SYNC_TMP=${XDG_SYNC_TMP}/Inbox
 
@@ -45,6 +46,7 @@ export LESSHISTFILE="${LESSHISTFILE:-$XDG_CACHE_HOME/less/history}"
 # nodejs
 export NPM_CONFIG_USERCONFIG="${NPM_CONFIG_USERCONFIG:-$XDG_CONFIG_HOME/npm/npmrc}"
 export NODE_REPL_HISTORY="${NODE_REPL_HISTORY:-$XDG_DATA_HOME/nodejs/repl_history}"
+export PNPM_HOME="$XDG_DATA_HOME/pnpm"
 # nuget
 export NUGET_PACKAGES="${NUGET_PACKAGES:-$XDG_CACHE_HOME/NuGetPackages}"
 # readline
@@ -61,7 +63,7 @@ export _Z_DATA="${_Z_DATA:-$XDG_DATA_HOME/z/data}"
 # Git config
 
 export GITPATH=${GITPATH:-$XDG_DATA_HOME/git}
-export GIT_CONFIG_GLOBAL="$HOME/.files/config/git/config"
+export GIT_CONFIG_GLOBAL="$DOTFILES/config/git/config"
 export GHQ_ROOT="$GITPATH" # Where to store git repos using ghq
 
 # Change default $EDITOR based on personal preference and available options

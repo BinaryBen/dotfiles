@@ -24,7 +24,7 @@ path /usr/local/bin
 path /opt/sbin
 path /opt/bin
 
-# Add Node Version Manager
+# Node Version Manager
 if [ -d $HOME/.nvm ]; then
   export NVM_DIR="$HOME/.nvm"
   # This loads nvm (and by extension Node and globally installed packages)
@@ -39,17 +39,24 @@ elif [ -d /opt/homebrew/opt/nvm ]; then
   [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
 fi
 
+# Performant NPM
+path $PNPM_HOME
+
 # Homebrew
 path /opt/homebrew/sbin
 path /opt/homebrew/bin
+
+# Bolt via Homebrew
+path /opt/puppetlabs/bolt/bin
 
 # Language specific binaries
 path $HOME/.composer/vendor/bin # PHP / Composer
 path $HOME/.nimble/bin          # Nim
 path $NIMBLEDIR/bin             # Nim
 # path /usr/local/lib/ruby/gems/2.7.0/bin # Ruby (Broken)
-path $HOME/.deno/bin         # Deno
-path /usr/local/share/dotnet # .NET
+path $HOME/.deno/bin              # Deno
+path /usr/local/share/dotnet      # .NET
+path $HOME/.local/bin/flutter/bin # Flutter / Dart
 
 # GNU coreutils for macOS without g prefix
 path "$(brew --prefix)/opt/coreutils/libexec/gnubin"

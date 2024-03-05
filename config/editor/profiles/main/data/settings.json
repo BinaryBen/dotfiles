@@ -142,7 +142,7 @@
   "editor.accessibilitySupport": "off",
   "editor.bracketPairColorization.enabled": true,
   "editor.codeActionsOnSave": {
-    "source.organizeImports": true
+    "source.organizeImports": "explicit"
   },
   "editor.cursorBlinking": "expand",
   "editor.cursorSmoothCaretAnimation": "explicit",
@@ -305,13 +305,14 @@
   "sidebar-markdown-notes.leftMargin": true,
   "security.workspace.trust.untrustedFiles": "open",
   "svelte.enable-ts-plugin": true,
+  "svg.preview.mode": "svg",
   "syncSettings.keybindingsPerPlatform": false,
   "syncSettings.resources": ["extensions", "keybindings", "settings"],
   "telemetry.telemetryLevel": "off",
   "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.fontFamily": "Input NF",
-  "terminal.integrated.fontSize": 13.5,
+  "terminal.integrated.fontSize": 13,
   "terminal.integrated.profiles.osx": {
     "zsh": {
       "path": "zsh",
@@ -371,6 +372,7 @@
     "data": [ // #core
       "ms:GraphQL.vscode-graphql-syntax",
       "ms:GraphQL.vscode-graphql",
+      "ms:matt-meyers.vscode-dbml",
       "vsx:alexcvzz.vscode-sqlite",
       "vsx:cweijan.vscode-redis-client",
       // "vsx:mtxr.sqltools-driver-mysql",
@@ -429,7 +431,7 @@
       {
         "id": "vsx:GitHub.vscode-pull-request-github",
         "enabled": true
-        }, {
+      }, {
           "id": "vsx:GitLab.gitlab-workflow",
           "enabled": false
       }
@@ -600,6 +602,8 @@
       "vsx:golang.go"
     ],
     "mobile": [ // App development
+      "ms:Google.arb-editor",
+      "ms:localizely.flutter-intl",
       "vsx:Dart-Code.dart-code",
       "vsx:Dart-Code.flutter"
     ],
@@ -681,7 +685,6 @@
       "vsx:unifiedjs.vscode-mdx"
     ],
     "vue": [
-      "ms:Vue.vscode-typescript-vue-plugin",
       "ms:hollowtree.vue-snippets",
       "vsx:Vue.volar"
     ],
@@ -723,7 +726,8 @@
       },
       "vsx.sumneko.lua",
       "svelte",
-      "vue"
+      "vue",
+      "mobile"
     ]
   },
   "vsix.extensions": [
@@ -776,6 +780,12 @@
   "[dockerfile]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
   },
+  "[dart]": {
+		"editor.selectionHighlight": false,
+		"editor.suggestSelection": "first",
+		"editor.tabCompletion": "onlySnippets",
+		"editor.wordBasedSuggestions": "off"
+	},
   "[dotenv]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
   },

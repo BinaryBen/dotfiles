@@ -114,19 +114,18 @@ brew install --cask firebase-admin
 # Git GUI
 # Fuse https://fuseopen.com
 brew install --cask koa11y
-# Opera, Firefox?
 brew install --cask microsoft-edge
 # REST GUI
 # Localhost domain manager
 # Localhost SSH keys
 brew install --cask publii
 brew install --cask pulse
-# brew install --cask touch-bar-simulator
 brew install nim
 brew install sass/sass/sass
 brew install flyctl
+brew install cocoapods
 
-Media production
+# Media production
 
 brew install --cask ableton-live-standard
 # Tracktion Waveform
@@ -188,7 +187,7 @@ brew install --cask runescape
 
 brew install --cask ferdium
 brew install caprine
-brew install --cask around
+# brew install --cask around
 # Element?
 
 # MAS

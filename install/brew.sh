@@ -13,6 +13,7 @@ brew install --cask fing
 brew install --cask knockknock
 # Alternative for  knock to unlock?
 brew install --cask tor-browser
+brew install wireguard-tools
 
 # Automations & Assistants
 
@@ -160,7 +161,7 @@ brew install --cask eloston-chromium
 
 brew install --cask quarto
 # Reference Manager
-# jamovi
+brew install --cask jamovi
 
 # Entertainment
 
@@ -180,8 +181,10 @@ brew install --cask steam
 brew install --cask freetube
 brew install --cask jellyfin-media-player
 brew install --cask gopanda
-brew install --cask runescape
+# brew install --cask runescape
 # Trakt
+brew tap krtirtho/apps
+brew install --cask spotube
 
 # Communication
 

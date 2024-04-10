@@ -1,3 +1,5 @@
+# CodeWhisperer pre block. Keep at the top of this file.
+[[ -f "${HOME}/Library/Application Support/codewhisperer/shell/bashrc.pre.bash" ]] && builtin source "${HOME}/Library/Application Support/codewhisperer/shell/bashrc.pre.bash"
 # This file should be symlinked to ~/.bashrc
 
 # Bash specific config
@@ -12,3 +14,6 @@ HISTCONTROL=ignoreboth:erasedups
 
 export XDG_DOTFILES="$HOME/.files"
 source $XDG_DOTFILES/runcom/shared.sh
+
+# CodeWhisperer post block. Keep at the bottom of this file.
+[[ -f "${HOME}/Library/Application Support/codewhisperer/shell/bashrc.post.bash" ]] && builtin source "${HOME}/Library/Application Support/codewhisperer/shell/bashrc.post.bash"

@@ -14,6 +14,7 @@ brew install --cask knockknock
 # Alternative for  knock to unlock?
 brew install --cask tor-browser
 brew install wireguard-tools
+# Wireguard GUI
 
 # Automations & Assistants
 
@@ -24,24 +25,24 @@ brew install --cask hammerspoon
 
 brew install --cask barrier
 brew install --cask rectangle
+brew install --cask alt-tab
 brew install --cask betterdisplay
 brew install --cask insomnia
+brew install --cask itsycal
 brew install lsd
 brew install thefuck
 brew install tmux
 brew install jq
 brew install trash
-brew install --cask fig
 brew install mas
 brew install qrcp
-# Epoccam?
-brew install --cask duet
 brew install --cask imageoptim
 # Focus app? Pomo timer?
 brew install --cask flux
 brew install --cask finicky
 brew install --cask browserosaurus
-# Find large files / duplicates / empty directories?
+brew install --cask disk-inventory-x
+# Find duplicates / empty directories?
 # Geektool
 brew install --cask geekbench
 brew install --cask nomachine
@@ -52,6 +53,7 @@ brew install --cask qlvideo
 brew install --cask tyke
 brew install youtube-dl
 brew install ffmpeg
+brew install gifski
 
 # Text expander / Snippet manager
 
@@ -66,6 +68,7 @@ espanso install cht
 # Dropzone / drop to GIF?
 # Eject drives from menu bar
 # Remote server manager (DO, Vultr, AWS)
+brew install meetingbar
 brew install only-switch
 
 # Engineering
@@ -102,14 +105,13 @@ brew install --cask visual-studio-code
 brew install --cask vscodium
 brew install --cask open-in-code
 brew install --cask iterm2
-brew install --cask dotnet
+# brew install --cask dotnet
 brew install --cask devtoys
 brew install --cask multipass
 #ASCIinema
 brew install --cask beekeeper-studio
 # Docs viewer (like Dash)
 # API browser
-# Electron?
 # Browser automation
 brew install --cask firebase-admin
 # Git GUI
@@ -145,8 +147,6 @@ brew install --cask spitfire-audio
 
 brew install --cask resilio-sync
 brew install --cask adobe-acrobat-reader
-brew install --cask google-drive
-brew install --cask microsoft-office
 brew install --cask mailspring # Seems to be this or Thunderbird
 # Which supports PEP? GPG? What about Canary and Proton?
 # Mailspring is apparently going more open
@@ -155,7 +155,7 @@ brew install --cask standard-notes
 # Calendar? Fantastical?
 # Project Management
 # Grammarly
-brew install --cask eloston-chromium
+# brew install --cask eloston-chromium
 
 # Academic / Writing
 
@@ -171,18 +171,32 @@ brew install --cask jamovi
 brew install --cask vlc
 brew install --cask optimus-player
 # Music player
-brew install --cask psst
 brew tap popcorn-official/popcorn-desktop https://github.com/popcorn-official/popcorn-desktop.git
 brew install --cask popcorn-time
 brew install --cask motrix
 # SteamLink
 brew install --cask steam
-# Epic Games
 brew install --cask freetube
 brew install --cask jellyfin-media-player
 brew install --cask gopanda
 # brew install --cask runescape
 # Trakt
+
+# * Currently trialing Spotify since Apple Music deleted my library when I let my subscription lapse (boo!)
+
+brew install --cask spotify
+bash <(curl -sSL https://spotx-official.github.io/run.sh) -h
+
+brew install spicetify-cli
+spicetify
+spicetify config spotify_path /Applications/Spotify.app/Contents/Resources
+curl -fsSL https://raw.githubusercontent.com/spicetify/spicetify-marketplace/main/resources/install.sh | sh
+
+# Spicetify Mods
+
+# Add stats
+# Add library
+
 brew tap krtirtho/apps
 brew install --cask spotube
 

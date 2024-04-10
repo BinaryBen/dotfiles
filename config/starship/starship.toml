@@ -1,0 +1,424 @@
+scan_timeout = 100
+add_newline = true
+palette = 'pride'
+
+format = """
+──$jobs$character$status$fill$cmd_duration──
+
+[ ${custom.hardware}$os$hostname$shlvl](bg:host_bg fg:#090c0c)\
+[](fg:host_bg bg:tlpwd_bg)\
+${custom.tlpwd}\
+$git_branch\
+[](fg:tlpwd_bg bg:dir_bg)\
+$directory\
+[](fg:dir_bg)\
+$fill\
+[](fg:dev_bg) \
+$package\
+[](fg:lang_bg bg:dev_bg)\
+$c\
+$cmake\
+$conda\
+$dart\
+$deno\
+$dotnet\
+$golang\
+$nim\
+$nodejs\
+[   ](bg:lang_bg)\
+$php\
+$python
+$rlang\
+$rust\
+$swift\
+
+$newline
+ [](fg:5)[ ](bg:5)\
+$sudo\
+$username\
+[](bg:8 fg:5)\
+[](bg:15 fg:8)\
+${custom.prompt}\
+[](fg:15)  \
+"""
+
+right_format = """
+$git_status\
+$git_commit\
+[](fg:5)\
+$time\
+[](fg:5) \
+"""
+
+# red #de324c
+# orange #f4895f
+# yellow #f8e16f
+# green #95cf92
+# blue #369acc
+# purple #9656a2
+
+# LGBT Pride!
+# LGBT_PROMPT="${LS_RED}${LS_YELLOW}${LS_GREEN}${LS_CYAN}${LS_PURPLE} ${LS_RESET}"
+#
+
+[palettes.pride]
+host_bg = "#f4895f"
+tlpwd_bg = "#f8e16f"
+dir_bg = "#95cf92"
+dev_bg = "#369acc"
+lang_bg = "#9656a2"
+
+# unsorted = """
+# $battery\
+# $memory_usage\
+
+# $container\
+# $kubernetes\
+# $docker_context\
+# $helm\
+
+# $aws\
+# $azure\
+# $gcloud\
+# ${custom.oracle}\
+
+# $shell\
+# """
+
+
+# might_use = """
+# $bun\
+# $env_var\
+# $localip\
+# $terraform\
+# """
+
+
+
+# ﱮ
+
+# Best effort to show the type of deployment the OS is running on
+#  (WSL), , ,  (VPS, hypervisor)
+[custom.hardware]
+command = "echo  "
+style = "bg:host_bg fg:#090c0c"
+when = false
+
+[custom.prompt]
+command = 'beeline-prompt icon'
+style = 'bg:15'
+format = '[$output]($style)'
+when = true
+
+[custom.pwd]
+command = 'echo $PWD'
+when = true
+style = 'green'
+format = '[$output]($style)'
+
+[custom.tlpwd]
+description = "The most significant top-level directory of your current directory"
+command = 'beeline-pwd root | beeline-pretty'
+when = true
+style = 'bold bg:tlpwd_bg fg:black'
+format = '[ $output]($style)'
+
+[custom.quarto]
+command = 'echo Quarto'
+
+[custom.arduino]
+symbol = ""
+
+
+
+[cmd_duration]
+min_time = 100
+format = '[ 祥$duration ]($style)'
+
+[directory]
+format = "[ $path ]($style)"
+style = "fg:black bg:dir_bg"
+read_only = " 󰌾"
+home_symbol = ""
+truncate_to_repo = false
+truncation_length = 1
+use_os_path_sep = false
+
+# [directory.substitutions]
+# '/' = "  "
+
+[fill]
+# symbol = '─'
+symbol = ' '
+
+[git_branch]
+format = '[ $symbol$branch(:$remote_branch) ]($style)'
+symbol = " "
+truncation_length = 6
+style = "italic bg:tlpwd_bg fg:black"
+
+[git_commit]
+only_detached = false
+style = 'white'
+commit_hash_length = 5
+format = '[ $hash$tag]($style) '
+
+[git_status]
+format = '[$ahead_behind$all_status]($style)'
+ignore_submodules = true
+conflicted = '[咽 $count](red) '
+ahead = '[ $count](green) '
+behind = '[ $count](yellow) '
+diverged = '[ $ahead_count/$behind_count](purple) ' # Replace with f0641 󰙁
+up_to_date = '[  ](green)'
+untracked = '[ $count ](blue)'
+stashed = '[ $count ](purple)'
+modified = '[ $count ](yellow)'
+staged = '[● $count ](green)'
+renamed = '[凜 $count ](yellow)'
+deleted = '[ $count ](red)'
+typechanged = '[ $count ](yellow)'
+
+# TODO: Flag when no remote origin (local only)
+
+[character]
+success_symbol = '[  ](bold green) '
+error_symbol = '[  ](bold red) '
+
+[hostname]
+format = '[$hostname ]($style)'
+style = "bg:host_bg fg:#090c0c"
+ssh_only = true
+
+[memory_usage]
+symbol = "󰍛 "
+
+[os]
+disabled = false
+style = "bg:host_bg fg:#090c0c"
+
+[package]
+symbol = " "
+format = '[ $symbol$version ]($style)'
+style = "bg:dev_bg fg:bold"
+disabled = false
+
+[shlvl]
+disabled = false
+style = "bg:host_bg fg:#090c0c"
+format = '[ $symbol$shlvl ]($style)'
+symbol = ' '
+
+[status]
+style = ""
+format = '[$maybe_int$common_meaning$signal_name]($style)'
+disabled = false
+
+[sudo]
+style = 'bold red'
+symbol = ''
+format = '[ $symbol ]($style)'
+disabled = false
+
+[time]
+disabled = false
+time_format = "%R" # Hour:Minute Format
+style = "bg:5"
+format = '[   $time ]($style)'
+
+[username]
+style_user = "fg:#7DF9AA bg:#1C3A5E"
+format = '[  $user ]($style)'
+show_always = false
+
+## Envirnoments
+
+[aws]
+symbol = "  "
+[docker_context]
+symbol = " "
+
+## Languages
+
+[c]
+symbol = " "
+format = '[$symbol($version(-$name) )]($style)'
+style= 'bg:lang_bg fg:bold'
+[cmake]
+symbol = " "
+style= 'bg:lang_bg fg:bold'
+[conda]
+symbol = "🅒 "
+style= 'bg:lang_bg fg:bold'
+[dart]
+symbol = " "
+format = '[$symbol($version )]($style)'
+style= 'bg:lang_bg fg:bold'
+[deno]
+symbol = "🦕 "
+format = '[$symbol($version )]($style)'
+style= 'bg:lang_bg fg:bold'
+[dotnet]
+symbol = ".NET "
+format = '[$symbol($version )]($style)'
+style= 'bg:lang_bg fg:bold'
+[golang]
+symbol = " "
+format = '[$symbol($version )]($style)'
+style= 'bg:lang_bg fg:bold'
+[nim]
+symbol = " "
+format = '[$symbol($version ) ]($style)'
+style= 'bg:lang_bg fg:bold'
+[nodejs]
+symbol = " "
+format = '[$symbol](bg:lang_bg fg:green)[($version )]($style)'
+style= 'bg:lang_bg fg:bold green'
+[php]
+symbol = " "
+style= 'bg:lang_bg fg:bold'
+[python]
+symbol = " "
+style= 'bg:lang_bg fg:bold'
+[rlang]
+symbol = "󰟔 "
+style= 'bg:lang_bg fg:bold'
+[rust]
+symbol = " "
+style= 'bg:lang_bg fg:bold'
+[swift]
+symbol = " "
+style= 'bg:lang_bg fg:bold'
+
+[os.symbols]
+Alpaquita = " "
+Alpine = " "
+Amazon = " "
+Android = " "
+Arch = " "
+Artix = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+# Garuda = "󰛓 "
+Gentoo = " "
+# HardenedBSD = "󰞌 "
+# Illumos = "󰈸 "
+Linux = " "
+Mabox = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+# OpenBSD = "󰈺 "
+openSUSE = " "
+# OracleLinux = "󰌷 "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+# Redox = "󰀘 "
+# Solus = "󰠳 "
+SUSE = " "
+Ubuntu = " "
+Unknown = " "
+Windows = " "
+# TODO: Rocky Linux
+
+
+
+# Icon set: https://www.nerdfonts.com/cheat-sheet
+
+# B6_ICON_GENERIC_COMMENT=""
+# B6_ICON_GENERIC_USER=""
+# B6_ICON_GENERIC_SUPERUSER=""
+# B6_ICON_GENERIC_WINDOWS=""
+# B6_ICON_GENERIC_CLOCK=""
+# B6_ICON_GENERIC_STOPWATCH="祥"
+# B6_ICON_GENERIC_CALENDER=""
+# B6_ICON_GENERIC_NOTIFICATION=""
+# B6_ICON_GENERIC_CHAT=""
+# B6_ICON_GENERIC_GLOBE="爵"
+# B6_ICON_GENERIC_EMAIL="﫯"
+# B6_ICON_GENERIC_PLAYING=""
+# B6_ICON_GENERIC_PAUSED=""
+# B6_ICON_GENERIC_INCOGNITO=""
+# B6_ICON_GENERIC_SUCCESS=""
+# B6_ICON_GENERIC_ERROR=""
+# B6_ICON_GENERIC_WARNING=""
+# B6_ICON_GENERIC_LOADING=""
+# B6_ICON_GENERIC_PROMPT="ﬦ" # Common alternative options: ﬦ, , 
+# B6_ICON_GENERIC_DIVIDER="─"
+
+
+
+# export B6_ICON_GIT_CONFLICT="咽"
+# export B6_ICON_GIT_AHEAD=""
+# export B6_ICON_GIT_BEHIND=""
+# export B6_ICON_GIT_DIVERGED=" or "
+# export B6_ICON_GIT_CLEAN="${B6_ICON_GENERIC_SUCCESS}"
+# export B6_ICON_GIT_UNTRACKED="●"
+# export B6_ICON_GIT_STASHED=""
+# export B6_ICON_GIT_MODIFIED=""
+# export B6_ICON_GIT_STAGED=""
+# export B6_ICON_GIT_RENAMED="凜"
+# export B6_ICON_GIT_DELETED=""
+
+# Check for skynet
+
+# if [ -n "$BEELINE_DISABLE_SKYNET" ]; then
+#   export LAST_CMD_EXIT_CODE=$?
+# elif [ -n "$BEELINE_DISABLE_SKYNET_WARNING" ]; then
+#   echo "Skynet is disabled! Good luck hoomaan!"
+# fi
+
+
+
+
+# Unused modules
+
+# $buf\
+# $cobol\
+# $crystal\
+# $daml\
+# $elixir\
+# $elm\
+# $erlang\
+# $fennel\
+# $fossil_branch\
+# $git_metrics\
+# $gradle\
+# $haskell\
+# $haxe\
+# $java\
+# $julia\
+# $kotlin\
+# $lua\
+# $meson\
+# $hg_branch\
+# $nix_shell\
+# $opa\
+# $openstack\
+# $ocaml\
+# $perl\
+# $pijul_channel\
+# $pulumi\
+# $purescript\
+# $raku\
+# $red\
+# $ruby\
+# $scala\
+# $singularity
+# $solidity\
+# $spack\
+# $vagrant\
+# $vlang\
+# $vcsh\
+# $zig\

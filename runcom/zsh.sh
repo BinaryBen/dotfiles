@@ -1,3 +1,5 @@
+# CodeWhisperer pre block. Keep at the top of this file.
+[[ -f "${HOME}/Library/Application Support/codewhisperer/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/codewhisperer/shell/zshrc.pre.zsh"
 # This file should be symlinked to ~/.zshrc
 
 # Zsh specific config
@@ -61,3 +63,8 @@ function magic-enter-cmd() {
   preamble="\n👋 Hello $(whoami)!\n📂 $PWD\n"
   echo "clear && echo \"$preamble\" | lolcat && l"
 }
+
+eval $(thefuck --alias)
+
+# CodeWhisperer post block. Keep at the bottom of this file.
+[[ -f "${HOME}/Library/Application Support/codewhisperer/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/codewhisperer/shell/zshrc.post.zsh"

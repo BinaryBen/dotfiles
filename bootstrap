@@ -3,4 +3,153 @@
 # This is located in root for use in Github Codespace
 # https://docs.github.com/en/codespaces/customizing-your-codespace/personalizing-codespaces-for-your-account#dotfiles
 
-echo "This does nothing at the moment. Sad face."
+clear
+
+echo -e "\nThis computer will be configured with \033[1m@binaryben's\033[0m personal preferences\n"
+
+# echo -e "\n\033[1;43m WARNING! \033[0m  \033[1;33mPrompts will automatically continue with defaults if they timeout.\033[0m\n"
+
+echo -e "\033[1;43m WARNING! \033[0m  \033[1;33mThis script is only tested with macOS for now.\033[0m\n"
+
+echo -e "Your password may be required to continue. Please enter it if asked.\n"
+sudo -v
+
+# Keep-alive: update existing `sudo` time stamp until finished
+while true; do
+  sudo -n true
+  sleep 60
+  kill -0 "$$" || exit
+done 2>/dev/null &
+
+# *********************************************
+# * Install platform dependencies
+# *********************************************
+
+# NOTE: Install WSL2 on Windows
+
+# if Apple Silicon
+# sudo softwareupdate --install-rosetta --agree-to-license
+
+echo -e "\033[1;36mChecking for system updates...\033[0m\n"
+
+softwareupdate --all --install --force
+
+# *********************************************
+# * Install or update Homebrew
+# *********************************************
+
+if command -v brew &>/dev/null; then
+  echo -e "\n\033[1;36mHomebrew already installed. Updating now...\033[0m\n"
+  brew update
+  brew upgrade
+else
+  echo -e "\n\033[1;36mHomebrew not found. Installing...\033[0m\n"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
+
+# *********************************************
+# * Install core packages
+# *********************************************
+
+echo -e "\n\033[1;36mInstalling Node...\033[0m\n"
+
+# First because Node possibly needs to be installed before birwarden-cli
+
+brew install corepack
+corepack enable pnpm
+pnpm env add -g latest 18
+pnpm env use -g lts # Default to latest lts
+
+echo -e "\n\033[1;36mInstalling Python 3...\033[0m\n"
+
+# Python 3
+
+echo -e "\n\033[1;36mInstalling Core Packages...\033[0m\n"
+
+cd /tmp
+curl -O https://raw.githubusercontent.com/binaryben/dotfiles/main/install/homebrew/core.brew
+brew bundle --no-lock --file core.brew && rm core.brew && cd -
+
+# *********************************************
+# * Configure Git & Get Dotfiles
+# *********************************************
+
+git lfs install
+mkdir -p ~/.local/share/git/github.com/binaryben
+
+# Generate SSH key
+#! Careful, this may unlock almost everything once set up...
+
+exit 0
+
+# *********************************************
+# * Install other dependencies
+# *********************************************
+
+# Install XCode
+# TODO: Ask if wanting to install full Xcode or just Command Line Tools?
+brew install --cask xcode
+sudo xcodebuild -license accept
+
+# *********************************************
+# * Prepare config
+# *********************************************
+
+# Download the dotfiles repo
+
+# Install preferences
+brew mackup
+
+# *********************************************
+# * Install software
+# *********************************************
+
+# Install brewfile bundles
+
+for bundle in terminal creative developer entertainment productivity utility; do
+  brew bundle --no-lock --file $GITPATH/github.com/binaryben/dotfile/install/homebrew/${bundle}.brew
+done
+
+# *********************************************
+# * Final tasks
+# *********************************************
+
+# Install my fonts
+## Input NF
+
+# Hack Spotify
+
+bash <(curl -sSL https://spotx-official.github.io/run.sh) -h
+
+spicetify
+spicetify config spotify_path /Applications/Spotify.app/Contents/Resources
+curl -fsSL https://raw.githubusercontent.com/spicetify/spicetify-marketplace/main/resources/install.sh | sh
+
+# Spicetify Mods
+
+# Add stats
+# Add library
+
+# Make Go directories
+mkdir -p $HOME/.local/share/go/{bin,src,pkg}
+
+# TODO: Add the following to shell:
+# export GOPATH=$HOME/.local/share/go
+# export GOROOT="$(brew --prefix golang)/libexec"
+# export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
+
+# Snippets
+
+espanso install espanso-pinyin-tone
+espanso install cht
+
+# Node CLIs
+
+pnpm i -g @softwaretechnik/dbml-renderer
+pnpm i -g stegcloak
+pnpm i -g serve
+pnpm i -g surge
+pnpm i -g vercel@latest
+pnpm i -g @shopify/cli
+pnpm i -g netlify-cli
+pnpm i -g tunnelmole

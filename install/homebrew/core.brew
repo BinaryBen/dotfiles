@@ -1,0 +1,45 @@
+# ********************************************************
+# * Core
+# ********************************************************
+
+# Basic
+
+brew "zsh"
+brew "git"
+cask "iterm2" if OS.mac?
+brew "moreutils"
+cask "kitty" if OS.linux?
+brew "starship"
+brew "rename"
+brew "nano"
+brew "curl"
+brew "wget"
+brew "nmap"
+brew "telnet"
+brew "openssh" if OS.linux?
+brew "mas"
+
+# Security
+
+brew "bitwarden-cli"
+mas "Bitwarden.app", id: 1352778147 # need to use MAS for Touch ID integration
+brew "wireguard-tools"
+mas "WireGuard.app", id: 1451685025
+cask "geph"
+cask "ivpn"
+
+# GNU all the things
+
+brew "coreutils"
+brew "findutils"
+brew "gawk"
+brew "gnu-sed"
+brew "gnu-tar"
+brew "gnu-getopt"
+brew "grep"
+brew "make"
+
+# Captcha for risky commands
+
+tap "kaplanelad/tap"
+brew "shellfirm"

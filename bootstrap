@@ -83,7 +83,7 @@ export DOTFILES="$GITPATH/github.com/binaryben/dotfiles"
 
 git lfs install
 
-if [ -d "$DOTFILE" ]; then
+if [ -d "$DOTFILES" ]; then
   echo "\n\033[1;36mUpdating local dotfiles repo...\033[0m\n"
   cd $DOTFILES
   git pull

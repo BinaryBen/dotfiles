@@ -74,6 +74,8 @@ brew bundle --no-lock --file core.brew && rm core.brew && cd -
 # * Configure Git & Get Dotfiles
 # *********************************************
 
+echo "\n\033[1;36mCloning dotfiles locally...\033[0m\n"
+
 export GITPATH="$HOME/.local/share/git"
 
 git lfs install
@@ -81,6 +83,7 @@ mkdir -p $GITPATH/github.com/binaryben
 
 cd ~/.local/share/git/github.com/binaryben
 git clone https://github.com/binaryben/dotfiles.git
+cd -
 
 export DOTFILES="$GITPATH/github.com/binaryben/dotfiles"
 
@@ -88,12 +91,31 @@ export DOTFILES="$GITPATH/github.com/binaryben/dotfiles"
 #! Careful, this may unlock almost everything once set up...
 
 # *********************************************
-# * Install other dependencies
+# * Install software
 # *********************************************
+
+echo "\n\033[1;36mInstalling XCode...\033[0m\n"
 
 # Install XCode
 mas install $(mas search xcode | grep "  Xcode  " | awk '{print $1}')
 sudo xcodebuild -license accept
+
+echo "\n\033[1;36mInstalling Global Node Packages...\033[0m\n"
+
+pnpm i -g @softwaretechnik/dbml-renderer
+pnpm i -g stegcloak
+pnpm i -g serve
+pnpm i -g surge
+pnpm i -g vercel@latest
+pnpm i -g @shopify/cli
+pnpm i -g netlify-cli
+pnpm i -g tunnelmole
+
+echo "\n\033[1;36mInstalling Homebrew Bundles...\033[0m\n"
+
+for bundle in terminal creative developer entertainment productivity utility; do
+  brew bundle --no-lock --file $DOTFILES/install/homebrew/${bundle}.brew
+done
 
 # *********************************************
 # * Prepare config
@@ -103,16 +125,6 @@ exit 0
 
 # Install preferences
 brew mackup
-
-# *********************************************
-# * Install software
-# *********************************************
-
-# Install brewfile bundles
-
-for bundle in terminal creative developer entertainment productivity utility; do
-  brew bundle --no-lock --file $GITPATH/github.com/binaryben/dotfile/install/homebrew/${bundle}.brew
-done
 
 # *********************************************
 # * Final tasks
@@ -146,14 +158,3 @@ mkdir -p $HOME/.local/share/go/{bin,src,pkg}
 
 espanso install espanso-pinyin-tone
 espanso install cht
-
-# Node CLIs
-
-pnpm i -g @softwaretechnik/dbml-renderer
-pnpm i -g stegcloak
-pnpm i -g serve
-pnpm i -g surge
-pnpm i -g vercel@latest
-pnpm i -g @shopify/cli
-pnpm i -g netlify-cli
-pnpm i -g tunnelmole

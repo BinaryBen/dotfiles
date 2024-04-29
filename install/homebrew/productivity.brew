@@ -1,8 +1,8 @@
 # Office / productivity
 
-cask arc
-cask resilio-sync
-cask adobe-acrobat-reader
+cask "arc"
+cask "resilio-sync"
+cask "adobe-acrobat-reader"
 
 # TODO: Email client
 # cask mailspring # Seems to be this or Thunderbird
@@ -10,9 +10,9 @@ cask adobe-acrobat-reader
 # Mailspring is apparently going more open
 # Need to support JMAP
 
-cask drawio
+cask "drawio"
 # cask standard-notes
-cask notesnook
+cask "notesnook"
 # Calendar? Fantastical?
 # Project Management
 # Grammarly
@@ -20,12 +20,12 @@ cask "anki"
 
 # Academic / Writing
 
-cask quarto
+cask "quarto"
 # Python stuff
 # R
 
 # Reference Manager
-cask jamovi
+cask "jamovi"
 # TODO: Reference Manager(s)
 # TODO: Python scientific packages
 # TODO: R, Radian

@@ -5,7 +5,7 @@
 # cask fing
 # cask knockknock
 # # Alternative for knock to unlock?
-cask tor-browser
+cask "tor-browser"
 
 # Menulet / macOS UI
 
@@ -33,26 +33,26 @@ cask "qlmarkdown"
 
 # Automation
 
-cask home-assistant
-cask ha-menu
-cask espanso
-cask hammerspoon
+cask "home-assistant"
+cask "ha-menu"
+cask "espanso"
+cask "hammerspoon"
 
 # Tools
 
-mas 1632827132 # Camera Preview
-cask codewhisperer
+mas "Camera Preview.app", id: 1632827132
+cask "codewhisperer"
 
 # TODO: Sort
 
-cask disk-inventory-x
+cask "disk-inventory-x"
 # Find duplicates / empty directories?
 # Geektool
 # cask geekbench
-cask nomachine
+cask "nomachine"
 # Mount NTFS drives
 # Better sound control DO NOT USE background-music
-cask duet
+# cask "duet"
 # Metric viewer
 # Dropzone / drop to GIF?
 # Eject drives from menu bar

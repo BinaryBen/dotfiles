@@ -92,7 +92,7 @@ export DOTFILES="$GITPATH/github.com/binaryben/dotfiles"
 # *********************************************
 
 # Install XCode
-mas install $(mas list | grep "Xcode" | awk '{print $1}')
+mas install $(mas search xcode | grep "  Xcode  " | awk '{print $1}')
 sudo xcodebuild -license accept
 
 # *********************************************

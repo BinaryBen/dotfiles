@@ -7,7 +7,7 @@ cask "kodi"
 cask "optimus-player"
 # Music player
 tap "popcorn-official/popcorn-desktop", "https://github.com/popcorn-official/popcorn-desktop.git"
-cask "popcorn-time"
+cask "popcorn-official/popcorn-desktop/popcorn-time"
 # cask motrix
 # SteamLink
 cask "steam"

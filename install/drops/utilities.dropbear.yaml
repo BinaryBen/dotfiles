@@ -1,0 +1,53 @@
+
+name: Utilities & Helpers
+
+groups:
+  - name: Terminal
+    drops:
+    - name: tldr++
+      homepage: https://isacikgoz.me/tldr/
+      install:
+        brew: isacikgoz/taps/tldr
+
+  - name: Interface
+    drops:
+      - name: Amphetamine
+        install:
+          mas: 937984704
+      - name: PowerToys
+        description: Advanced features for Windows
+
+  - name: General
+    drops:
+      - name: Drive Fixers
+        description: Allows NFTS/HFS drives to be mounted where they weren't supposed to be mounted
+        notes:
+          - macOS option (Mounty) does not work on Ventura
+        install:
+          cask: mounty
+          choco: hfsexplorer
+      - name: Disk Usage Analysers
+        description: Find out what files are consuming your SSD space
+        notes:
+          - Each platform installs a different, but similar tool
+        install:
+          cask: disk-inventory-x
+          apt: k4dirstat
+          choco: windirstat
+      - name: Self Control
+        description: Don't have any? Just install it!
+        install:
+          cask: selfcontrol
+
+  - name: Rice
+    drops:
+    - name: GeekTool
+      description: Personlise your mac desktop
+      install:
+        cask: geektool
+    - name: AutoHideMouseCursor
+
+  - name: Windoze
+    drops:
+    - name: Bonjour
+    - name: Media Codec Pack

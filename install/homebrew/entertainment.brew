@@ -1,0 +1,28 @@
+# Entertainment
+
+# Podcast client
+# Retro emoulation (PS2, MAME, N64)
+cask "vlc"
+cask "kodi"
+cask "optimus-player"
+# Music player
+tap popcorn-official/popcorn-desktop https://github.com/popcorn-official/popcorn-desktop.git
+cask popcorn-time
+# cask motrix
+# SteamLink
+cask "steam"
+# cask freetube
+cask "jellyfin-media-player"
+cask "gopanda"
+# cask "runescape"
+# Trakt
+
+# * Currently trialing Spotify since Apple Music deleted my library when I let my subscription lapse (boo!)
+
+cask "spotify"
+brew "spicetify-cli"
+
+tap "krtirtho/apps"
+cask "spotube"
+
+# Podcast player?

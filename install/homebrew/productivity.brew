@@ -1,0 +1,40 @@
+# Office / productivity
+
+cask arc
+cask resilio-sync
+cask adobe-acrobat-reader
+
+# TODO: Email client
+# cask mailspring # Seems to be this or Thunderbird
+# Which supports PEP? GPG? What about Canary and Proton?
+# Mailspring is apparently going more open
+# Need to support JMAP
+
+cask drawio
+# cask standard-notes
+cask notesnook
+# Calendar? Fantastical?
+# Project Management
+# Grammarly
+cask "anki"
+
+# Academic / Writing
+
+cask quarto
+# Python stuff
+# R
+
+# Reference Manager
+cask jamovi
+# TODO: Reference Manager(s)
+# TODO: Python scientific packages
+# TODO: R, Radian
+
+# Communication # TODO: Review
+
+# cask ferdium
+# brew caprine
+# cask around
+# cask session
+# Element?
+# Mastodon et al?

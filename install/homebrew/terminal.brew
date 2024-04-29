@@ -1,0 +1,87 @@
+# ********************************************************
+# * Terminal
+# ********************************************************
+
+# Modern UNIX for real people
+
+brew "eza"     # ls
+brew "lsd"     # Replace lsd when eza supports custom icons & space between icon/label?
+brew "zoxide"  # cd
+brew "micro"   # $EDITOR
+brew "mosh"    # ssh
+brew "peco"    # realtime grep
+brew "bat"     # cat
+brew "btop"    # top - also htop, vtop, bashtop and glances
+brew "fd"      # find
+brew "ripgrep" # grep
+brew "rga"     # as above + PDF/SRT/docx/sqlite/jpg
+brew "doggo"   # dig
+brew "tmux"    # screen
+brew "trash"   # rm
+brew "broot"   # tree
+brew "gping"   # ping
+brew "duf"     # df
+brew "sd"      # sed
+
+# TODO
+
+# await or rush
+# choose
+# dust
+# mcfly
+# rustscan # nmap
+
+# Utilities
+
+brew "imagemagick"
+brew "ffmpeg"
+brew "chafa"
+brew "pandoc"  # Optional dep for rga
+brew "poppler" # Optional dep for rga
+brew "bandwhich"
+brew "fzf"
+brew "git-delta" # TODO: Ensure is set as pager for git
+brew "jq"
+brew "fx"
+brew "qrcp"
+brew "grex"
+brew "hyperfine"
+brew "entr"
+brew "xh"
+brew "aria2"
+brew "yt-dlp"
+
+# TODO: Looking for:
+# Speedtest
+# Check if a website is up
+# Check progress of long running tasks / Show progress bar for copying/moving files
+# Quick static file server
+# Better copy / paste (pbcopy)
+# Keylogger - for developing Workmate keyboard layout
+
+# Workflow tracking / focus
+
+brew "task"
+# ttscoff/doing
+# IonicaBizau/idea OR simeg/eureka
+
+# Reference
+
+brew "navi"
+brew "cheat"
+brew "libqalculate"
+brew "howdoi"
+brew "isacikgoz/taps/tldr"
+brew "thefuck"
+
+# Just for FUN! You know these are important! 😉
+
+brew "neofetch"
+brew "lolcat"
+brew "figlet"
+brew "cowsay"
+brew "cmatrix" # Possibly consider st3w/neo if made available on Homebrew
+# AngelJumbo/lavat
+brew "cbonsai"
+brew "hr"
+brew "arttime"

@@ -1,0 +1,55 @@
+# Engineering
+
+cask "autodesk-fusion360"
+# EasyEDA
+# Bomist?
+# Circuit Studio in VM?
+cask "ultimaker-cura"
+# ChiTuBox
+cask "teensy"
+cask "raspberry-pi-imager"
+cask "balenaetcher"
+brew "arduino-cli"
+cask "blender"
+brew "micropython"
+cask "bricklink-studio"
+
+# Design
+
+cask "affinity-designer"
+cask "affinity-photo"
+cask "affinity-publisher"
+cask "figma"
+# Font editor? FontForge?
+cask "fontbase"
+cask "imageoptim"
+
+# Media production
+
+cask "ableton-live-standard"
+# Tracktion Waveform
+# Ardour?
+# Audapolis? # https://github.com/audapolis/audapolis
+# Rewire?
+brew "eye-d3"
+brew "id3lib"
+cask "rekordbox"
+# Other DJ software?
+# cask "loom"
+cask "cleanshot" # OR cask "shottr" (maybe both)
+# Davinci Resolve
+cask "handbrake"
+# RipX alternative?
+# Ebook creator
+mas "Gifski.app", id: 1351639930
+brew "gifski"
+
+# Screen sharing / Vlogging
+
+cask "obs"
+cask "keycastr"
+
+# VST Plugins
+
+cask "spitfire-audio"
+# Helm synth

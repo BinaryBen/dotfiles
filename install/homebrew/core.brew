@@ -6,6 +6,7 @@
 
 brew "zsh"
 brew "git"
+brew "git-lfs"
 cask "iterm2" if OS.mac?
 brew "moreutils"
 cask "kitty" if OS.linux?
@@ -42,4 +43,4 @@ brew "make"
 # Captcha for risky commands
 
 tap "kaplanelad/tap"
-brew "shellfirm"
+brew "shellfirm" # TODO: Requires brew update before it works. Maybe put all taps in a file?

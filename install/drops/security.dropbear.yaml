@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=./../source/models/config/dropbear.schema.json
+# Note: This config is used in external projects. Only add minimal requirements!
+
+collection: Security
+groups:
+    - name: Picocrypt
+      description: A very small, very simple, yet very secure file encryption tool
+      homepage: https://github.com/HACKERALERT/Picocrypt

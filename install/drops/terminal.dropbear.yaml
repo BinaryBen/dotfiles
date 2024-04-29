@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=./../source/schemas/buckets.schema.json
+
+groups:
+  - name: Core Tools
+    drops:
+      - name: Terminal Emulator
+        description: Replace default terminal emulators with better options
+        install:
+          cask: iterm2
+          choco: microsoft-windows-terminal
+
+  - name: Text Editors
+    description:
+    drops:
+      - name: Vim
+        install:
+          apt: vim-tiny

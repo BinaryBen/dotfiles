@@ -1,0 +1,94 @@
+# ********************************************************
+# * Development
+# ********************************************************
+
+# Visual IDE
+
+cask "vscodium" # TODO Finder shortcut to open directory in Codium
+cask "visual-studio-code"
+
+# Version Control
+
+brew "ghq"    # This powers `git get` and `git cc` alias
+brew "bfg"    # Remove large files and passwords
+brew "forgit" # TODO: Make aliases that have -i option
+brew "gh"
+brew "act"
+brew "tea"
+# Atlassian?
+# Some kind of git profile management
+
+# Infrastructure
+
+cask "puppet-bolt"
+cask "docker"
+cask "multipass"
+brew "k3d" # https://thriveread.com/mastering-k3s-on-macos/
+brew "kubernetes-cli"
+brew "helm"
+
+# GUIs
+
+# cask devdocs # TODO: Find replacement docs viewer
+cask "beekeeper-studio"
+cask "microsoft-edge"
+cask "gitup"
+# Another Git GUI?
+brew "bruno"
+
+# Languages / Frameworks
+
+brew "shellcheck"
+brew "deno"
+brew "oven-sh/bun/bun"
+brew "nim"
+brew "go"
+brew "sass/sass/sass"
+brew "cmake"
+cask "dotnet" # Does this cover all C#?
+brew "rust"
+# Flutter
+# Zig
+# Arduino
+# Platform IO
+
+# Platforms
+
+brew "doctl"
+brew "awscli"
+brew "supabase/tap/supabase"
+cask "google-cloud-sdk"
+brew "flyctl"
+brew "vultr/vultr-cli/vultr-cli"
+brew "oci-cli"
+tap "heroku/brew"
+brew "heroku"
+
+# Integrations
+
+brew "infisical/get-cli/infisical"
+brew "stripe/stripe-cli/stripe"
+tap "twilio/brew"
+brew "twilio"
+brew "nickrobinson/tap/square"
+
+# Tools
+
+brew "direnv"
+cask "devtoys"
+brew "asciinema"
+brew "agg"
+# Browser automation? Playwright?
+# Fuse https://fuseopen.com
+# cask koa11y
+# REST GUI
+# Localhost domain manager
+# Localhost SSH keys
+# cask pulse
+brew "cocoapods"
+
+# Tools > LOC counting
+
+brew "cloc"
+brew "scc"
+brew "tokei"

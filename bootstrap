@@ -1,17 +1,17 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 # This is located in root for use in Github Codespace
 # https://docs.github.com/en/codespaces/customizing-your-codespace/personalizing-codespaces-for-your-account#dotfiles
 
 clear
 
-echo -e "\nThis computer will be configured with \033[1m@binaryben's\033[0m personal preferences\n"
+echo "\nThis computer will be configured with \033[1m@binaryben's\033[0m personal preferences\n"
 
-# echo -e "\n\033[1;43m WARNING! \033[0m  \033[1;33mPrompts will automatically continue with defaults if they timeout.\033[0m\n"
+# echo "\n\033[1;43m WARNING! \033[0m  \033[1;33mPrompts will automatically continue with defaults if they timeout.\033[0m\n"
 
-echo -e "\033[1;43m WARNING! \033[0m  \033[1;33mThis script is only tested with macOS for now.\033[0m\n"
+echo "\033[1;43m WARNING! \033[0m  \033[1;33mThis script is only tested with macOS for now.\033[0m\n"
 
-echo -e "Your password may be required to continue. Please enter it if asked.\n"
+echo "Your password may be required to continue. Please enter it if asked.\n"
 sudo -v
 
 # Keep-alive: update existing `sudo` time stamp until finished
@@ -30,7 +30,7 @@ done 2>/dev/null &
 # if Apple Silicon
 # sudo softwareupdate --install-rosetta --agree-to-license
 
-echo -e "\033[1;36mChecking for system updates...\033[0m\n"
+echo "\n\033[1;36mChecking for system updates...\033[0m\n"
 
 softwareupdate --all --install --force
 
@@ -39,11 +39,11 @@ softwareupdate --all --install --force
 # *********************************************
 
 if command -v brew &>/dev/null; then
-  echo -e "\n\033[1;36mHomebrew already installed. Updating now...\033[0m\n"
+  echo "\n\033[1;36mHomebrew already installed. Updating now...\033[0m\n"
   brew update
   brew upgrade
 else
-  echo -e "\n\033[1;36mHomebrew not found. Installing...\033[0m\n"
+  echo "\n\033[1;36mHomebrew not found. Installing...\033[0m\n"
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
@@ -51,7 +51,7 @@ fi
 # * Install core packages
 # *********************************************
 
-echo -e "\n\033[1;36mInstalling Node...\033[0m\n"
+echo "\n\033[1;36mInstalling Node...\033[0m\n"
 
 # First because Node possibly needs to be installed before birwarden-cli
 
@@ -60,11 +60,11 @@ corepack enable pnpm
 pnpm env add -g latest 18
 pnpm env use -g lts # Default to latest lts
 
-echo -e "\n\033[1;36mInstalling Python 3...\033[0m\n"
+echo "\n\033[1;36mInstalling Python 3...\033[0m\n"
 
 # Python 3
 
-echo -e "\n\033[1;36mInstalling Core Packages...\033[0m\n"
+echo "\n\033[1;36mInstalling Core Packages...\033[0m\n"
 
 cd /tmp
 curl -O https://raw.githubusercontent.com/binaryben/dotfiles/main/install/homebrew/core.brew

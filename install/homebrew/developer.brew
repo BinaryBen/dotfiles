@@ -35,7 +35,7 @@ cask "beekeeper-studio"
 cask "microsoft-edge"
 cask "gitup"
 # Another Git GUI?
-brew "bruno"
+cask "bruno"
 
 # Languages / Frameworks
 
@@ -73,6 +73,7 @@ brew "infisical/get-cli/infisical"
 brew "stripe/stripe-cli/stripe"
 tap "twilio/brew"
 brew "twilio"
+tap "nickrobinson/tap"
 brew "nickrobinson/tap/square"
 
 # Tools

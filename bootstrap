@@ -92,8 +92,7 @@ export DOTFILES="$GITPATH/github.com/binaryben/dotfiles"
 # *********************************************
 
 # Install XCode
-# TODO: Ask if wanting to install full Xcode or just Command Line Tools?
-brew install --cask xcode
+mas install $(mas list | grep "Xcode" | awk '{print $1}')
 sudo xcodebuild -license accept
 
 # *********************************************

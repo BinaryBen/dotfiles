@@ -32,9 +32,15 @@ Once a machine has it's OS installed and your user configured, run the command b
 
 > ⚠️ This is not ready and does not work. DO NOT try to run this.
 
+```sh
+sh -c "$(curl -sSL https://raw.githubusercontent.com/binaryben/dotfiles/main/bootstrap)"
 ```
-$ curl https://dotfiles.bnry.be/bootstrap | sh && drop in
+
+<!--
 ```
+curl https://dotfiles.bnry.be/bootstrap | sh && drop in
+```
+-->
 
 You are encouraged to review the docs and code thoughrouly, but in short, it will:
 
@@ -62,16 +68,19 @@ You are encouraged to review the docs and code thoughrouly, but in short, it wil
 
 ## Todo
 
+* [ ] <https://rutger-t.medium.com/installing-zsh-and-oh-my-zsh-on-mac-using-homebrew-af80d266515d>
+
 ### CLI Software
-- [ ] ssh
-- [ ] ssl? hostnames?
+
+* [ ] ssh
+* [ ] ssl? hostnames?
 
 ### Install Libraries
 
-- [ ] Drivers
-- [ ] Desktop Backgrounds
-- Fonts are saved in my Omnidrive and managed via FontBase
-- Brand assets are saved in Omnidrive and git repos
+* [ ] Drivers
+* [ ] Desktop Backgrounds
+* Fonts are saved in my Omnidrive and managed via FontBase
+* Brand assets are saved in Omnidrive and git repos
 
 [List of CLI apps to trawl through in bed or whenever](https://github.com/toolleeo/cli-apps)
 
@@ -83,7 +92,6 @@ Alpine - default container OS and used in iSH on iOS devices
 Debian - default server OS
 Windows (mainly via RDI) - gaming mainly, some creative software is Windows only
 macOS - default OS for professional work
-
 
 ![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/solar.png)
 
@@ -117,22 +125,22 @@ Most of these are installed via my Dropbear "droppings", however many are config
 
 ![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/solar.png)
 
-## 🦸‍♂️ Install Superpowers!
+## 🦸‍♂️ Install Superpowers
 
 ### Git
 
 ### Docker
 
-* https://github.com/unixorn/docker-helpers.zshplugin
-* https://github.com/sroze/docker-compose-zsh-plugin/blob/master/docker-compose.plugin.zsh
-* https://github.com/webyneter/docker-aliases/blob/master/docker-aliases.plugin.zsh
+* <https://github.com/unixorn/docker-helpers.zshplugin>
+* <https://github.com/sroze/docker-compose-zsh-plugin/blob/master/docker-compose.plugin.zsh>
+* <https://github.com/webyneter/docker-aliases/blob/master/docker-aliases.plugin.zsh>
 
 ### Tmux
 
-* https://github.com/ChrisPenner/session-sauce
+* <https://github.com/ChrisPenner/session-sauce>
 
 ![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/solar.png)
 
-## 🙏 Thanks!
+## 🙏 Thanks
 
 Original dotfiles [logo](https://github.com/jglovier/dotfiles-logo) by [Joel Glovier](https://github.com/jglovier). Remixed with gratitude under the [MIT Licence](https://github.com/jglovier/dotfiles-logo/blob/main/LICENSE).

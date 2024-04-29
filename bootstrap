@@ -27,8 +27,12 @@ done 2>/dev/null &
 
 # NOTE: Install WSL2 on Windows
 
-# if Apple Silicon
-# sudo softwareupdate --install-rosetta --agree-to-license
+case $(sysctl -n machdep.cpu.brand_string) in
+*Apple*)
+  echo "\n\033[1;36mInstalling Rosetta 2...\033[0m\n"
+  sudo softwareupdate --install-rosetta --agree-to-license
+  ;;
+esac
 
 echo "\n\033[1;36mChecking for system updates...\033[0m\n"
 
@@ -74,18 +78,23 @@ brew bundle --no-lock --file core.brew && rm core.brew && cd -
 # * Configure Git & Get Dotfiles
 # *********************************************
 
-echo "\n\033[1;36mCloning dotfiles locally...\033[0m\n"
-
 export GITPATH="$HOME/.local/share/git"
+export DOTFILES="$GITPATH/github.com/binaryben/dotfiles"
 
 git lfs install
-mkdir -p $GITPATH/github.com/binaryben
 
-cd ~/.local/share/git/github.com/binaryben
-git clone https://github.com/binaryben/dotfiles.git
+if [ -d "$DOTFILE" ]; then
+  echo "\n\033[1;36mUpdating local dotfiles repo...\033[0m\n"
+  cd $DOTFILES
+  git pull
+else
+  echo "\n\033[1;36mCloning dotfiles locally...\033[0m\n"
+  mkdir -p $GITPATH/github.com/binaryben
+  cd ~/.local/share/git/github.com/binaryben
+  git clone https://github.com/binaryben/dotfiles.git
+fi
+
 cd -
-
-export DOTFILES="$GITPATH/github.com/binaryben/dotfiles"
 
 # Generate SSH key
 #! Careful, this may unlock almost everything once set up...

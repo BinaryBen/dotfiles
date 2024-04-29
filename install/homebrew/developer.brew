@@ -20,6 +20,7 @@ brew "tea"
 
 # Infrastructure
 
+tap "puppetlabs/puppet"
 cask "puppet-bolt"
 cask "docker"
 cask "multipass"
@@ -40,9 +41,11 @@ brew "bruno"
 
 brew "shellcheck"
 brew "deno"
+tap "oven-sh/bun"
 brew "oven-sh/bun/bun"
 brew "nim"
 brew "go"
+tap "sass/sass"
 brew "sass/sass/sass"
 brew "cmake"
 cask "dotnet" # Does this cover all C#?

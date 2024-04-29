@@ -74,13 +74,18 @@ brew bundle --no-lock --file core.brew && rm core.brew && cd -
 # * Configure Git & Get Dotfiles
 # *********************************************
 
+export GITPATH="$HOME/.local/share/git"
+
 git lfs install
-mkdir -p ~/.local/share/git/github.com/binaryben
+mkdir -p $GITPATH/github.com/binaryben
+
+cd ~/.local/share/git/github.com/binaryben
+git clone https://github.com/binaryben/dotfiles.git
+
+export DOTFILES="$GITPATH/github.com/binaryben/dotfiles"
 
 # Generate SSH key
 #! Careful, this may unlock almost everything once set up...
-
-exit 0
 
 # *********************************************
 # * Install other dependencies
@@ -95,7 +100,7 @@ sudo xcodebuild -license accept
 # * Prepare config
 # *********************************************
 
-# Download the dotfiles repo
+exit 0
 
 # Install preferences
 brew mackup

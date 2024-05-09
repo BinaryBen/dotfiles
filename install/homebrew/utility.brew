@@ -41,7 +41,7 @@ cask "hammerspoon"
 # Tools
 
 mas "Camera Preview.app", id: 1632827132
-cask "codewhisperer"
+cask "amazon-q"
 
 # TODO: Sort
 

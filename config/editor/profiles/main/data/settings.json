@@ -1,11 +1,12 @@
 {
+  "$schema": "vscode://schemas/settings/user",
   "accessibility.dimUnfocused.enabled": true,
-  "accessibility.dimUnfocused.opacity": 0.9,
+  "accessibility.dimUnfocused.opacity": 0.85,
   "activitusbar.activeColour": "statusBar.foreground",
   "activitusbar.alignment": "Right",
   "activitusbar.combineWorkspaceSettings": true,
   "activitusbar.inactiveColour": "statusBar.foreground",
-  "activitusbar.priority": -99999,
+  "activitusbar.priority": -99,
   "activitusbar.toggleSidebar": false,
   "activitusbar.views": [
     {
@@ -18,84 +19,60 @@
       "tooltip": "Extensions (⌃Space, ⌃X)"
     }, {
       "name": "terminal"
-    }, {
-      "name": "problems"
-    }, {
-      "codicon": "tools",
-      "tooltip": "Powertools"
-    }, {
-      "codicon": "cloud-download",
-      "tooltip": "Update Extensions"
-    }, {
-      "codicon": "compass",
-      "tooltip": "Projects"
-    }, {
-      "name": "extension.bookmarksExplorer",
-      "codicon": "bookmark",
-      "tooltip": "Navigate"
-    }, {
-      "codicon": "pass",
-      "tooltip": "Todo"
-    }, {
-      "codicon": "database",
-      "tooltip": "Data"
     }
   ],
-  "advancedNewFile.exclude": {
-    "node_modules": true,
-    "node_modules_electron": true,
-    "dist": true,
-    "out": true,
-    "build": true
-  },
-  "advancedNewFile.showInformationMessages": true,
-  "advancedNewFile.convenienceOptions": ["last", "current", "root"],
+  "amazonQ.telemetry": false,
   "apc.activityBar": {
-    "hideSettings": true,
     "position": "bottom",
     "size": 35,
     "itemSize": 30
   },
   "apc.electron": {
-    "apc.font.family": "SF Pro",
     "backgroundColor": "rgba(0, 0, 0, 0)",
     "frame": false,
     "titleBarStyle": "customButtonsOnHover",
+    "trafficLightPosition": {
+      "x": 15,
+      "y": 10,
+    },
     "transparent": true,
     "vibrancy": "sidebar",
-    "visualEffectState": "active"
+    "visualEffectState": "active",
   },
   "apc.header": {
-    "height": 35
+    "height": 16
   },
-  "apc.menubar.compact": false,
   "apc.statusBar": {
-    "fontSize": 12,
+    "fontSize": 13,
     "height": 35,
     "position": "editor-bottom"
   },
   "apc.stylesheet": {
+    ".global-activity-actionbar": "display: none",
     ".monaco-workbench .part.sidebar>.title>.title-label h2": "display: none;",
     ".title.tabs.title-border-bottom .tabs-container": "cursor: default; -webkit-app-region: no-drag;",
     ".editor-actions": "display: none;",
     ".monaco-list-rows": "background-color: transparent !important;",
-    ".nosidebar .tabs": "padding-left: 80px;",
-    ".scrollbar": " width: 10px !important",
+    // ".nosidebar .tabs": "padding-left: 80px;",
     ".scrollbar .slider": "border-radius: 6px; width: calc(100% - 2px) !important;",
     ".activitybar .composite-bar > .monaco-action-bar > .actions-container": "justify-content: space-evenly; max-width: 300px;",
     ".monaco-editor .margin": "opacity: 1;",
-    // ".pane-header": "padding-left: 10px;",
+    ".pane-header": "padding-left: 4px;",
     ".activitybar > .content": "flex-direction: column !important",
     // Toolbars hidden unless needed
     "#workbench\\.parts\\.sidebar > .composite.title": "opacity: 0;",
     "#workbench\\.parts\\.sidebar > .composite.title:hover": "opacity: 1;",
+    ".monaco-breadcrumbs": "opacity: 0;",
+    ".monaco-breadcrumbs:hover": "opacity: 1;",
     // Move notifications above taller status bar
     // TODO: Move over editor if right sidebar is open (Needs fixed sidebar widths)
-    ".monaco-workbench>.notifications-center": "bottom: 45px; right: 0px",
+    ".monaco-workbench>.notifications-center": "bottom: 45px",
     ".monaco-workbench>.notifications-toasts": "bottom: 45px",
     // Dim inactive terminal panes further
     ".terminal": "border-left: 1px solid #00ffaa; padding-left: 1em; opacity: 1;",
-    ".terminal:not(.focus)": "border-color: transparent; opacity: 0.4;",
+    ".terminal:not(.focus)": "border-color: transparent; opacity: 0.6;",
+    // Nicer icon select
+    // ".action-item.checked > a": "background: blue;",
     // Translucent sidebars
     ".editor .title": "background: transparent !important;",
     ".editor .title .label-container": "visibility: hidden;",
@@ -109,7 +86,6 @@
   "auto-close-tag.enableAutoCloseSelfClosingTag": true,
   "auto-close-tag.insertSpaceBeforeSelfClosingTag": true,
   "aws.telemetry": false,
-  "breadcrumbs.enabled": false,
   "C_Cpp.intelliSenseEngine": "Disabled",
   "codemetrics.basics.DecorationTemplate": "<svg xmlns='http://www.w3.org/2000/svg' width='{{size}}px' height='{{size}}px' viewbox='0 0 {{size}} {{size}}'><circle cx='3' cy='9' r='3' stroke-width='0' fill='{{color}}' /></svg>",
   "codemetrics.basics.ComplexityTemplate": "{1}ㅤ (Score: {0})",
@@ -127,16 +103,18 @@
   "cSpell.maxNumberOfProblems": 20,
   "cSpell.numSuggestions": 8,
   "cSpell.allowCompoundWords": true,
-  "cSpell.showStatus": false,
-  "cSpell.spellCheckDelayMs": 5000,
+  "cSpell.spellCheckDelayMs": 2000,
   "cSpell.spellCheckOnlyWorkspaceFiles": true,
   "cSpell.userWords": [
     "Arduino",
+    "clippy",
+    "dialog",
     "drawio",
     "laravel",
     "mjml",
-    "sass"
+    "sass",
   ],
+  "database-client.autoSync": true,
   "diffEditor.renderSideBySide": false,
   "editor.acceptSuggestionOnEnter": "off",
   "editor.accessibilitySupport": "off",
@@ -210,20 +188,15 @@
   "extensions.closeExtensionDetailsOnViewChange": true,
   "extensions.ignoreRecommendations": true,
   "files.associations": {
-    "*.module": "php"
+    "*.module": "php",
+    "*.brew": "shellscript"
   },
   "files.autoSave": "onFocusChange",
   "files.defaultLanguage": "markdown",
   "files.trimTrailingWhitespace": true,
   "git.autofetch": true,
   "git.confirmSync": false,
-  // #if(editor="visual studio code")
-  "github.copilot.enable": {
-    "*": true,
-    "yaml": false,
-    "markdown": false
-  },
-  // #endif
+  "git.openRepositoryInParentFolders": "never",
   "gitlens.currentLine.format": "${author} committed this ${agoOrDate}",
   "gitlens.currentLine.pullRequests.enabled": false,
   "gitlens.currentLine.uncommittedChangesFormat": "🚧 Last edit ${ago}",
@@ -245,25 +218,13 @@
     "rgba(255,127,255,0.3)",
     "rgba(79,236,236,0.3)"
   ],
-  "indentRainbow.includedLanguages": ["nim", "nims", "python", "sass"],
+  "indentRainbow.includedLanguages": ["python", "sass"],
   "indentRainbow.indicatorStyle": "light",
   "indentRainbow.lightIndicatorStyleLineWidth": 1,
   "javascript.autoClosingTags": false,
-  "javascript.suggest.paths": true,
+  "javascript.suggest.paths": false, // Path Intellisense extension needs this off
   "javascript.updateImportsOnFileMove.enabled": "always",
   "keyboard.touchbar.enabled": false,
-  "local-history.absolute": false,
-  "local-history.dateLocale": "en-AU",
-  "local-history.daysLimit": 7,
-  "local-history.exclude": [
-    "**/.history/**",
-    "**/.vscode**",
-    "**/node_modules/**",
-    "**/typings/**",
-    "**/out/**"
-  ],
-  "local-history.path": "%XDG_CACHE_HOME%/code/",
-  "local-history.treeLocation": "localHistory",
   "markdownlint.config": {
       "default": true,
       "no-inline-html": { // MD033
@@ -275,7 +236,6 @@
         ]
       }
   },
-  "nim.provider": "lsp",
   "peacock.affectActivityBar": false,
   "peacock.affectStatusBar": true,
   "peacock.affectTitleBar": false,
@@ -297,12 +257,27 @@
   "powermode.shake.enabled": false,
   "powermode.presets": "flames",
   "prettier.requireConfig": true,
+  "projectManager.cacheProjectsBetweenSessions": true,
+  "projectManager.git.baseFolders": [
+    "~/.local/share/git/github.com/binaryben",
+    "~/.local/share/git/github.com/domostack",
+    "~/.local/share/git/github.com/oschema"
+  ],
+  "projectManager.ignoreProjectsWithinProjects": true,
+  "projectManager.showParentFolderInfoOnDuplicates": true,
+  "projectManager.showProjectNameInStatusBar": true,
+  "projectManager.tags": [
+    "Personal",
+    "Work",
+    "Domo Stack",
+    "Open Schema",
+  ],
   "python.formatting.provider": "none",
   "redhat.telemetry.enabled": false,
+  "rust-analyzer.check.command": "clippy",
   "scm.countBadge": "off",
   "scm.defaultViewMode": "tree",
   "scm.diffDecorationsGutterVisibility": "hover", // TODO: Only in Zen mode?
-  "sidebar-markdown-notes.leftMargin": true,
   "security.workspace.trust.untrustedFiles": "open",
   "svelte.enable-ts-plugin": true,
   "svg.preview.mode": "svg",
@@ -327,230 +302,104 @@
     }
   },
   "theme-by-language.themes": {
-    // #if(editor="visual studio code")
-    // "*": "Default Dark+",
-    // #else
-    // "*": "Popping and Locking",
-    // #endif
+    "*": "Popping and Locking",
     "csv": "Office Theme (Excel)"
   },
   "typescript.autoClosingTags": false,
-  "typescript.suggest.paths": true,
+  "typescript.suggest.paths": false, // Path Intellisense extension needs this off
   "typescript.updateImportsOnFileMove.enabled": "always",
-  // * Prefer to only know about new features when they are also available in Codium
-  // #if(editor="vscodium")
-  // "update.mode": "default",
-  // #else
-  // "update.mode": "manual",
-  // "update.showReleaseNotes": false,
-  // #endif
+  "update.mode": "manual", // Because APC breaks!
   "vscode-edge-devtools.mirrorEdits": true,
-  "vsix.applyChanges": false,
   "vsix.debug": true,
-  "vsix.sources": {
-    "local": {
-      "type": "file",
-      "path": "~/.files/config/editor/extensions"
-    },
-    "ms": {
-      "type": "marketplace",
-      "serviceUrl": "https://marketplace.visualstudio.com/_apis/public/gallery"
-    },
-    "vsx": {
-      "type": "marketplace",
-      "serviceUrl": "https://open-vsx.org/vscode/gallery",
-      "fallback": "ms"
-    }
-  },
+  "vsix.extensions": [
+    "core",
+    "extras",
+    "languages",
+    "providers",
+  ],
   "vsix.groups": {
-    "ai": [
-      // "local:gencay.vscode-chatgpt",
-      // https://ranguna.prose.sh/vscodium-and-copilot
-      // "ms:GitHub.copilot",
-      // "vsx:DanielSanMedium.dscodegpt"
-    ],
-    "data": [ // #core
-      "ms:GraphQL.vscode-graphql-syntax",
-      "ms:GraphQL.vscode-graphql",
+
+    // * Core Extensions
+
+    "data": [
+      "ms:cweijan.vscode-redis-client",
       "ms:matt-meyers.vscode-dbml",
+      "ms:mtxr.sqltools",
+      // "ms:mtxr.sqltools-driver-mysql", // Yuck!
+      "ms:mtxr.sqltools-driver-pg",
+      "ms:PeggyJS.peggy-language",
       "vsx:alexcvzz.vscode-sqlite",
-      "vsx:cweijan.vscode-redis-client",
-      // "vsx:mtxr.sqltools-driver-mysql",
-      "vsx:mtxr.sqltools-driver-pg",
-      "vsx:mtxr.sqltools",
-      "vsx:rangav.vscode-thunder-client"
+      "vsx:GraphQL.vscode-graphql",
+      "vsx:GraphQL.vscode-graphql-syntax",
+      "vsx:Prisma.prisma",
+      // "vsx:rangav.vscode-thunder-client" // TODO: Consider other REST clients
     ],
-    "debug": [ // #core
-      "vsx:usernamehw.errorlens",
-      // Tasks:
+    "debug": [
       "ms:spmeesseman.vscode-taskexplorer",
-      "vsx:cschleiden.vscode-github-actions",
       "vsx:formulahendry.code-runner",
-      // Testing:
-      {
-        "id": [
-          "vsx:hbenl.test-adapter-converter",
-          "ms:ms-vscode.test-adapter-converter"
-        ]
-      },
       "vsx:hbenl.vscode-test-explorer",
-      // Built-in browsing:
-      "vsx:antfu.browse-lite",
+      "vsx:ms-vscode.test-adapter-converter",
       "vsx:ms-edgedevtools.vscode-edge-devtools",
-      "vsx:ms-vscode.live-server"
+      "vsx:usernamehw.errorlens",
     ],
-    "format": [ // #core
-      "ms:bradgashler.htmltagwrap",
-      "ms:DavidAnson.vscode-markdownlint",
-      "ms:Rubymaniac.vscode-paste-and-indent",
-      "vsx:dbaeumer.vscode-eslint",
-      "vsx:esbenp.prettier-vscode",
+    "format": [
+      "vsx:bradgashler.htmltagwrap",
+      "vsx:DavidAnson.vscode-markdownlint", // TODO: Good, but needs settings tweaks
+      "-vsx:dbaeumer.vscode-eslint", // TODO: Review (kinda slow for some reason)
+      "-vsx:esbenp.prettier-vscode", // TODO: Review (as above)
       "vsx:formulahendry.auto-close-tag",
       "vsx:formulahendry.auto-rename-tag",
       "vsx:shardulm94.trailing-spaces",
-      "vsx:stylelint.vscode-stylelint",
-      "vsx:wwm.better-align"
+      "-vsx:wwm.better-align" // TODO: Review (better to leave to autoformater?)
     ],
-    "git": [ // #core - And linting!
+    "git": [
       "ms:fabiospampinato.vscode-diff",
       "ms:fabiospampinato.vscode-git-history",
-      "vsx:ziyasal.vscode-open-in-github", // Cross platform despite ID
+      // "vsx:ziyasal.vscode-open-in-github", // Cross platform despite ID // TODO: Review
       "vsx:donjayamanne.githistory",
-      "vsx:eamodio.gitlens",
+      "-vsx:eamodio.gitlens",
       "vsx:seatonjiang.gitmoji-vscode",
-
-      // Code Platforms
-      "vsx:redhat.vscode-yaml", // Dependency of Atlascode (and needed anyway)
-      // {
-      //   "id": [
-      //     "vsx:atlassian.atlascode",
-      //     "ms:Atlassian.atlascode"
-      //   ],
-      //   "enabled": false
-      // },
-      {
-        "id": "vsx:GitHub.vscode-pull-request-github",
-        "enabled": true
-      }, {
-          "id": "vsx:GitLab.gitlab-workflow",
-          "enabled": false
-      }
-      // "vsx:xyz.local-history"
     ],
-    "infrastructure": [
-      "vsx:ms-azuretools.vscode-docker"
-      // {
-      //   "id": "vsx:ms-kubernetes-tools.vscode-kubernetes-tools",
-      //   "enabled": false
-      // },
-      // {
-      //   "id": [
-      //     "vsx.amazonwebservices.aws-toolkit-vscode",
-      //     "ms:AmazonWebServices.aws-toolkit-vscode"
-      //   ],
-      //   "enabled": false
-      // }
-    ],
-    "navigation": [ // #core
-      {
-        "id": [
-          "ms:alefragnani.Bookmarks",
-          "vsx:alefragnani.Bookmarks" // Not up to date
-        ]
-      },
+    "navigation": [
+      "vsx:alefragnani.Bookmarks",
+      "vsx:alefragnani.project-manager",
       "vsx:Fr43nk.seito-openfile", // Right click to open file under cursor
-      "vsx:patbenatar.advanced-new-file",
-      "vsx:sleistner.vscode-fileutils"
     ],
-    "present": [
-      "ms:imagio.vscode-dimmer-block",
-      "ms:johnpapa.vscode-cloak",
-      "ms:ryu1kn.text-marker",
-      "vsx:coderoad.coderoad",
-      "vsx:hoovercj.vscode-power-mode",
-      "vsx:vsls-contrib.codetour"
-    ],
-    "preview": [
-      {
-        "id": [
-          "vsx:Greenbyte.handlebars-preview",
-          "ms:greenbyte.handlebars-preview"
-        ]
-      },
-      "vsx:mjmlio.vscode-mjml",
-      "vsx:hediet.vscode-drawio",
-      "vsx:GrapeCity.gc-excelviewer", // Let's use Code instead of Excel
-      "vsx:huacat.office-theme"
-    ],
-    "prose": [ // #core
+    "prose": [
       "ms:bierner.markdown-preview-github-styles",
       "vsx:bierner.markdown-mermaid",
       "vsx:houkanshan.vscode-markdown-footnote",
-      "vsx:lokalise.i18n-ally",
+      "vsx:lokalise.i18n-ally||ms:Lokalise.i18n-ally",
       "vsx:quarto.quarto",
       "vsx:yzhang.markdown-all-in-one"
     ],
-    "remote": [
-      // #if(editor="visual studio code")
-      "ms:GitHub.codespaces",
-      "ms:ms-vscode-remote.vscode-remote-extensionpack",
-      // #else
-      "vsx:jeanp413.open-remote-ssh",
-      // #endif
-      "vsx:genuitecllc.codetogether",
-      "vsx:filiptronicek.open-in-gitpod"
-    ],
-    "shortcuts": [ // #core
-      "ms:BriteSnow.vscode-toggle-quotes",
-      "ms:quicktype.quicktype",
-      "vsx:albert.TabOut",
-      "vsx:hideoo.toggler",
-      "vsx:qcz.text-power-tools",
-      "vsx:robole.snippets-ranger",
-      "vsx:ryu1kn.edit-with-shell",
-      {
-        "id": [
-          "ms:yatki.vscode-surround",
-          "vsx:yatki.vscode-surround"
-        ]
-      }
-    ],
-    "syntax": [ // Core syntax only
-      "ms:ItsMeAdarsh.vsc-handlebars-ext",
-      "vsx:attilabuti.mustache-syntax-vscode",
-      "vsx:bungcip.better-toml",
+    // "shortcuts": [
+    //   "ms:BriteSnow.vscode-toggle-quotes",
+    //   "ms:quicktype.quicktype",
+    //   "vsx:albert.TabOut",
+    //   "vsx:hideoo.toggler",
+    //   "vsx:qcz.text-power-tools",
+    //   "vsx:robole.snippets-ranger",
+    //   "vsx:ryu1kn.edit-with-shell",
+    //   {
+    //     "id": [
+    //       "ms:yatki.vscode-surround",
+    //       "vsx:yatki.vscode-surround",
+    //     ],
+    //   },
+    // ],
+    "syntax": [
+      "vsx:tamasfe.even-better-toml",
       "vsx:foxundermoon.shell-format",
       "vsx:jock.svg",
       "vsx:keesschollaart.vscode-home-assistant",
-      "vsx:mikestead.dotenv"
-    ],
-    "tools": [
-      "ms:softwaredotcom.swdc-vscode",
-      "ms:VisualStudioExptTeam.vscodeintellicode",
-      {
-        "id": [
-          "ms:pdconsec.vscode-print",
-          "github:PDConSec/vsc-print"
-        ]
-      },
-      "vsx:alefragnani.project-manager",
-      // "vsx:assisrMatheus.sidebar-markdown-notes", // Not as helpful as I hoped
-      {
-        "id": [
-          "vsx:codespaces-contrib.codeswing",
-          "ms:codespaces-Contrib.codeswing"
-        ]
-      },
-      "vsx:egomobile.vscode-powertools",
-      "vsx:Gruntfuggly.todo-tree",
-      "vsx:streetsidesoftware.code-spell-checker"
+      "vsx:mikestead.dotenv",
+      "vsx:redhat.vscode-yaml",
     ],
     "ui": [
-      // Custom UI Layout for VSCodium
-      // #if(editor="vscodium")
-      // "ms:hedinne.popping-and-locking-vscode",
-      // #endif
+      "ms:hedinne.popping-and-locking-vscode",
       "ms:PeterSchmalfeldt.explorer-exclude",
+      "ms:jsaulou.theme-by-language||vsx:Voklen.theme-by-language",
       "vsx:aaron-bond.better-comments",
       "vsx:drcika.apc-extension",
       "vsx:emmanuelbeziat.vscode-great-icons",
@@ -558,141 +407,194 @@
       "vsx:IBM.output-colorizer",
       "vsx:johnpapa.vscode-peacock",
       "vsx:oderwat.indent-rainbow",
-      { // For Arduino & Excel themes
-        "id": [
-          "vsx:Voklen.theme-by-language",
-          "ms:jsaulou.theme-by-language"
-        ]
-      }
+    ],
+
+    // * Extra Extensions
+
+    "ai": [
+      "-vsx:amazonwebservices.amazon-q-vscode||ms:AmazonWebServices.amazon-q-vscode",
+      "-vsx:Continue.continue",
+    ],
+    "editors": [
+      "ms:mjmlio.vscode-mjml", // Not updated on Open VSX
+      "vsx:codespaces-contrib.codeswing||ms:codespaces-Contrib.codeswing",
+      "vsx:hediet.vscode-drawio",
+      "vsx:GrapeCity.gc-excelviewer", // Let's use Code instead of Excel
+      "vsx:huacat.office-theme",
+    ],
+    "infrastructure": [
+      "vsx:ms-azuretools.vscode-docker",
+      "vsx:ms-kubernetes-tools.vscode-kubernetes-tools",
+    ],
+    // "present": [
+    //   "ms:imagio.vscode-dimmer-block",
+    //   "ms:johnpapa.vscode-cloak",
+    //   "ms:ryu1kn.text-marker",
+    //   "vsx:coderoad.coderoad",
+    //   "vsx:hoovercj.vscode-power-mode",
+    //   "vsx:vsls-contrib.codetour"
+    // ],
+    "remote": [
+      "vsx:jeanp413.open-remote-ssh||github:jeanp413/open-remote-ssh",
+      "vsx:genuitecllc.codetogether",
+    ],
+    "tools": [
+      "github:PDConSec/vsc-print",
+      "ms:softwaredotcom.swdc-vscode",
+      "ms:VisualStudioExptTeam.vscodeintellicode",
+      // "vsx:egomobile.vscode-powertools", // TODO: Do I still need this? Maybe scripts for toggling extensions?
+      "vsx:Gruntfuggly.todo-tree",
+      "vsx:streetsidesoftware.code-spell-checker",
     ],
 
     // Language Extensions
 
     "css": [
-      "ms:mrmlnc.vscode-scss",
-      "vsx:pranaygp.vscode-css-peek",
-      "vsx:syler.sass-indented"
-      // "vsx:Zignd.html-css-class-completion"
+      // "vsx:pranaygp.vscode-css-peek", // Marked as depreciated on VSX
+      // "ms:pucelle.vscode-css-navigation", // Possible alternative to above, but maybe no SASS support?
+      "vsx:stylelint.vscode-stylelint",
+      "vsx:syler.sass-indented||ms:Syler.sass-indented",
     ],
-    "cpp": [
-      "ms:jeff-hykin.better-c-syntax",
-      "ms:ms-vscode.cpptools",
-      "ms:tdennis4496.cmantic",
-      "vsx:fredericbonnet.cmake-test-adapter",
-      "vsx:jeff-hykin.better-cpp-syntax",
-      "vsx:llvm-vs-code-extensions.vscode-clangd",
-      "vsx:matepek.vscode-catch2-test-adapter",
-      "vsx:moosecasa.vscode-acutest-test-adapter",
-      "vsx:twxs.cmake"
-    ],
-    "csharp": [
-      "vsx:jsw.csharpextensions",
-      "vsx:muhammad-sammy.csharp"
-    ],
-    "deno": [
-      "vsx:denoland.vscode-deno"
-    ],
-    "embedded": [ // Arduino, ARM, Particle, etc.
-      "ms:formulahendry.platformio",
-      "ms:vsciot-vscode.vscode-arduino",
-      "vsx:lintangwisesa.arduino" // Theme
-    ],
-    "go": [
-      "ms:jeff-hykin.better-go-syntax",
-      "vsx:golang.go"
-    ],
-    "mobile": [ // App development
-      "ms:Google.arb-editor",
-      "ms:localizely.flutter-intl",
-      "vsx:Dart-Code.dart-code",
-      "vsx:Dart-Code.flutter"
-    ],
-    "nim": [
-      "vsx:nimsaem.nimvscode"
-    ],
+    // "cpp": [
+    //   "ms:jeff-hykin.better-c-syntax",
+    //   "ms:ms-vscode.cpptools",
+    //   "ms:tdennis4496.cmantic",
+    //   "vsx:fredericbonnet.cmake-test-adapter",
+    //   "vsx:jeff-hykin.better-cpp-syntax",
+    //   "vsx:llvm-vs-code-extensions.vscode-clangd",
+    //   "vsx:matepek.vscode-catch2-test-adapter",
+    //   "vsx:moosecasa.vscode-acutest-test-adapter",
+    //   "vsx:twxs.cmake",
+    // ],
+    // "csharp": [
+    //   "vsx:jsw.csharpextensions",
+    //   "vsx:muhammad-sammy.csharp",
+    // ],
+    // "embedded": [ // Arduino, ARM, Particle, etc.
+    //   "ms:formulahendry.platformio",
+    //   "ms:vsciot-vscode.vscode-arduino",
+    //   "vsx:lintangwisesa.arduino", // Theme
+    // ],
+    // "go": [
+    //   "ms:jeff-hykin.better-go-syntax",
+    //   "vsx:golang.go",
+    // ],
+    // "mobile": [ // App development
+    //   "ms:Google.arb-editor",
+    //   "ms:localizely.flutter-intl",
+    //   "vsx:dart-Code.dart-code",
+    //   "vsx:dart-Code.flutter",
+    // ],
     "node": [
-      // Only available in Microsoft Marketplace
-      "ms:austinleegordon.vscode-schema-dot-org",
+      // // Only available in Microsoft Marketplace
       "ms:bengreenier.vscode-node-readme",
-      "ms:jasonnutter.search-node-modules",
-      "ms:jeff-hykin.better-js-syntax",
+      // "ms:jasonnutter.search-node-modules",
+      // "ms:jeff-hykin.better-js-syntax",
       "ms:kisstkondoros.vscode-codemetrics",
-      "ms:liamhammett.inline-parameters",
-      // Available in OpenVSX
-      {
-        "id": [
-          "vsx:antfu.vscode-vite",
-          "ms:antfu.vite",
-          "github:antfu/vscode-vite"
-        ]
-      },
+      // // Available in OpenVSX
       "vsx:christian-kohler.npm-intellisense",
       "vsx:christian-kohler.path-intellisense",
       // "vsx:maty.vscode-mocha-sidebar",
-      "vsx:ms-vscode.test-adapter-converter",
-      "vsx:Orta.vscode-jest",
-      "vsx:redhat.fabric8-analytics",
-      "vsx:xabikos.JavaScriptSnippets"
+      // "vsx:ms-vscode.test-adapter-converter",
+      // "vsx:Orta.vscode-jest",
+      // "vsx:redhat.fabric8-analytics",
+      // "vsx:xabikos.JavaScriptSnippets",
+
+      // // "desktop",
+      // // "native",
+      // // "react",
+      // // "svelte",
+      // // "vue",
     ],
-    "php": [
-      "vsx:ahinkle.laravel-model-snippets",
-      "vsx:bmewburn.vscode-intelephense-client",
-      "vsx:codingyu.laravel-goto-view",
-      "vsx:ikappas.composer",
-      "vsx:kokororin.vscode-phpfmt",
-      "vsx:liamhammett.inline-parameters",
-      "vsx:ms-vscode.test-adapter-converter",
-      "vsx:onecentlin.laravel-blade",
-      "vsx:onecentlin.laravel5-snippets",
-      "vsx:ryannaddy.laravel-artisan",
-      "vsx:xdebug.php-debug"
-    ],
+    // "php": [
+    //   "vsx:ahinkle.laravel-model-snippets",
+    //   "vsx:bmewburn.vscode-intelephense-client",
+    //   "vsx:codingyu.laravel-goto-view",
+    //   "vsx:ikappas.composer",
+    //   "vsx:kokororin.vscode-phpfmt",
+    //   "vsx:liamhammett.inline-parameters",
+    //   "vsx:ms-vscode.test-adapter-converter",
+    //   "vsx:onecentlin.laravel-blade",
+    //   "vsx:onecentlin.laravel5-snippets",
+    //   "vsx:ryannaddy.laravel-artisan",
+    //   "vsx:xdebug.php-debug",
+    // ],
     "python": [ // Also R, Data science and academic writing for now
       // Only available in Microsoft Marketplace
-      "ms:cstrap.flask-snippets",
-      "ms:ms-python.black-formatter",
-      "ms:ms-python.flake8",
-      "ms:ms-python.vscode-pylance",
-      "ms:notZaki.pandocciter",
-      "ms:REditorSupport.r",
+      // "ms:cstrap.flask-snippets",
+      // "vsx:ms-python.black-formatter",
+      // "ms:ms-python.flake8",
+      // "ms:ms-python.vscode-pylance", // Autoinstall?
+      // "ms:notZaki.pandocciter",
+      // "ms:REditorSupport.r",
       // Available in OpenVSX
-      "vsx:almenon.arepl",
-      "vsx:batisteo.vscode-django",
-      "vsx:littlefoxteam.vscode-python-test-adapter",
+      // "vsx:almenon.arepl",
+      // "vsx:littlefoxteam.vscode-python-test-adapter",
       "vsx:ms-python.python",
-      "vsx:njpwerner.autodocstring",
-      "vsx:RDebugger.r-debugger",
-      "vsx:sourcery.sourcery"
+      // "vsx:njpwerner.autodocstring",
+      // "vsx:RDebugger.r-debugger",
+      // "vsx:sourcery.sourcery",
     ],
     "rust": [
-      // Only available in Microsoft Marketplace
-      "ms:dustypomerleau.rust-syntax",
-      "ms:rust-lang.rust-analyzer",
-      // Available in OpenVSX
-      "vsx:serayuzgur.crates",
-      "vsx:Swellaby.vscode-rust-test-adapter"
+      "vsx:rust-lang.rust-analyzer",
     ],
 
     // Framework extensions
 
-    // Node
-    "native": [ // React native
-      "react",
-      "vsx:msjsdiag.vscode-react-native"
+    // // Node
+    // "desktop": [
+    //   // Tauri
+    //   // Express
+    // ],
+    // "native": [ // React native
+    //   "react",
+    //   "vsx:msjsdiag.vscode-react-native",
+    // ],
+    // "react": [
+    //   "vsx:dsznajder.es7-react-js-snippets",
+    //   "vsx:unifiedjs.vscode-mdx",
+    // ],
+    // "svelte": [
+    //   "vsx:svelte.svelte-vscode",
+    // ],
+    // "vue": [
+    //   "ms:Vue.vscode-typescript-vue-plugin",
+    //   "ms:hollowtree.vue-snippets",
+    //   "vsx:vue.volar",
+    // ],
+
+    // Provider extensions
+
+    "cloud": [
+      // "aws",
+      // "oracle",
     ],
-    "react": [
-      "vsx:dsznajder.es7-react-js-snippets",
-      "vsx:unifiedjs.vscode-mdx"
+    "git-remotes": [
+      // "bitbucket",
+      "github",
+      // "gitea",
+      // "gitlab",
     ],
-    "vue": [
-      "ms:hollowtree.vue-snippets",
-      "vsx:Vue.volar"
+
+    "aws": [
+      "vsx:amazonwebservices.aws-toolkit-vscode||ms:AmazonWebServices.aws-toolkit-vscode",
     ],
-    "svelte": [
-      "vsx:svelte.svelte-vscode"
+    "bitbucket": [
+      "vsx:atlassian.atlascode||ms:Atlassian.atlascode",
     ],
-    "express": [],
-    "desktop": [],
+    "github": [
+      "vsx:GitHub.vscode-github-actions",
+      "vsx:GitHub.vscode-pull-request-github",
+    ],
+    "gitea": [
+      "vsx:Seuma.gitea-issue-and-timetracking",
+    ],
+    "gitlab": [
+      "vsx:GitLab.gitlab-workflow",
+    ],
+    "oracle": [
+      "vsx:Oracle.oci-vscode-toolkit",
+    ],
 
     // Organisation
 
@@ -703,39 +605,53 @@
       "git",
       "navigation",
       "prose",
-      "shortcuts",
+      // "shortcuts",
       "syntax",
-      "ui"
+      "ui",
     ],
-    "enhancements": [
+    "extras": [
       "ai",
+      "editors", // Too heavy to be core
       "infrastructure",
-      // {
-      //   "id": "present",
-      //   "enabled": false
-      // },
-      "preview", // Too heavy to be core
+      // "present",
       "remote",
-      "tools"
+      "tools",
     ],
     "languages": [
       "css",
-      {
-        "id": "node",
-        "enabled": true
-      },
-      "vsx.sumneko.lua",
-      "svelte",
-      "vue",
-      "mobile"
-    ]
+      // "cpp",
+      // "csharp",
+      // "embedded",
+      // "go",
+      // "mobile",
+      // "node",
+      // "php",
+      // "python",
+      "rust",
+    ],
+    "providers": [
+      "cloud",
+      "git-remotes",
+    ],
   },
-  "vsix.extensions": [
-    "core",
-    "enhancements",
-    "languages"
-  ],
-  "window.commandCenter": true,
+  "vsix.sources": {
+    "local": {
+      "type": "file",
+      "path": "~/.files/config/editor/extensions",
+    },
+    "ms": {
+      "type": "marketplace",
+      "serviceUrl": "https://marketplace.visualstudio.com/_apis/public/gallery",
+    },
+    "vsx": {
+      "type": "marketplace",
+      "serviceUrl": "https://open-vsx.org/vscode/gallery",
+      "fallback": "ms",
+      "throttle": 5000,
+    },
+  },
+  "window.confirmSaveUntitledWorkspace": false,
+  "window.customTitleBarVisibility": "never",
   "window.dialogStyle": "custom",
   "window.restoreWindows": "one",
   "window.titleBarStyle": "native",
@@ -744,18 +660,13 @@
     "editorIndentGuide.background1": "#2e2e31",
     "sideBar.background": "#51547b20",
     "sideBarSectionHeader.background": "#00000000",
-    "terminalCursor.foreground": "#00ffaa"
+    "terminalCursor.foreground": "#00ffaa",
   },
-  // #if(editor="visual studio code")
-  // "workbench.colorTheme": "Default Dark+",
-  // #else
-  // "workbench.colorTheme": "Popping and Locking",
-  // #endif
   "workbench.editor.closeEmptyGroups": false,
   "workbench.editor.decorations.badges": false,
   "workbench.editor.decorations.colors": false,
   "workbench.editor.editorActionsLocation": "hidden",
-  "workbench.editor.showTabs": "single",
+  "workbench.editor.showTabs": "none",
   "workbench.editor.tabSizing": "fixed",
   "workbench.editor.limit.enabled": true,
   "workbench.editor.limit.excludeDirty": true,
@@ -764,49 +675,45 @@
   "workbench.editorAssociations": {
     "*.csv": "gc-excelviewer-csv-editor",
     "*.md": "vscode.markdown.preview.editor",
-    "*.xlsx": "gc-excelviewer-csv-editor"
+    "*.xlsx": "gc-excelviewer-csv-editor",
   },
   "workbench.iconTheme": "vscode-great-icons",
-  // #if(editor="visual studio code")
-  // "workbench.preferredDarkColorTheme": "Default Dark+",
-  // #else
-  // "workbench.preferredDarkColorTheme": "Popping and Locking",
-  // #endif
   "workbench.startupEditor": "none",
   "workbench.tips.enabled": false,
   "zenMode.fullScreen": false,
   "zenMode.restore": false,
-  "zenMode.showTabs": "single",
+  "zenMode.showTabs": "none",
   "[dockerfile]": {
-    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker",
   },
   "[dart]": {
 		"editor.selectionHighlight": false,
 		"editor.suggestSelection": "first",
 		"editor.tabCompletion": "onlySnippets",
-		"editor.wordBasedSuggestions": "off"
+		"editor.wordBasedSuggestions": "off",
 	},
   "[dotenv]": {
-    "editor.defaultFormatter": "foxundermoon.shell-format"
+    "editor.defaultFormatter": "foxundermoon.shell-format",
   },
   "[hosts]": {
-    "editor.defaultFormatter": "foxundermoon.shell-format"
+    "editor.defaultFormatter": "foxundermoon.shell-format",
   },
   "[ignore]": {
-    "editor.defaultFormatter": "foxundermoon.shell-format"
+    "editor.defaultFormatter": "foxundermoon.shell-format",
   },
   "[markdown]": {
     "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
     "editor.formatOnPaste": true,
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
   },
   "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter"
+    "editor.defaultFormatter": "ms-python.black-formatter",
   },
   "[shellscript]": {
-    "editor.defaultFormatter": "foxundermoon.shell-format"
+    "editor.defaultFormatter": "foxundermoon.shell-format",
   },
   "[svelte]": {
-    "editor.defaultFormatter": "svelte.svelte-vscode"
-  }
+    "editor.defaultFormatter": "svelte.svelte-vscode",
+  },
+  // #### -- ANYTHING SETTING AFTER THIS HAS BEEN ADDED AND NEEDS REVIEW -- ####
 }
